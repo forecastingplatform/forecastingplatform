@@ -1,0 +1,2844 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 43 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+[Warning: Some of the parameters have no value (bet, pistar, sprd, Fom, zstar, rstar, Rstarn, rkstar, omegastar, Lstar, kstar, kbarstar, istar,
+ystar, cstar, wl_c, zwstar) when using steady. If these parameters are not initialized in a steadystate file or a steady_state_model-block,
+Dynare may not be able to solve the model...] 
+
+STEADY-STATE RESULTS:
+
+y_t         		 0
+c_t         		 0
+i_t         		 0
+k_t         		 0
+kbar_t      		 0
+L_t         		 0
+mc_t        		 0
+pi_t        		 0
+R_t         		 0
+rk_t        		 0
+u_t         		 0
+w_t         		 0
+muw_t       		 0
+qk_t        		 0
+z_t         		 0
+ztil_t      		 0
+b_t         		 0
+g_t         		 0
+laf_t       		 0
+law_t       		 0
+mu_t        		 0
+rm_t        		 0
+xgdp_q_obs  		 0.4
+hours_obs   		 0
+wage_obs    		 0.4
+pgdp_q_obs  		 0.55
+rff_q_obs   		 1.18425
+pcer_q_obs  		 0.4
+fpi_q_obs   		 0.4
+y_ft        		 0
+c_ft        		 0
+i_ft        		 0
+k_ft        		 0
+kbar_ft     		 0
+L_ft        		 0
+r_ft        		 0
+rk_ft       		 0
+u_ft        		 0
+w_ft        		 0
+qk_ft       		 0
+outputgap_t 		 0
+r_ft_obs    		 2.537
+r_ann_t     		 2.537
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       6.184e-17       -6.184e-17                0
+       1.993e-16       -1.993e-16                0
+          0.4094           0.4094                0
+          0.4842           0.4238           0.2342
+          0.4842           0.4238          -0.2342
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+             0.5              0.5                0
+          0.7281            0.716           0.1318
+          0.7281            0.716          -0.1318
+          0.7644           0.7644                0
+          0.7693           0.7693                0
+          0.9756           0.9756                0
+          0.9788           0.9788                0
+           1.024            1.024                0
+           1.028            1.028                0
+            1.24            1.232            0.135
+            1.24            1.232           -0.135
+           1.477            1.418           0.4115
+           1.477            1.418          -0.4115
+           1.586            1.586                0
+       1.114e+18       -1.114e+18                0
+       5.755e+18        5.755e+18                0
+       1.483e+19       -1.483e+19                0
+       1.851e+19        1.851e+19                0
+       1.809e+20        1.809e+20                0
+             Inf              Inf                0
+
+
+There are 13 eigenvalue(s) larger than 1 in modulus 
+for 13 forward-looking variable(s)
+
+The rank condition is verified.
+
+Total computing time : 0h00m00s
+Note: warning(s) encountered in MATLAB/Octave code
+Trying mode_compute = 4, Chris Sims’s csminwel, and checking if estimation is feasible.
+[Warning: Some of the parameters have no value (zwstar) when using initial_estimation_checks. If these parameters are not initialized in a
+steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...] 
+Initial value of the log posterior (or likelihood): -2312.7756
+-----------------
+f at the beginning of new iteration,      2312.7755867990
+Predicted improvement:   156407.009832863
+lambda =          1; f =         2341.8489662
+lambda =    0.33333; f =         2315.9233543
+lambda =    0.11111; f =         2313.1057626
+lambda =   0.037037; f =         2312.8063941
+lambda =   0.012346; f =         2312.7776967
+lambda =  0.0041152; f =         2312.7756943
+lambda =  0.0013717; f =         1796.0666890
+lambda =  0.0026518; f =         2312.7756047
+lambda =  0.0017856; f =         2312.7755872
+lambda =  0.0014084; f =         1782.4464481
+lambda =  0.0016239; f =         1707.0976220
+lambda =  0.0018724; f =         2312.7755877
+lambda =  0.0017191; f =         2312.7755869
+lambda =  0.0016332; f =         1704.2511540
+lambda =  0.0016842; f =         2312.7755868
+lambda =  0.0016534; f =         2312.7755868
+lambda =  0.0016352; f =         1703.6492948
+Norm of dx      5.593
+Cliff.  Perturbing search direction.
+Predicted improvement:   260441.225589102
+lambda =          1; f =         2312.7783003
+lambda =    0.33333; f =         2321.9008898
+lambda =    0.11111; f =         2313.7523191
+lambda =   0.037037; f =         2312.8732696
+lambda =   0.012346; f =         2312.7834726
+lambda =  0.0041152; f =         2312.7760573
+lambda =  0.0013717; f =         2312.7755937
+lambda = 0.00045725; f =         2035.6149256
+lambda = 0.00088394; f =         1758.1347699
+lambda =  0.0017088; f =         2312.7756115
+lambda =  0.0011506; f =         2312.7755880
+lambda = 0.00090756; f =         1744.0390913
+lambda =  0.0010464; f =         2312.7755869
+lambda = 0.00096075; f =         1713.4653350
+lambda =  0.0010113; f =         2312.7755868
+lambda = 0.00098065; f =         1702.7379416
+lambda = 0.00099891; f =         2312.7755868
+lambda = 0.00098791; f =         1699.0444255
+Norm of dx     9.3434
+Cliff again.  Try traversing
+Predicted improvement: 19118569.057954013
+lambda =          1; f =     29873321.5429012
+lambda =    0.33333; f =      3320002.8916648
+lambda =    0.11111; f =       370509.6672962
+lambda =   0.037037; f =        43079.8360743
+lambda =   0.012346; f =         6795.6884441
+lambda =  0.0041152; f =         2796.3578869
+lambda =  0.0013717; f =         2362.3307058
+lambda = 0.00045725; f =         2317.1992412
+lambda = 0.00015242; f =         2313.0431746
+lambda = 5.0805e-05; f =         2312.7791008
+lambda = 1.6935e-05; f =         2312.7756715
+lambda =  5.645e-06; f =         2027.0684335
+lambda = 1.0913e-05; f =         1526.4816632
+lambda = 2.1097e-05; f =         2312.7759633
+lambda = 1.4205e-05; f =         2312.7755931
+lambda = 1.1204e-05; f =         1501.1307572
+lambda = 1.2919e-05; f =         1396.9408208
+lambda = 1.4896e-05; f =         2312.7756045
+lambda = 1.3676e-05; f =         2312.7755883
+lambda = 1.2993e-05; f =         1395.1517134
+lambda = 1.3398e-05; f =         2312.7755871
+lambda = 1.3153e-05; f =         1393.3093723
+lambda =   1.33e-05; f =         2312.7755869
+Norm of dx     6183.6
+----
+Improvement on iteration 1 =      919.466214455
+back and forth on step length never finished
+-----------------
+f at the beginning of new iteration,      1393.3093723437
+Predicted improvement:     4300.194145739
+lambda =          1; f =         1393.8930583
+lambda =    0.33333; f =         1393.3725527
+lambda =    0.11111; f =         1393.3158617
+lambda =   0.037037; f =         1393.3099436
+lambda =   0.012346; f =         1393.3094131
+lambda =  0.0041152; f =         1393.3093767
+lambda =  0.0013717; f =         1393.3093728
+lambda = 0.00045725; f =         1393.3093724
+lambda = 0.00015242; f =         1393.3093723
+lambda = 5.0805e-05; f =         1392.9056441
+Norm of dx    0.92738
+----
+Improvement on iteration 2 =        0.403728221
+-----------------
+f at the beginning of new iteration,      1392.9056441227
+Predicted improvement:     3210.554905298
+lambda =          1; f =         1393.2724777
+lambda =    0.33333; f =         1392.9447853
+lambda =    0.11111; f =         1392.9094807
+lambda =   0.037037; f =         1392.9059265
+lambda =   0.012346; f =         1392.9056545
+lambda =  0.0041152; f =         1392.9056452
+lambda =  0.0013717; f =         1392.9056442
+lambda = 0.00045725; f =         1392.9056441
+lambda = 0.00015242; f =         1392.9056441
+lambda = 5.0805e-05; f =         1392.5909017
+lambda = 9.8216e-05; f =         1392.3217106
+lambda = 0.00018987; f =         1392.9056441
+lambda = 0.00012785; f =         1392.1674089
+lambda = 0.00016209; f =         1392.9056441
+lambda = 0.00014058; f =         1392.9056441
+lambda = 0.00012907; f =         1392.1613131
+lambda = 0.00013585; f =         1392.1277624
+lambda =   0.000143; f =         1392.9056441
+lambda = 0.00013867; f =         1392.1140477
+lambda = 0.00014125; f =         1392.9056441
+lambda =  0.0001397; f =         1392.1090701
+Norm of dx    0.80132
+Cliff.  Perturbing search direction.
+Predicted improvement:     5847.515481488
+lambda =          1; f =         1392.9057662
+lambda =    0.33333; f =         1393.0396005
+lambda =    0.11111; f =         1392.9195237
+lambda =   0.037037; f =         1392.9068784
+lambda =   0.012346; f =         1392.9057056
+lambda =  0.0041152; f =         1392.9056467
+lambda =  0.0013717; f =         1392.9056444
+lambda = 0.00045725; f =         1392.9056441
+lambda = 0.00015242; f =         1392.9056441
+lambda = 5.0805e-05; f =         1392.3403168
+lambda = 9.8216e-05; f =         1392.9056441
+lambda = 6.6133e-05; f =         1392.1828122
+lambda = 8.3845e-05; f =         1392.0094889
+lambda =  0.0001063; f =         1392.9056441
+lambda = 9.2193e-05; f =         1391.9312842
+lambda = 0.00010042; f =         1392.9056441
+lambda = 9.5398e-05; f =         1392.9056441
+lambda = 9.2509e-05; f =         1391.9283743
+lambda = 9.4232e-05; f =         1392.9056441
+lambda = 9.3194e-05; f =         1391.9220667
+Norm of dx     1.4685
+Cliff again.  Try traversing
+Predicted improvement: 21593652.848364297
+lambda =          1; f =      1278005.9785106
+lambda =    0.33333; f =       142659.8638616
+lambda =    0.11111; f =        16902.4636977
+lambda =   0.037037; f =         3056.5061106
+lambda =   0.012346; f =         1559.7365918
+lambda =  0.0041152; f =         1406.9581512
+lambda =  0.0013717; f =         1393.5590735
+lambda = 0.00045725; f =         1397.4216833
+lambda = 0.00015242; f =         1393.4002166
+lambda = 5.0805e-05; f =         1392.9585101
+lambda = 1.6935e-05; f =         1392.9108495
+lambda =  5.645e-06; f =         1392.9060266
+lambda = 1.8817e-06; f =         1392.9056482
+lambda = 6.2723e-07; f =         1370.9025227
+lambda = 1.2125e-06; f =         1392.9056441
+lambda = 8.1646e-07; f =         1366.6296560
+lambda = 1.0351e-06; f =         1392.9056441
+lambda = 8.9775e-07; f =         1365.1447044
+lambda = 9.7782e-07; f =         1392.9056441
+lambda = 9.2896e-07; f =         1364.6327003
+lambda = 9.5797e-07; f =         1392.9056441
+lambda = 9.4046e-07; f =         1392.9056441
+lambda =  9.301e-07; f =         1364.6145634
+Norm of dx     6571.7
+----
+Improvement on iteration 3 =       28.291080693
+back and forth on step length never finished
+-----------------
+f at the beginning of new iteration,      1364.6145634298
+Predicted improvement:     3210.554905298
+lambda =          1; f =         1364.9861618
+lambda =    0.33333; f =         1364.6552664
+lambda =    0.11111; f =         1364.6188942
+lambda =   0.037037; f =         1364.6149841
+lambda =   0.012346; f =         1364.6145934
+lambda =  0.0041152; f =         1364.6145646
+lambda =  0.0013717; f =         1364.6145636
+lambda = 0.00045725; f =         1364.6145634
+lambda = 0.00015242; f =         1364.6145634
+lambda = 5.0805e-05; f =         1364.6145634
+lambda = 1.6935e-05; f =         1364.6145634
+lambda =  5.645e-06; f =         1364.6145634
+lambda = 1.8817e-06; f =         1364.6145634
+Norm of dx    0.80132
+----
+Improvement on iteration 4 =        0.000000000
+improvement < crit termination
+
+Final value of minus the log posterior (or likelihood):1364.614563 
+
+POSTERIOR KERNEL OPTIMIZATION PROBLEM!
+ (minus) the hessian matrix at the "mode" is not positive definite!
+=> posterior variance of the estimated parameters are not positive.
+You should try to change the initial values of the parameters using
+the estimated_params_init block, or use another optimization routine.
+[Warning: The results below are most likely wrong!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.6\matlab\dynare_estimation_1.m', 316)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation_1.m',316,0)">line 316</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.6\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation.m',105,0)">line 105</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m', 101)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m',101,0)">line 101</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m',174,0)">line 174</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 853)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',853,0)">line 853</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND = NaN.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.6\matlab\dynare_estimation_1.m', 339)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation_1.m',339,0)">line 339</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.6\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation.m',105,0)">line 105</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m', 101)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m',101,0)">line 101</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m',174,0)">line 174</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 853)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',853,0)">line 853</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>] 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+         prior mean     mode    s.d. prior pstdev
+
+psi1         1.500   1.7984     NaN norm  0.2500 
+rho_r        0.750   0.8301     NaN beta  0.1000 
+psi2         0.125   0.0869     NaN norm  0.0500 
+psi3         0.125   0.2143     NaN norm  0.0500 
+zeta_p       0.500   0.7789     NaN beta  0.1000 
+zeta_w       0.500   0.7928     NaN beta  0.1000 
+iota_w       0.500   0.4425     NaN beta  0.1500 
+iota_p       0.500   0.3290     NaN beta  0.1500 
+alp          0.300   0.2293     NaN norm  0.0500 
+Bigphi       1.250   1.4689     NaN norm  0.1200 
+h            0.700   0.7383     NaN beta  0.1000 
+nu_l         2.000   2.8402     NaN norm  0.7500 
+rstar_aux    0.250   0.7427     NaN gamm  0.1000 
+pistar_aux   0.750   0.7000     NaN gamm  0.4000 
+zstar_aux    0.400   0.3585     NaN norm  0.1000 
+s2           4.000   6.3326     NaN norm  1.5000 
+sigmac       1.500   1.2312     NaN norm  0.3700 
+ppsi         0.500   0.2653     NaN beta  0.1500 
+Lmean        0.000   1.2918     NaN norm  2.0000 
+rho_z        0.500   0.9999     NaN beta  0.2000 
+rho_b        0.500   0.2584     NaN beta  0.2000 
+rho_g        0.500   0.9975     NaN beta  0.2000 
+rho_mu       0.500   0.5634     NaN beta  0.2000 
+rho_rm       0.500   0.3000     NaN beta  0.2000 
+rho_laf      0.500   0.8750     NaN beta  0.2000 
+rho_law      0.500   0.9505     NaN beta  0.2000 
+eta_laf      0.500   0.7652     NaN beta  0.2000 
+eta_law      0.500   0.8937     NaN beta  0.2000 
+eta_gz       0.500   0.0500     NaN norm  0.2000 
+
+standard deviation of shocks
+         prior mean     mode    s.d. prior pstdev
+
+z_sh         0.100   0.4625     NaN invg  2.0000 
+g_sh         0.500   3.0000     NaN invg  2.0000 
+b_sh         0.100   0.1301     NaN invg  2.0000 
+mu_sh        0.100   0.4623     NaN invg  2.0000 
+laf_sh       0.100   0.1458     NaN invg  2.0000 
+law_sh       0.100   0.2091     NaN invg  2.0000 
+rm_sh        0.100   0.2391     NaN invg  2.0000 
+
+
+Log data density [Laplace approximation] is NaN.
+
+Mode_compute=5, Marco Ratto’s newrat, was unsuccessfull, trying mode_compute=7, fminsearch.
+[Warning: Some of the parameters have no value (zwstar) when using initial_estimation_checks. If these parameters are not initialized in a
+steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...] 
+Initial value of the log posterior (or likelihood): -2312.7756
+ 
+ Iteration   Func-count     min f(x)         Procedure
+     0            1          2312.78         
+     1           37          2087.92         initial simplex
+     2           39          1959.09         expand
+     3           40          1959.09         reflect
+     4           42          1959.09         contract outside
+     5           44           1444.6         reflect
+     6           45           1444.6         reflect
+     7           46           1444.6         reflect
+     8           47           1444.6         reflect
+     9           48           1444.6         reflect
+    10           49           1444.6         reflect
+    11           50           1444.6         reflect
+    12           51           1444.6         reflect
+    13           52           1444.6         reflect
+    14           53           1444.6         reflect
+    15           54           1444.6         reflect
+    16           55           1444.6         reflect
+    17           56           1444.6         reflect
+    18           57           1444.6         reflect
+    19           58           1444.6         reflect
+    20           59           1444.6         reflect
+    21           60           1444.6         reflect
+    22           61           1444.6         reflect
+    23           62           1444.6         reflect
+    24           63           1444.6         reflect
+    25           64           1444.6         reflect
+    26           65           1444.6         reflect
+    27           66           1444.6         reflect
+    28           67           1444.6         reflect
+    29           68           1444.6         reflect
+    30           69           1444.6         reflect
+    31           70           1444.6         reflect
+    32           71           1444.6         reflect
+    33           72           1444.6         reflect
+    34           73           1444.6         reflect
+    35           74           1444.6         reflect
+    36           75           1444.6         reflect
+    37           76           1444.6         reflect
+    38           77           1444.6         reflect
+    39           78           1444.6         reflect
+    40           79           1444.6         reflect
+    41           80           1444.6         reflect
+    42           81           1444.6         reflect
+    43           82           1444.6         reflect
+    44           83           1444.6         reflect
+    45           84           1444.6         reflect
+    46           85           1444.6         reflect
+    47           86           1444.6         reflect
+    48           87           1444.6         reflect
+    49           88           1444.6         reflect
+    50           89           1444.6         reflect
+    51           90           1444.6         reflect
+    52           91           1444.6         reflect
+    53           92           1444.6         reflect
+    54           93           1444.6         reflect
+    55           94           1444.6         reflect
+    56           95           1444.6         reflect
+    57           96           1444.6         reflect
+    58           97           1444.6         reflect
+    59           98           1444.6         reflect
+    60           99           1444.6         reflect
+    61          100           1444.6         reflect
+    62          101           1444.6         reflect
+    63          102           1444.6         reflect
+    64          103           1444.6         reflect
+    65          104           1444.6         reflect
+    66          105           1444.6         reflect
+    67          106           1444.6         reflect
+    68          107           1444.6         reflect
+    69          109           1444.6         contract inside
+    70          110           1444.6         reflect
+    71          111           1444.6         reflect
+    72          112           1444.6         reflect
+    73          113           1444.6         reflect
+    74          114           1444.6         reflect
+    75          115           1444.6         reflect
+    76          116           1444.6         reflect
+    77          117           1444.6         reflect
+    78          118           1444.6         reflect
+    79          119           1444.6         reflect
+    80          120           1444.6         reflect
+    81          121           1444.6         reflect
+    82          122           1444.6         reflect
+    83          123           1444.6         reflect
+    84          124           1444.6         reflect
+    85          125           1444.6         reflect
+    86          127          1426.86         reflect
+    87          128          1426.86         reflect
+    88          129          1426.86         reflect
+    89          130          1426.86         reflect
+    90          131          1426.86         reflect
+    91          132          1426.86         reflect
+    92          133          1426.86         reflect
+    93          134          1426.86         reflect
+    94          135          1426.86         reflect
+    95          136          1426.86         reflect
+    96          137          1426.86         reflect
+    97          138          1426.86         reflect
+    98          139          1426.86         reflect
+    99          140          1426.86         reflect
+   100          141          1426.86         reflect
+   101          142          1426.86         reflect
+   102          143          1426.86         reflect
+   103          144          1426.86         reflect
+   104          145          1426.86         reflect
+   105          146          1426.86         reflect
+   106          147          1426.86         reflect
+   107          148          1426.86         reflect
+   108          149          1426.86         reflect
+   109          151          1420.42         reflect
+   110          153          1411.37         reflect
+   111          155          1372.95         reflect
+   112          157           1361.7         reflect
+   113          158           1361.7         reflect
+   114          160          1360.16         reflect
+   115          162          1349.56         reflect
+   116          164          1332.81         reflect
+   117          166          1332.81         contract inside
+   118          168          1332.81         contract inside
+   119          170          1332.81         contract inside
+   120          171          1332.81         reflect
+   121          172          1332.81         reflect
+   122          173          1332.81         reflect
+   123          174          1332.81         reflect
+   124          175          1332.81         reflect
+   125          177          1332.81         contract inside
+   126          179          1332.81         contract inside
+   127          181          1332.81         contract inside
+   128          183          1332.81         contract inside
+   129          185          1332.81         contract inside
+   130          186          1332.81         reflect
+   131          188          1332.81         contract inside
+   132          190          1332.81         contract inside
+   133          192          1332.81         contract inside
+   134          193          1332.81         reflect
+   135          195          1332.81         contract inside
+   136          196          1332.81         reflect
+   137          198          1332.81         contract inside
+   138          200          1332.81         contract inside
+   139          202          1332.81         contract inside
+   140          204          1328.09         reflect
+   141          206          1328.09         contract inside
+   142          208          1328.09         contract inside
+   143          210          1324.75         reflect
+   144          212          1324.75         contract inside
+   145          214          1324.75         contract inside
+   146          215          1324.75         reflect
+   147          217          1324.75         contract inside
+   148          218          1324.75         reflect
+   149          220          1324.75         contract inside
+   150          222          1324.75         contract inside
+   151          224          1324.75         contract inside
+   152          226          1324.75         contract inside
+   153          228          1324.75         contract inside
+   154          229          1324.75         reflect
+   155          230          1324.75         reflect
+   156          232          1324.75         contract inside
+   157          233          1324.75         reflect
+   158          235          1324.75         contract inside
+   159          237          1324.75         contract inside
+   160          239          1324.75         contract inside
+   161          241          1324.75         contract inside
+   162          243          1324.75         contract inside
+   163          245          1324.75         contract inside
+   164          283          1324.22         shrink
+   165          285          1324.22         contract inside
+   166          287          1324.22         contract inside
+   167          289          1324.22         contract inside
+   168          291          1324.22         contract inside
+   169          293          1324.22         contract inside
+   170          295          1324.22         contract inside
+   171          297          1324.22         contract inside
+   172          299          1318.27         reflect
+   173          301          1318.27         contract inside
+   174          303          1318.27         contract inside
+   175          305          1318.27         contract inside
+   176          307          1318.27         contract inside
+   177          309          1318.27         contract inside
+   178          311          1318.27         contract inside
+   179          313          1318.27         contract inside
+   180          315          1318.27         contract inside
+   181          317          1318.27         contract inside
+   182          319          1318.27         contract inside
+   183          320          1318.27         reflect
+   184          322          1318.27         contract inside
+   185          324          1318.27         contract inside
+   186          326          1318.27         contract inside
+   187          328          1318.27         contract inside
+   188          330          1318.27         contract inside
+   189          331          1318.27         reflect
+   190          333          1318.27         contract inside
+   191          335          1318.27         contract inside
+   192          337          1318.27         contract inside
+   193          339          1318.27         contract inside
+   194          341          1318.27         contract inside
+   195          343          1318.27         contract inside
+   196          345          1318.27         contract inside
+   197          347          1318.27         contract inside
+   198          349          1318.27         contract inside
+   199          350          1318.27         reflect
+   200          352          1318.27         contract inside
+   201          354          1318.27         contract inside
+   202          355          1318.27         reflect
+   203          356          1318.27         reflect
+   204          358          1318.27         contract inside
+   205          360          1318.27         contract inside
+   206          362          1318.27         contract inside
+   207          364          1318.27         contract inside
+   208          366          1318.27         contract inside
+   209          368          1318.27         contract inside
+   210          369          1318.27         reflect
+   211          371          1318.27         contract inside
+   212          373          1318.27         contract inside
+   213          375          1318.27         contract inside
+   214          377          1318.27         contract inside
+   215          379          1318.27         contract inside
+   216          381          1318.27         contract inside
+   217          382          1318.27         reflect
+   218          384          1318.27         contract inside
+   219          386          1318.27         contract inside
+   220          388          1318.27         contract inside
+   221          390          1318.27         contract inside
+   222          392          1318.27         contract inside
+   223          394          1318.27         contract inside
+   224          395          1318.27         reflect
+   225          397          1318.27         contract inside
+   226          398          1318.27         reflect
+   227          400          1318.27         contract inside
+   228          402          1318.27         contract inside
+   229          403          1318.27         reflect
+   230          405          1318.27         contract inside
+   231          407          1318.27         contract inside
+   232          408          1318.27         reflect
+   233          410          1318.27         contract inside
+   234          412          1318.27         contract inside
+   235          414          1318.27         contract inside
+   236          416          1318.27         contract inside
+   237          418          1318.27         contract inside
+   238          420          1318.27         contract inside
+   239          422          1318.27         contract inside
+   240          424          1318.27         contract inside
+   241          426          1318.27         contract inside
+   242          427          1318.27         reflect
+   243          428          1318.27         reflect
+   244          430          1318.27         contract inside
+   245          432          1318.27         contract inside
+   246          433          1318.27         reflect
+   247          434          1318.27         reflect
+   248          436          1318.27         contract inside
+   249          438          1318.27         contract inside
+   250          440          1318.27         contract inside
+   251          441          1318.27         reflect
+   252          442          1318.27         reflect
+   253          444          1318.27         contract inside
+   254          446          1318.27         contract inside
+   255          448          1318.27         contract inside
+   256          450          1318.27         contract inside
+   257          451          1318.27         reflect
+   258          452          1318.27         reflect
+   259          453          1318.27         reflect
+   260          455          1318.27         contract inside
+   261          457          1310.19         expand
+   262          458          1310.19         reflect
+   263          460          1310.19         contract inside
+   264          461          1310.19         reflect
+   265          462          1310.19         reflect
+   266          463          1310.19         reflect
+   267          464          1310.19         reflect
+   268          466          1310.19         contract inside
+   269          468          1310.19         contract inside
+   270          469          1310.19         reflect
+   271          471          1310.19         contract inside
+   272          472          1310.19         reflect
+   273          473          1310.19         reflect
+   274          474          1310.19         reflect
+   275          476          1310.19         contract inside
+   276          477          1310.19         reflect
+   277          478          1310.19         reflect
+   278          480          1310.19         contract inside
+   279          481          1310.19         reflect
+   280          482          1310.19         reflect
+   281          483          1310.19         reflect
+   282          484          1310.19         reflect
+   283          485          1310.19         reflect
+   284          486          1310.19         reflect
+   285          487          1310.19         reflect
+   286          488          1310.19         reflect
+   287          489          1310.19         reflect
+   288          490          1310.19         reflect
+   289          491          1310.19         reflect
+   290          493          1310.19         contract inside
+   291          494          1310.19         reflect
+   292          496          1304.59         expand
+   293          497          1304.59         reflect
+   294          498          1304.59         reflect
+   295          500          1304.59         contract inside
+   296          501          1304.59         reflect
+   297          502          1304.59         reflect
+   298          503          1304.59         reflect
+   299          504          1304.59         reflect
+   300          505          1304.59         reflect
+   301          506          1304.59         reflect
+   302          507          1304.59         reflect
+   303          508          1304.59         reflect
+   304          509          1304.59         reflect
+   305          510          1304.59         reflect
+   306          511          1304.59         reflect
+   307          512          1304.59         reflect
+   308          514          1298.03         expand
+   309          515          1298.03         reflect
+   310          516          1298.03         reflect
+   311          517          1298.03         reflect
+   312          518          1298.03         reflect
+   313          519          1298.03         reflect
+   314          520          1298.03         reflect
+   315          521          1298.03         reflect
+   316          522          1298.03         reflect
+   317          523          1298.03         reflect
+   318          524          1298.03         reflect
+   319          525          1298.03         reflect
+   320          526          1298.03         reflect
+   321          527          1298.03         reflect
+   322          528          1298.03         reflect
+   323          529          1298.03         reflect
+   324          531          1291.55         expand
+   325          532          1291.55         reflect
+   326          533          1291.55         reflect
+   327          534          1291.55         reflect
+   328          535          1291.55         reflect
+   329          536          1291.55         reflect
+   330          537          1291.55         reflect
+   331          538          1291.55         reflect
+   332          539          1291.55         reflect
+   333          540          1291.55         reflect
+   334          541          1291.55         reflect
+   335          542          1291.55         reflect
+   336          543          1291.55         reflect
+   337          544          1291.55         reflect
+   338          545          1291.55         reflect
+   339          546          1291.55         reflect
+   340          548          1284.65         expand
+   341          549          1284.65         reflect
+   342          550          1284.65         reflect
+   343          551          1284.65         reflect
+   344          552          1284.65         reflect
+   345          553          1284.65         reflect
+   346          554          1284.65         reflect
+   347          555          1284.65         reflect
+   348          556          1284.65         reflect
+   349          557          1284.65         reflect
+   350          558          1284.65         reflect
+   351          559          1284.65         reflect
+   352          560          1284.65         reflect
+   353          561          1284.65         reflect
+   354          563          1276.83         expand
+   355          564          1276.83         reflect
+   356          565          1276.83         reflect
+   357          566          1276.83         reflect
+   358          567          1276.83         reflect
+   359          568          1276.83         reflect
+   360          569          1276.83         reflect
+   361          570          1276.83         reflect
+   362          571          1276.83         reflect
+   363          572          1276.83         reflect
+   364          573          1276.83         reflect
+   365          574          1276.83         reflect
+   366          575          1276.83         reflect
+   367          577          1262.91         expand
+   368          578          1262.91         reflect
+   369          579          1262.91         reflect
+   370          580          1262.91         reflect
+   371          581          1262.91         reflect
+   372          582          1262.91         reflect
+   373          583          1262.91         reflect
+   374          584          1262.91         reflect
+   375          585          1262.91         reflect
+   376          586          1262.91         reflect
+   377          587          1262.91         reflect
+   378          588          1262.91         reflect
+   379          589          1262.91         reflect
+   380          591          1262.91         contract inside
+   381          592          1262.91         reflect
+   382          593          1262.91         reflect
+   383          594          1262.91         reflect
+   384          595          1262.91         reflect
+   385          596          1262.91         reflect
+   386          597          1262.91         reflect
+   387          598          1262.91         reflect
+   388          599          1262.91         reflect
+   389          600          1262.91         reflect
+   390          601          1262.91         reflect
+   391          602          1262.91         reflect
+   392          603          1262.91         reflect
+   393          604          1262.91         reflect
+   394          605          1262.91         reflect
+   395          607          1252.95         expand
+   396          608          1252.95         reflect
+   397          609          1252.95         reflect
+   398          610          1252.95         reflect
+   399          611          1252.95         reflect
+   400          612          1252.95         reflect
+   401          613          1252.95         reflect
+   402          614          1252.95         reflect
+   403          615          1252.95         reflect
+   404          616          1252.95         reflect
+   405          617          1252.95         reflect
+   406          618          1252.95         reflect
+   407          619          1252.95         reflect
+   408          621          1241.59         expand
+   409          622          1241.59         reflect
+   410          623          1241.59         reflect
+   411          624          1241.59         reflect
+   412          625          1241.59         reflect
+   413          626          1241.59         reflect
+   414          627          1241.59         reflect
+   415          628          1241.59         reflect
+   416          629          1241.59         reflect
+   417          630          1241.59         reflect
+   418          631          1241.59         reflect
+   419          632          1241.59         reflect
+   420          633          1241.59         reflect
+   421          634          1241.59         reflect
+   422          635          1241.59         reflect
+   423          636          1241.59         reflect
+   424          637          1241.59         reflect
+   425          639          1228.11         expand
+   426          640          1228.11         reflect
+   427          641          1228.11         reflect
+   428          642          1228.11         reflect
+   429          643          1228.11         reflect
+   430          644          1228.11         reflect
+   431          645          1228.11         reflect
+   432          646          1228.11         reflect
+   433          647          1228.11         reflect
+   434          648          1228.11         reflect
+   435          649          1228.11         reflect
+   436          650          1228.11         reflect
+   437          651          1228.11         reflect
+   438          652          1228.11         reflect
+   439          653          1228.11         reflect
+   440          654          1228.11         reflect
+   441          656           1217.1         expand
+   442          657           1217.1         reflect
+   443          658           1217.1         reflect
+   444          659           1217.1         reflect
+   445          660           1217.1         reflect
+   446          661           1217.1         reflect
+   447          662           1217.1         reflect
+   448          663           1217.1         reflect
+   449          664           1217.1         reflect
+   450          665           1217.1         reflect
+   451          666           1217.1         reflect
+   452          667           1217.1         reflect
+   453          668           1217.1         reflect
+   454          669           1217.1         reflect
+   455          670           1217.1         reflect
+   456          672          1210.71         expand
+   457          673          1210.71         reflect
+   458          674          1210.71         reflect
+   459          675          1210.71         reflect
+   460          676          1210.71         reflect
+   461          677          1210.71         reflect
+   462          678          1210.71         reflect
+   463          679          1210.71         reflect
+   464          680          1210.71         reflect
+   465          681          1210.71         reflect
+   466          682          1210.71         reflect
+   467          683          1210.71         reflect
+   468          684          1210.71         reflect
+   469          685          1210.71         reflect
+   470          686          1210.71         reflect
+   471          687          1210.71         reflect
+   472          688          1210.71         reflect
+   473          689          1210.71         reflect
+   474          691          1210.71         contract inside
+   475          692          1210.71         reflect
+   476          693          1210.71         reflect
+   477          695          1210.71         contract inside
+   478          697          1210.71         contract inside
+   479          698          1210.71         reflect
+   480          699          1210.71         reflect
+   481          700          1210.71         reflect
+   482          701          1210.71         reflect
+   483          703          1210.71         contract inside
+   484          704          1210.71         reflect
+   485          705          1210.71         reflect
+   486          707          1210.71         contract inside
+   487          709          1210.71         contract inside
+   488          710          1210.71         reflect
+   489          712          1210.71         contract inside
+   490          713          1210.71         reflect
+   491          714          1210.71         reflect
+   492          716          1210.71         contract inside
+   493          718          1210.71         contract inside
+   494          720          1210.71         contract inside
+   495          721          1210.71         reflect
+   496          723          1210.71         contract inside
+   497          725          1210.71         contract inside
+   498          727          1210.71         contract inside
+   499          728          1210.71         reflect
+   500          730          1210.71         contract inside
+   501          731          1210.71         reflect
+   502          732          1210.71         reflect
+   503          734          1208.82         reflect
+   504          735          1208.82         reflect
+   505          736          1208.82         reflect
+   506          738          1208.82         contract inside
+   507          740          1208.82         contract inside
+   508          741          1208.82         reflect
+   509          743          1208.82         contract inside
+   510          745          1208.82         contract inside
+   511          746          1208.82         reflect
+   512          747          1208.82         reflect
+   513          749          1202.93         expand
+   514          751          1202.93         contract inside
+   515          752          1202.93         reflect
+   516          753          1202.93         reflect
+   517          755          1202.93         contract inside
+   518          756          1202.93         reflect
+   519          757          1202.93         reflect
+   520          759          1202.93         contract inside
+   521          761          1202.93         contract inside
+   522          762          1202.93         reflect
+   523          763          1202.93         reflect
+   524          765          1202.93         contract inside
+   525          767          1202.93         contract inside
+   526          769          1202.93         contract inside
+   527          771          1202.93         contract inside
+   528          773          1202.93         contract inside
+   529          774          1202.93         reflect
+   530          775          1202.93         reflect
+   531          776          1202.93         reflect
+   532          777          1202.93         reflect
+   533          779          1202.93         contract inside
+   534          780          1202.93         reflect
+   535          782          1202.93         contract inside
+   536          783          1202.93         reflect
+   537          785          1202.93         contract inside
+   538          786          1202.93         reflect
+   539          787          1202.93         reflect
+   540          788          1202.93         reflect
+   541          789          1202.93         reflect
+   542          790          1202.93         reflect
+   543          791          1202.93         reflect
+   544          793          1202.93         contract inside
+   545          794          1202.93         reflect
+   546          795          1202.93         reflect
+   547          796          1202.93         reflect
+   548          797          1202.93         reflect
+   549          798          1202.93         reflect
+   550          799          1202.93         reflect
+   551          800          1202.93         reflect
+   552          801          1202.93         reflect
+   553          802          1202.93         reflect
+   554          803          1202.93         reflect
+   555          805          1202.93         contract inside
+   556          806          1202.93         reflect
+   557          807          1202.93         reflect
+   558          808          1202.93         reflect
+   559          809          1202.93         reflect
+   560          810          1202.93         reflect
+   561          811          1202.93         reflect
+   562          812          1202.93         reflect
+   563          813          1202.93         reflect
+   564          814          1202.93         reflect
+   565          815          1202.93         reflect
+   566          816          1202.93         reflect
+   567          817          1202.93         reflect
+   568          818          1202.93         reflect
+   569          819          1202.93         reflect
+   570          820          1202.93         reflect
+   571          821          1202.93         reflect
+   572          822          1202.93         reflect
+   573          824          1200.12         expand
+   574          825          1200.12         reflect
+   575          826          1200.12         reflect
+   576          827          1200.12         reflect
+   577          828          1200.12         reflect
+   578          829          1200.12         reflect
+   579          830          1200.12         reflect
+   580          831          1200.12         reflect
+   581          832          1200.12         reflect
+   582          833          1200.12         reflect
+   583          834          1200.12         reflect
+   584          835          1200.12         reflect
+   585          836          1200.12         reflect
+   586          837          1200.12         reflect
+   587          838          1200.12         reflect
+   588          839          1200.12         reflect
+   589          840          1200.12         reflect
+   590          841          1200.12         reflect
+   591          842          1200.12         reflect
+   592          843          1200.12         reflect
+   593          844          1200.12         reflect
+   594          846          1195.69         expand
+   595          847          1195.69         reflect
+   596          848          1195.69         reflect
+   597          849          1195.69         reflect
+   598          850          1195.69         reflect
+   599          851          1195.69         reflect
+   600          852          1195.69         reflect
+   601          853          1195.69         reflect
+   602          854          1195.69         reflect
+   603          855          1195.69         reflect
+   604          856          1195.69         reflect
+   605          857          1195.69         reflect
+   606          858          1195.69         reflect
+   607          859          1195.69         reflect
+   608          860          1195.69         reflect
+   609          861          1195.69         reflect
+   610          862          1195.69         reflect
+   611          863          1195.69         reflect
+   612          864          1195.69         reflect
+   613          865          1195.69         reflect
+   614          867          1191.79         expand
+   615          868          1191.79         reflect
+   616          869          1191.79         reflect
+   617          870          1191.79         reflect
+   618          871          1191.79         reflect
+   619          872          1191.79         reflect
+   620          873          1191.79         reflect
+   621          874          1191.79         reflect
+   622          875          1191.79         reflect
+   623          876          1191.79         reflect
+   624          877          1191.79         reflect
+   625          878          1191.79         reflect
+   626          880          1191.79         contract inside
+   627          881          1191.79         reflect
+   628          882          1191.79         reflect
+   629          884          1191.79         contract inside
+   630          885          1191.79         reflect
+   631          886          1191.79         reflect
+   632          887          1191.79         reflect
+   633          888          1191.79         reflect
+   634          889          1191.79         reflect
+   635          890          1191.79         reflect
+   636          891          1191.79         reflect
+   637          893           1187.8         expand
+   638          894           1187.8         reflect
+   639          895           1187.8         reflect
+   640          896           1187.8         reflect
+   641          897           1187.8         reflect
+   642          898           1187.8         reflect
+   643          899           1187.8         reflect
+   644          900           1187.8         reflect
+   645          901           1187.8         reflect
+   646          902           1187.8         reflect
+   647          903           1187.8         reflect
+   648          904           1187.8         reflect
+   649          905           1187.8         reflect
+   650          906           1187.8         reflect
+   651          907           1187.8         reflect
+   652          908           1187.8         reflect
+   653          909           1187.8         reflect
+   654          910           1187.8         reflect
+   655          911           1187.8         reflect
+   656          912           1187.8         reflect
+   657          914          1184.41         expand
+   658          915          1184.41         reflect
+   659          916          1184.41         reflect
+   660          917          1184.41         reflect
+   661          918          1184.41         reflect
+   662          919          1184.41         reflect
+   663          920          1184.41         reflect
+   664          921          1184.41         reflect
+   665          922          1184.41         reflect
+   666          923          1184.41         reflect
+   667          924          1184.41         reflect
+   668          925          1184.41         reflect
+   669          926          1184.41         reflect
+   670          927          1184.41         reflect
+   671          929          1178.48         expand
+   672          930          1178.48         reflect
+   673          931          1178.48         reflect
+   674          932          1178.48         reflect
+   675          933          1178.48         reflect
+   676          934          1178.48         reflect
+   677          935          1178.48         reflect
+   678          936          1178.48         reflect
+   679          937          1178.48         reflect
+   680          938          1178.48         reflect
+   681          939          1178.48         reflect
+   682          941          1178.48         contract inside
+   683          942          1178.48         reflect
+   684          943          1178.48         reflect
+   685          944          1178.48         reflect
+   686          945          1178.48         reflect
+   687          946          1178.48         reflect
+   688          947          1178.48         reflect
+   689          948          1178.48         reflect
+   690          949          1178.48         reflect
+   691          950          1178.48         reflect
+   692          951          1178.48         reflect
+   693          952          1178.48         reflect
+   694          953          1178.48         reflect
+   695          954          1178.48         reflect
+   696          956          1174.34         expand
+   697          957          1174.34         reflect
+   698          958          1174.34         reflect
+   699          959          1174.34         reflect
+   700          960          1174.34         reflect
+   701          961          1174.34         reflect
+   702          962          1174.34         reflect
+   703          963          1174.34         reflect
+   704          964          1174.34         reflect
+   705          965          1174.34         reflect
+   706          966          1174.34         reflect
+   707          967          1174.34         reflect
+   708          968          1174.34         reflect
+   709          969          1174.34         reflect
+   710          971          1170.64         expand
+   711          972          1170.64         reflect
+   712          973          1170.64         reflect
+   713          974          1170.64         reflect
+   714          975          1170.64         reflect
+   715          976          1170.64         reflect
+   716          977          1170.64         reflect
+   717          978          1170.64         reflect
+   718          979          1170.64         reflect
+   719          980          1170.64         reflect
+   720          981          1170.64         reflect
+   721          982          1170.64         reflect
+   722          983          1170.64         reflect
+   723          984          1170.64         reflect
+   724          986          1165.88         expand
+   725          987          1165.88         reflect
+   726          988          1165.88         reflect
+   727          989          1165.88         reflect
+   728          990          1165.88         reflect
+   729          991          1165.88         reflect
+   730          992          1165.88         reflect
+   731          993          1165.88         reflect
+   732          994          1165.88         reflect
+   733          995          1165.88         reflect
+   734          996          1165.88         reflect
+   735          997          1165.88         reflect
+   736          998          1165.88         reflect
+   737          999          1165.88         reflect
+   738         1000          1165.88         reflect
+   739         1001          1165.88         reflect
+   740         1002          1165.88         reflect
+   741         1003          1165.88         reflect
+   742         1004          1165.88         reflect
+   743         1006          1159.94         expand
+   744         1007          1159.94         reflect
+   745         1008          1159.94         reflect
+   746         1009          1159.94         reflect
+   747         1010          1159.94         reflect
+   748         1011          1159.94         reflect
+   749         1012          1159.94         reflect
+   750         1013          1159.94         reflect
+   751         1014          1159.94         reflect
+   752         1015          1159.94         reflect
+   753         1016          1159.94         reflect
+   754         1017          1159.94         reflect
+   755         1018          1159.94         reflect
+   756         1019          1159.94         reflect
+   757         1020          1159.94         reflect
+   758         1021          1159.94         reflect
+   759         1022          1159.94         reflect
+   760         1023          1159.94         reflect
+   761         1024          1159.94         reflect
+   762         1025          1159.94         reflect
+   763         1026          1159.94         reflect
+   764         1028          1156.59         expand
+   765         1029          1156.59         reflect
+   766         1030          1156.59         reflect
+   767         1031          1156.59         reflect
+   768         1032          1156.59         reflect
+   769         1033          1156.59         reflect
+   770         1034          1156.59         reflect
+   771         1035          1156.59         reflect
+   772         1036          1156.59         reflect
+   773         1037          1156.59         reflect
+   774         1038          1156.59         reflect
+   775         1039          1156.59         reflect
+   776         1040          1156.59         reflect
+   777         1041          1156.59         reflect
+   778         1042          1156.59         reflect
+   779         1043          1156.59         reflect
+   780         1044          1156.59         reflect
+   781         1046          1155.06         expand
+   782         1047          1155.06         reflect
+   783         1048          1155.06         reflect
+   784         1049          1155.06         reflect
+   785         1050          1155.06         reflect
+   786         1051          1155.06         reflect
+   787         1052          1155.06         reflect
+   788         1054          1153.28         expand
+   789         1055          1153.28         reflect
+   790         1056          1153.28         reflect
+   791         1057          1153.28         reflect
+   792         1058          1153.28         reflect
+   793         1059          1153.28         reflect
+   794         1060          1153.28         reflect
+   795         1061          1153.28         reflect
+   796         1062          1153.28         reflect
+   797         1063          1153.28         reflect
+   798         1065          1151.41         expand
+   799         1066          1151.41         reflect
+   800         1067          1151.41         reflect
+   801         1068          1151.41         reflect
+   802         1069          1151.41         reflect
+   803         1070          1151.41         reflect
+   804         1071          1151.41         reflect
+   805         1072          1151.41         reflect
+   806         1073          1151.41         reflect
+   807         1074          1151.41         reflect
+   808         1075          1151.41         reflect
+   809         1076          1151.41         reflect
+   810         1077          1151.41         reflect
+   811         1078          1151.41         reflect
+   812         1079          1151.41         reflect
+   813         1080          1151.41         reflect
+   814         1081          1151.41         reflect
+   815         1082          1151.41         reflect
+   816         1083          1151.41         reflect
+   817         1084          1151.41         reflect
+   818         1085          1151.41         reflect
+   819         1086          1151.41         reflect
+   820         1087          1151.41         reflect
+   821         1089          1151.41         contract inside
+   822         1090          1151.41         reflect
+   823         1091          1151.41         reflect
+   824         1092          1151.41         reflect
+   825         1093          1151.41         reflect
+   826         1094          1151.41         reflect
+   827         1095          1151.41         reflect
+   828         1096          1151.41         reflect
+   829         1097          1151.41         reflect
+   830         1099          1151.41         contract inside
+   831         1100          1151.41         reflect
+   832         1102          1151.41         contract inside
+   833         1103          1151.41         reflect
+   834         1104          1151.41         reflect
+   835         1105          1151.41         reflect
+   836         1106          1151.41         reflect
+   837         1107          1151.41         reflect
+   838         1108          1151.41         reflect
+   839         1110          1151.41         contract inside
+   840         1111          1151.41         reflect
+   841         1112          1151.41         reflect
+   842         1113          1151.41         reflect
+   843         1114          1151.41         reflect
+   844         1115          1151.41         reflect
+   845         1117          1150.11         expand
+   846         1118          1150.11         reflect
+   847         1119          1150.11         reflect
+   848         1121          1150.11         contract inside
+   849         1122          1150.11         reflect
+   850         1123          1150.11         reflect
+   851         1124          1150.11         reflect
+   852         1125          1150.11         reflect
+   853         1126          1150.11         reflect
+   854         1127          1150.11         reflect
+   855         1128          1150.11         reflect
+   856         1129          1150.11         reflect
+   857         1130          1150.11         reflect
+   858         1131          1150.11         reflect
+   859         1133          1150.11         contract inside
+   860         1135          1150.11         contract inside
+   861         1136          1150.11         reflect
+   862         1137          1150.11         reflect
+   863         1138          1150.11         reflect
+   864         1140          1150.11         contract inside
+   865         1141          1150.11         reflect
+   866         1142          1150.11         reflect
+   867         1143          1150.11         reflect
+   868         1144          1150.11         reflect
+   869         1145          1150.11         reflect
+   870         1146          1150.11         reflect
+   871         1148          1149.83         reflect
+   872         1149          1149.83         reflect
+   873         1151          1149.82         reflect
+   874         1152          1149.82         reflect
+   875         1153          1149.82         reflect
+   876         1155          1148.51         expand
+   877         1156          1148.51         reflect
+   878         1157          1148.51         reflect
+   879         1158          1148.51         reflect
+   880         1159          1148.51         reflect
+   881         1160          1148.51         reflect
+   882         1161          1148.51         reflect
+   883         1162          1148.51         reflect
+   884         1163          1148.51         reflect
+   885         1164          1148.51         reflect
+   886         1165          1148.51         reflect
+   887         1166          1148.51         reflect
+   888         1167          1148.51         reflect
+   889         1168          1148.51         reflect
+   890         1170          1147.76         expand
+   891         1171          1147.76         reflect
+   892         1172          1147.76         reflect
+   893         1173          1147.76         reflect
+   894         1174          1147.76         reflect
+   895         1175          1147.76         reflect
+   896         1176          1147.76         reflect
+   897         1177          1147.76         reflect
+   898         1178          1147.76         reflect
+   899         1179          1147.76         reflect
+   900         1180          1147.76         reflect
+   901         1181          1147.76         reflect
+   902         1183          1147.01         expand
+   903         1184          1147.01         reflect
+   904         1185          1147.01         reflect
+   905         1186          1147.01         reflect
+   906         1188          1147.01         contract inside
+   907         1189          1147.01         reflect
+   908         1190          1147.01         reflect
+   909         1191          1147.01         reflect
+   910         1193          1147.01         contract inside
+   911         1194          1147.01         reflect
+   912         1195          1147.01         reflect
+   913         1196          1147.01         reflect
+   914         1197          1147.01         reflect
+   915         1198          1147.01         reflect
+   916         1199          1147.01         reflect
+   917         1201          1145.69         expand
+   918         1202          1145.69         reflect
+   919         1203          1145.69         reflect
+   920         1204          1145.69         reflect
+   921         1205          1145.69         reflect
+   922         1206          1145.69         reflect
+   923         1207          1145.69         reflect
+   924         1208          1145.69         reflect
+   925         1209          1145.69         reflect
+   926         1210          1145.69         reflect
+   927         1211          1145.69         reflect
+   928         1212          1145.69         reflect
+   929         1213          1145.69         reflect
+   930         1214          1145.69         reflect
+   931         1215          1145.69         reflect
+   932         1216          1145.69         reflect
+   933         1217          1145.69         reflect
+   934         1218          1145.69         reflect
+   935         1219          1145.69         reflect
+   936         1220          1145.69         reflect
+   937         1221          1145.69         reflect
+   938         1222          1145.69         reflect
+   939         1224          1145.54         reflect
+   940         1225          1145.54         reflect
+   941         1227          1145.54         contract inside
+   942         1228          1145.54         reflect
+   943         1229          1145.54         reflect
+   944         1231          1144.67         expand
+   945         1232          1144.67         reflect
+   946         1233          1144.67         reflect
+   947         1234          1144.67         reflect
+   948         1235          1144.67         reflect
+   949         1236          1144.67         reflect
+   950         1237          1144.67         reflect
+   951         1238          1144.67         reflect
+   952         1239          1144.67         reflect
+   953         1240          1144.67         reflect
+   954         1241          1144.67         reflect
+   955         1243          1144.53         reflect
+   956         1244          1144.53         reflect
+   957         1245          1144.53         reflect
+   958         1246          1144.53         reflect
+   959         1247          1144.53         reflect
+   960         1248          1144.53         reflect
+   961         1249          1144.53         reflect
+   962         1250          1144.53         reflect
+   963         1251          1144.53         reflect
+   964         1252          1144.53         reflect
+   965         1253          1144.53         reflect
+   966         1255          1144.26         reflect
+   967         1257          1143.72         expand
+   968         1259          1143.72         contract inside
+   969         1260          1143.72         reflect
+   970         1261          1143.72         reflect
+   971         1263          1143.27         expand
+   972         1265          1143.27         contract inside
+   973         1266          1143.27         reflect
+   974         1267          1143.27         reflect
+   975         1268          1143.27         reflect
+   976         1269          1143.27         reflect
+   977         1270          1143.27         reflect
+   978         1271          1143.27         reflect
+   979         1272          1143.27         reflect
+   980         1274          1143.27         contract inside
+   981         1275          1143.27         reflect
+   982         1277          1143.27         contract inside
+   983         1279          1143.27         contract inside
+   984         1280          1143.27         reflect
+   985         1281          1143.27         reflect
+   986         1282          1143.27         reflect
+   987         1283          1143.27         reflect
+   988         1284          1143.27         reflect
+   989         1286          1143.27         contract inside
+   990         1287          1143.27         reflect
+   991         1288          1143.27         reflect
+   992         1289          1143.27         reflect
+   993         1290          1143.27         reflect
+   994         1291          1143.27         reflect
+   995         1293          1142.95         reflect
+   996         1294          1142.95         reflect
+   997         1296          1142.51         expand
+   998         1297          1142.51         reflect
+   999         1298          1142.51         reflect
+  1000         1299          1142.51         reflect
+  1001         1300          1142.51         reflect
+  1002         1301          1142.51         reflect
+  1003         1302          1142.51         reflect
+  1004         1304          1142.51         contract inside
+  1005         1305          1142.51         reflect
+  1006         1306          1142.51         reflect
+  1007         1307          1142.51         reflect
+  1008         1308          1142.51         reflect
+  1009         1309          1142.51         reflect
+  1010         1311          1142.51         contract inside
+  1011         1312          1142.51         reflect
+  1012         1314          1142.51         contract inside
+  1013         1316          1142.51         contract inside
+  1014         1317          1142.51         reflect
+  1015         1319          1142.48         reflect
+  1016         1320          1142.48         reflect
+  1017         1321          1142.48         reflect
+  1018         1322          1142.48         reflect
+  1019         1324          1142.48         contract inside
+  1020         1325          1142.48         reflect
+  1021         1326          1142.48         reflect
+  1022         1327          1142.48         reflect
+  1023         1329          1142.05         reflect
+  1024         1331          1142.05         contract inside
+  1025         1332          1142.05         reflect
+  1026         1334          1141.59         expand
+  1027         1335          1141.59         reflect
+  1028         1336          1141.59         reflect
+  1029         1338          1141.59         contract inside
+  1030         1339          1141.59         reflect
+  1031         1340          1141.59         reflect
+  1032         1341          1141.59         reflect
+  1033         1342          1141.59         reflect
+  1034         1343          1141.59         reflect
+  1035         1344          1141.59         reflect
+  1036         1345          1141.59         reflect
+  1037         1346          1141.59         reflect
+  1038         1347          1141.59         reflect
+  1039         1348          1141.59         reflect
+  1040         1349          1141.59         reflect
+  1041         1351          1141.58         reflect
+  1042         1352          1141.58         reflect
+  1043         1353          1141.58         reflect
+  1044         1355          1141.58         contract inside
+  1045         1356          1141.58         reflect
+  1046         1357          1141.58         reflect
+  1047         1358          1141.58         reflect
+  1048         1359          1141.58         reflect
+  1049         1360          1141.58         reflect
+  1050         1362          1141.58         contract inside
+  1051         1363          1141.58         reflect
+  1052         1364          1141.58         reflect
+  1053         1365          1141.58         reflect
+  1054         1367          1141.48         reflect
+  1055         1369          1141.48         contract inside
+  1056         1371          1141.01         reflect
+  1057         1373          1141.01         contract outside
+  1058         1375          1141.01         contract inside
+  1059         1377          1140.97         reflect
+  1060         1378          1140.97         reflect
+  1061         1379          1140.97         reflect
+  1062         1381          1140.97         contract inside
+  1063         1382          1140.97         reflect
+  1064         1384          1140.97         contract inside
+  1065         1385          1140.97         reflect
+  1066         1386          1140.97         reflect
+  1067         1387          1140.97         reflect
+  1068         1389          1140.97         contract inside
+  1069         1390          1140.97         reflect
+  1070         1392          1140.45         expand
+  1071         1393          1140.45         reflect
+  1072         1395          1140.45         contract inside
+  1073         1396          1140.45         reflect
+  1074         1398          1140.45         contract inside
+  1075         1399          1140.45         reflect
+  1076         1400          1140.45         reflect
+  1077         1401          1140.45         reflect
+  1078         1402          1140.45         reflect
+  1079         1403          1140.45         reflect
+  1080         1404          1140.45         reflect
+  1081         1405          1140.45         reflect
+  1082         1406          1140.45         reflect
+  1083         1407          1140.45         reflect
+  1084         1409          1140.45         contract outside
+  1085         1410          1140.45         reflect
+  1086         1411          1140.45         reflect
+  1087         1412          1140.45         reflect
+  1088         1414          1140.45         contract inside
+  1089         1415          1140.45         reflect
+  1090         1416          1140.45         reflect
+  1091         1417          1140.45         reflect
+  1092         1418          1140.45         reflect
+  1093         1419          1140.45         reflect
+  1094         1420          1140.45         reflect
+  1095         1421          1140.45         reflect
+  1096         1423          1140.17         reflect
+  1097         1424          1140.17         reflect
+  1098         1425          1140.17         reflect
+  1099         1426          1140.17         reflect
+  1100         1427          1140.17         reflect
+  1101         1428          1140.17         reflect
+  1102         1429          1140.17         reflect
+  1103         1430          1140.17         reflect
+  1104         1431          1140.17         reflect
+  1105         1432          1140.17         reflect
+  1106         1433          1140.17         reflect
+  1107         1434          1140.17         reflect
+  1108         1435          1140.17         reflect
+  1109         1436          1140.17         reflect
+  1110         1437          1140.17         reflect
+  1111         1438          1140.17         reflect
+  1112         1439          1140.17         reflect
+  1113         1441          1139.98         reflect
+  1114         1442          1139.98         reflect
+  1115         1443          1139.98         reflect
+  1116         1444          1139.98         reflect
+  1117         1445          1139.98         reflect
+  1118         1447          1139.98         contract inside
+  1119         1448          1139.98         reflect
+  1120         1449          1139.98         reflect
+  1121         1450          1139.98         reflect
+  1122         1451          1139.98         reflect
+  1123         1452          1139.98         reflect
+  1124         1453          1139.98         reflect
+  1125         1455          1139.98         contract inside
+  1126         1457          1139.98         contract inside
+  1127         1458          1139.98         reflect
+  1128         1459          1139.98         reflect
+  1129         1460          1139.98         reflect
+  1130         1461          1139.98         reflect
+  1131         1462          1139.98         reflect
+  1132         1464          1139.84         reflect
+  1133         1465          1139.84         reflect
+  1134         1466          1139.84         reflect
+  1135         1467          1139.84         reflect
+  1136         1469          1139.84         contract inside
+  1137         1471          1139.84         contract outside
+  1138         1472          1139.84         reflect
+  1139         1473          1139.84         reflect
+  1140         1474          1139.84         reflect
+  1141         1476          1139.08         expand
+  1142         1477          1139.08         reflect
+  1143         1478          1139.08         reflect
+  1144         1480          1139.08         contract inside
+  1145         1481          1139.08         reflect
+  1146         1482          1139.08         reflect
+  1147         1483          1139.08         reflect
+  1148         1484          1139.08         reflect
+  1149         1485          1139.08         reflect
+  1150         1486          1139.08         reflect
+  1151         1488          1139.08         contract inside
+  1152         1489          1139.08         reflect
+  1153         1490          1139.08         reflect
+  1154         1491          1139.08         reflect
+  1155         1493          1139.08         contract inside
+  1156         1494          1139.08         reflect
+  1157         1495          1139.08         reflect
+  1158         1496          1139.08         reflect
+  1159         1497          1139.08         reflect
+  1160         1498          1139.08         reflect
+  1161         1500          1139.08         contract inside
+  1162         1501          1139.08         reflect
+  1163         1502          1139.08         reflect
+  1164         1503          1139.08         reflect
+  1165         1504          1139.08         reflect
+  1166         1505          1139.08         reflect
+  1167         1506          1139.08         reflect
+  1168         1508          1139.08         contract outside
+  1169         1509          1139.08         reflect
+  1170         1510          1139.08         reflect
+  1171         1511          1139.08         reflect
+  1172         1512          1139.08         reflect
+  1173         1513          1139.08         reflect
+  1174         1514          1139.08         reflect
+  1175         1515          1139.08         reflect
+  1176         1516          1139.08         reflect
+  1177         1517          1139.08         reflect
+  1178         1519          1139.08         contract inside
+  1179         1520          1139.08         reflect
+  1180         1521          1139.08         reflect
+  1181         1522          1139.08         reflect
+  1182         1523          1139.08         reflect
+  1183         1524          1139.08         reflect
+  1184         1525          1139.08         reflect
+  1185         1526          1139.08         reflect
+  1186         1527          1139.08         reflect
+  1187         1528          1139.08         reflect
+  1188         1529          1139.08         reflect
+  1189         1530          1139.08         reflect
+  1190         1532          1139.08         reflect
+  1191         1534          1139.08         contract inside
+  1192         1536          1138.84         expand
+  1193         1537          1138.84         reflect
+  1194         1538          1138.84         reflect
+  1195         1539          1138.84         reflect
+  1196         1540          1138.84         reflect
+  1197         1541          1138.84         reflect
+  1198         1542          1138.84         reflect
+  1199         1544          1138.81         reflect
+  1200         1545          1138.81         reflect
+  1201         1547          1138.27         expand
+  1202         1548          1138.27         reflect
+  1203         1549          1138.27         reflect
+  1204         1550          1138.27         reflect
+  1205         1552          1138.27         contract inside
+  1206         1553          1138.27         reflect
+  1207         1554          1138.27         reflect
+  1208         1555          1138.27         reflect
+  1209         1556          1138.27         reflect
+  1210         1557          1138.27         reflect
+  1211         1558          1138.27         reflect
+  1212         1559          1138.27         reflect
+  1213         1560          1138.27         reflect
+  1214         1561          1138.27         reflect
+  1215         1562          1138.27         reflect
+  1216         1563          1138.27         reflect
+  1217         1564          1138.27         reflect
+  1218         1565          1138.27         reflect
+  1219         1566          1138.27         reflect
+  1220         1567          1138.27         reflect
+  1221         1568          1138.27         reflect
+  1222         1569          1138.27         reflect
+  1223         1570          1138.27         reflect
+  1224         1571          1138.27         reflect
+  1225         1573          1138.03         expand
+  1226         1574          1138.03         reflect
+  1227         1575          1138.03         reflect
+  1228         1576          1138.03         reflect
+  1229         1577          1138.03         reflect
+  1230         1578          1138.03         reflect
+  1231         1579          1138.03         reflect
+  1232         1580          1138.03         reflect
+  1233         1581          1138.03         reflect
+  1234         1582          1138.03         reflect
+  1235         1584          1137.68         expand
+  1236         1585          1137.68         reflect
+  1237         1586          1137.68         reflect
+  1238         1587          1137.68         reflect
+  1239         1588          1137.68         reflect
+  1240         1589          1137.68         reflect
+  1241         1590          1137.68         reflect
+  1242         1591          1137.68         reflect
+  1243         1592          1137.68         reflect
+  1244         1593          1137.68         reflect
+  1245         1594          1137.68         reflect
+  1246         1595          1137.68         reflect
+  1247         1596          1137.68         reflect
+  1248         1597          1137.68         reflect
+  1249         1598          1137.68         reflect
+  1250         1599          1137.68         reflect
+  1251         1600          1137.68         reflect
+  1252         1601          1137.68         reflect
+  1253         1602          1137.68         reflect
+  1254         1603          1137.68         reflect
+  1255         1605          1137.62         reflect
+  1256         1606          1137.62         reflect
+  1257         1607          1137.62         reflect
+  1258         1608          1137.62         reflect
+  1259         1610           1137.5         reflect
+  1260         1611           1137.5         reflect
+  1261         1613          1137.28         reflect
+  1262         1615          1137.19         expand
+  1263         1616          1137.19         reflect
+  1264         1617          1137.19         reflect
+  1265         1619           1136.5         expand
+  1266         1620           1136.5         reflect
+  1267         1621           1136.5         reflect
+  1268         1622           1136.5         reflect
+  1269         1623           1136.5         reflect
+  1270         1625           1136.5         contract outside
+  1271         1626           1136.5         reflect
+  1272         1627           1136.5         reflect
+  1273         1628           1136.5         reflect
+  1274         1629           1136.5         reflect
+  1275         1630           1136.5         reflect
+  1276         1631           1136.5         reflect
+  1277         1632           1136.5         reflect
+  1278         1633           1136.5         reflect
+  1279         1634           1136.5         reflect
+  1280         1635           1136.5         reflect
+  1281         1636           1136.5         reflect
+  1282         1637           1136.5         reflect
+  1283         1638           1136.5         reflect
+  1284         1639           1136.5         reflect
+  1285         1640           1136.5         reflect
+  1286         1641           1136.5         reflect
+  1287         1642           1136.5         reflect
+  1288         1644          1136.48         reflect
+  1289         1645          1136.48         reflect
+  1290         1647          1135.91         expand
+  1291         1648          1135.91         reflect
+  1292         1649          1135.91         reflect
+  1293         1650          1135.91         reflect
+  1294         1651          1135.91         reflect
+  1295         1652          1135.91         reflect
+  1296         1653          1135.91         reflect
+  1297         1654          1135.91         reflect
+  1298         1655          1135.91         reflect
+  1299         1656          1135.91         reflect
+  1300         1657          1135.91         reflect
+  1301         1658          1135.91         reflect
+  1302         1659          1135.91         reflect
+  1303         1660          1135.91         reflect
+  1304         1661          1135.91         reflect
+  1305         1662          1135.91         reflect
+  1306         1663          1135.91         reflect
+  1307         1664          1135.91         reflect
+  1308         1665          1135.91         reflect
+  1309         1666          1135.91         reflect
+  1310         1668          1134.72         expand
+  1311         1669          1134.72         reflect
+  1312         1670          1134.72         reflect
+  1313         1671          1134.72         reflect
+  1314         1672          1134.72         reflect
+  1315         1673          1134.72         reflect
+  1316         1674          1134.72         reflect
+  1317         1675          1134.72         reflect
+  1318         1676          1134.72         reflect
+  1319         1677          1134.72         reflect
+  1320         1678          1134.72         reflect
+  1321         1679          1134.72         reflect
+  1322         1680          1134.72         reflect
+  1323         1681          1134.72         reflect
+  1324         1682          1134.72         reflect
+  1325         1683          1134.72         reflect
+  1326         1684          1134.72         reflect
+  1327         1685          1134.72         reflect
+  1328         1686          1134.72         reflect
+  1329         1687          1134.72         reflect
+  1330         1688          1134.72         reflect
+  1331         1689          1134.72         reflect
+  1332         1690          1134.72         reflect
+  1333         1691          1134.72         reflect
+  1334         1692          1134.72         reflect
+  1335         1693          1134.72         reflect
+  1336         1694          1134.72         reflect
+  1337         1696          1134.55         expand
+  1338         1697          1134.55         reflect
+  1339         1698          1134.55         reflect
+  1340         1699          1134.55         reflect
+  1341         1700          1134.55         reflect
+  1342         1701          1134.55         reflect
+  1343         1702          1134.55         reflect
+  1344         1703          1134.55         reflect
+  1345         1704          1134.55         reflect
+  1346         1706          1134.33         reflect
+  1347         1707          1134.33         reflect
+  1348         1708          1134.33         reflect
+  1349         1709          1134.33         reflect
+  1350         1711          1134.24         reflect
+  1351         1713          1133.75         expand
+  1352         1714          1133.75         reflect
+  1353         1715          1133.75         reflect
+  1354         1716          1133.75         reflect
+  1355         1717          1133.75         reflect
+  1356         1718          1133.75         reflect
+  1357         1719          1133.75         reflect
+  1358         1720          1133.75         reflect
+  1359         1722          1133.73         reflect
+  1360         1723          1133.73         reflect
+  1361         1725          1133.45         expand
+  1362         1726          1133.45         reflect
+  1363         1727          1133.45         reflect
+  1364         1728          1133.45         reflect
+  1365         1729          1133.45         reflect
+  1366         1730          1133.45         reflect
+  1367         1732           1133.1         expand
+  1368         1733           1133.1         reflect
+  1369         1734           1133.1         reflect
+  1370         1735           1133.1         reflect
+  1371         1736           1133.1         reflect
+  1372         1737           1133.1         reflect
+  1373         1739          1132.08         expand
+  1374         1740          1132.08         reflect
+  1375         1741          1132.08         reflect
+  1376         1742          1132.08         reflect
+  1377         1743          1132.08         reflect
+  1378         1744          1132.08         reflect
+  1379         1745          1132.08         reflect
+  1380         1746          1132.08         reflect
+  1381         1747          1132.08         reflect
+  1382         1748          1132.08         reflect
+  1383         1749          1132.08         reflect
+  1384         1750          1132.08         reflect
+  1385         1751          1132.08         reflect
+  1386         1752          1132.08         reflect
+  1387         1753          1132.08         reflect
+  1388         1754          1132.08         reflect
+  1389         1755          1132.08         reflect
+  1390         1756          1132.08         reflect
+  1391         1757          1132.08         reflect
+  1392         1758          1132.08         reflect
+  1393         1759          1132.08         reflect
+  1394         1760          1132.08         reflect
+  1395         1761          1132.08         reflect
+  1396         1763          1131.93         reflect
+  1397         1764          1131.93         reflect
+  1398         1765          1131.93         reflect
+  1399         1766          1131.93         reflect
+  1400         1767          1131.93         reflect
+  1401         1768          1131.93         reflect
+  1402         1770          1131.64         reflect
+  1403         1771          1131.64         reflect
+  1404         1773          1131.64         contract inside
+  1405         1774          1131.64         reflect
+  1406         1775          1131.64         reflect
+  1407         1776          1131.64         reflect
+  1408         1778          1131.41         reflect
+  1409         1779          1131.41         reflect
+  1410         1780          1131.41         reflect
+  1411         1782          1131.41         contract inside
+  1412         1784          1131.41         contract inside
+  1413         1785          1131.41         reflect
+  1414         1786          1131.41         reflect
+  1415         1787          1131.41         reflect
+  1416         1788          1131.41         reflect
+  1417         1790          1131.35         reflect
+  1418         1791          1131.35         reflect
+  1419         1793          1131.26         reflect
+  1420         1795          1130.97         reflect
+  1421         1796          1130.97         reflect
+  1422         1797          1130.97         reflect
+  1423         1798          1130.97         reflect
+  1424         1799          1130.97         reflect
+  1425         1800          1130.97         reflect
+  1426         1801          1130.97         reflect
+  1427         1802          1130.97         reflect
+  1428         1803          1130.97         reflect
+  1429         1804          1130.97         reflect
+  1430         1805          1130.97         reflect
+  1431         1806          1130.97         reflect
+  1432         1808           1130.8         reflect
+  1433         1809           1130.8         reflect
+  1434         1810           1130.8         reflect
+  1435         1812          1130.77         reflect
+  1436         1813          1130.77         reflect
+  1437         1814          1130.77         reflect
+  1438         1815          1130.77         reflect
+  1439         1816          1130.77         reflect
+  1440         1818          1130.77         contract inside
+  1441         1819          1130.77         reflect
+  1442         1821          1130.53         reflect
+  1443         1822          1130.53         reflect
+  1444         1823          1130.53         reflect
+  1445         1824          1130.53         reflect
+  1446         1825          1130.53         reflect
+  1447         1826          1130.53         reflect
+  1448         1828          1130.32         reflect
+  1449         1830          1130.32         contract inside
+  1450         1831          1130.32         reflect
+  1451         1833          1130.32         contract inside
+  1452         1835           1130.2         expand
+  1453         1836           1130.2         reflect
+  1454         1837           1130.2         reflect
+  1455         1838           1130.2         reflect
+  1456         1840           1130.2         contract inside
+  1457         1841           1130.2         reflect
+  1458         1842           1130.2         reflect
+  1459         1843           1130.2         reflect
+  1460         1845           1130.2         contract inside
+  1461         1846           1130.2         reflect
+  1462         1847           1130.2         reflect
+  1463         1848           1130.2         reflect
+  1464         1850          1129.45         expand
+  1465         1851          1129.45         reflect
+  1466         1852          1129.45         reflect
+  1467         1853          1129.45         reflect
+  1468         1854          1129.45         reflect
+  1469         1855          1129.45         reflect
+  1470         1856          1129.45         reflect
+  1471         1857          1129.45         reflect
+  1472         1858          1129.45         reflect
+  1473         1859          1129.45         reflect
+  1474         1860          1129.45         reflect
+  1475         1861          1129.45         reflect
+  1476         1862          1129.45         reflect
+  1477         1863          1129.45         reflect
+  1478         1864          1129.45         reflect
+  1479         1865          1129.45         reflect
+  1480         1866          1129.45         reflect
+  1481         1867          1129.45         reflect
+  1482         1869          1129.45         contract inside
+  1483         1870          1129.45         reflect
+  1484         1871          1129.45         reflect
+  1485         1873          1129.45         contract inside
+  1486         1874          1129.45         reflect
+  1487         1875          1129.45         reflect
+  1488         1876          1129.45         reflect
+  1489         1877          1129.45         reflect
+  1490         1878          1129.45         reflect
+  1491         1880          1129.42         reflect
+  1492         1881          1129.42         reflect
+  1493         1882          1129.42         reflect
+  1494         1884          1129.42         contract inside
+  1495         1885          1129.42         reflect
+  1496         1886          1129.42         reflect
+  1497         1888          1129.26         reflect
+  1498         1889          1129.26         reflect
+  1499         1891           1129.2         reflect
+  1500         1892           1129.2         reflect
+  1501         1893           1129.2         reflect
+  1502         1894           1129.2         reflect
+  1503         1895           1129.2         reflect
+  1504         1896           1129.2         reflect
+  1505         1897           1129.2         reflect
+  1506         1898           1129.2         reflect
+  1507         1899           1129.2         reflect
+  1508         1900           1129.2         reflect
+  1509         1902          1128.33         expand
+  1510         1903          1128.33         reflect
+  1511         1904          1128.33         reflect
+  1512         1905          1128.33         reflect
+  1513         1906          1128.33         reflect
+  1514         1907          1128.33         reflect
+  1515         1908          1128.33         reflect
+  1516         1909          1128.33         reflect
+  1517         1910          1128.33         reflect
+  1518         1911          1128.33         reflect
+  1519         1912          1128.33         reflect
+  1520         1913          1128.33         reflect
+  1521         1914          1128.33         reflect
+  1522         1915          1128.33         reflect
+  1523         1916          1128.33         reflect
+  1524         1917          1128.33         reflect
+  1525         1919          1128.33         contract inside
+  1526         1920          1128.33         reflect
+  1527         1921          1128.33         reflect
+  1528         1922          1128.33         reflect
+  1529         1923          1128.33         reflect
+  1530         1924          1128.33         reflect
+  1531         1925          1128.33         reflect
+  1532         1926          1128.33         reflect
+  1533         1927          1128.33         reflect
+  1534         1928          1128.33         reflect
+  1535         1929          1128.33         reflect
+  1536         1930          1128.33         reflect
+  1537         1931          1128.33         reflect
+  1538         1932          1128.33         reflect
+  1539         1933          1128.33         reflect
+  1540         1934          1128.33         reflect
+  1541         1935          1128.33         reflect
+  1542         1937          1128.22         reflect
+  1543         1938          1128.22         reflect
+  1544         1939          1128.22         reflect
+  1545         1940          1128.22         reflect
+  1546         1941          1128.22         reflect
+  1547         1942          1128.22         reflect
+  1548         1944           1127.5         expand
+  1549         1945           1127.5         reflect
+  1550         1946           1127.5         reflect
+  1551         1948           1127.5         contract inside
+  1552         1950           1127.5         contract inside
+  1553         1951           1127.5         reflect
+  1554         1952           1127.5         reflect
+  1555         1953           1127.5         reflect
+  1556         1954           1127.5         reflect
+  1557         1955           1127.5         reflect
+  1558         1956           1127.5         reflect
+  1559         1957           1127.5         reflect
+  1560         1958           1127.5         reflect
+  1561         1959           1127.5         reflect
+  1562         1960           1127.5         reflect
+  1563         1961           1127.5         reflect
+  1564         1962           1127.5         reflect
+  1565         1963           1127.5         reflect
+  1566         1964           1127.5         reflect
+  1567         1965           1127.5         reflect
+  1568         1966           1127.5         reflect
+  1569         1967           1127.5         reflect
+  1570         1968           1127.5         reflect
+  1571         1969           1127.5         reflect
+  1572         1970           1127.5         reflect
+  1573         1971           1127.5         reflect
+  1574         1973           1127.5         contract inside
+  1575         1975           1127.5         contract inside
+  1576         1977           1127.5         contract inside
+  1577         1978           1127.5         reflect
+  1578         1980           1127.1         expand
+  1579         1982           1127.1         contract inside
+  1580         1983           1127.1         reflect
+  1581         1984           1127.1         reflect
+  1582         1985           1127.1         reflect
+  1583         1986           1127.1         reflect
+  1584         1987           1127.1         reflect
+  1585         1988           1127.1         reflect
+  1586         1989           1127.1         reflect
+  1587         1990           1127.1         reflect
+  1588         1991           1127.1         reflect
+  1589         1992           1127.1         reflect
+  1590         1993           1127.1         reflect
+  1591         1994           1127.1         reflect
+  1592         1995           1127.1         reflect
+  1593         1996           1127.1         reflect
+  1594         1997           1127.1         reflect
+  1595         1998           1127.1         reflect
+  1596         1999           1127.1         reflect
+  1597         2001           1127.1         contract inside
+  1598         2003           1127.1         contract inside
+  1599         2004           1127.1         reflect
+  1600         2005           1127.1         reflect
+  1601         2006           1127.1         reflect
+  1602         2007           1127.1         reflect
+  1603         2008           1127.1         reflect
+  1604         2009           1127.1         reflect
+  1605         2010           1127.1         reflect
+  1606         2011           1127.1         reflect
+  1607         2012           1127.1         reflect
+  1608         2013           1127.1         reflect
+  1609         2014           1127.1         reflect
+  1610         2015           1127.1         reflect
+  1611         2016           1127.1         reflect
+  1612         2018          1126.98         reflect
+  1613         2019          1126.98         reflect
+  1614         2020          1126.98         reflect
+  1615         2022          1126.98         contract inside
+  1616         2023          1126.98         reflect
+  1617         2024          1126.98         reflect
+  1618         2025          1126.98         reflect
+  1619         2026          1126.98         reflect
+  1620         2028          1126.98         contract inside
+  1621         2030          1126.77         expand
+  1622         2032          1126.77         contract inside
+  1623         2033          1126.77         reflect
+  1624         2034          1126.77         reflect
+  1625         2035          1126.77         reflect
+  1626         2036          1126.77         reflect
+  1627         2037          1126.77         reflect
+  1628         2038          1126.77         reflect
+  1629         2039          1126.77         reflect
+  1630         2041          1126.72         reflect
+  1631         2042          1126.72         reflect
+  1632         2043          1126.72         reflect
+  1633         2044          1126.72         reflect
+  1634         2045          1126.72         reflect
+  1635         2046          1126.72         reflect
+  1636         2048          1126.72         contract inside
+  1637         2049          1126.72         reflect
+  1638         2051          1126.72         contract inside
+  1639         2052          1126.72         reflect
+  1640         2053          1126.72         reflect
+  1641         2055          1126.72         contract inside
+  1642         2056          1126.72         reflect
+  1643         2057          1126.72         reflect
+  1644         2059          1126.72         contract inside
+  1645         2061          1126.72         contract inside
+  1646         2062          1126.72         reflect
+  1647         2064          1126.72         contract inside
+  1648         2065          1126.72         reflect
+  1649         2066          1126.72         reflect
+  1650         2068          1126.62         reflect
+  1651         2069          1126.62         reflect
+  1652         2071          1126.61         reflect
+  1653         2072          1126.61         reflect
+  1654         2073          1126.61         reflect
+  1655         2074          1126.61         reflect
+  1656         2075          1126.61         reflect
+  1657         2076          1126.61         reflect
+  1658         2077          1126.61         reflect
+  1659         2078          1126.61         reflect
+  1660         2079          1126.61         reflect
+  1661         2081          1126.61         contract inside
+  1662         2082          1126.61         reflect
+  1663         2083          1126.61         reflect
+  1664         2084          1126.61         reflect
+  1665         2085          1126.61         reflect
+  1666         2086          1126.61         reflect
+  1667         2088          1126.61         contract inside
+  1668         2090          1126.48         reflect
+  1669         2091          1126.48         reflect
+  1670         2092          1126.48         reflect
+  1671         2093          1126.48         reflect
+  1672         2094          1126.48         reflect
+  1673         2096          1126.31         expand
+  1674         2097          1126.31         reflect
+  1675         2098          1126.31         reflect
+  1676         2099          1126.31         reflect
+  1677         2100          1126.31         reflect
+  1678         2101          1126.31         reflect
+  1679         2102          1126.31         reflect
+  1680         2103          1126.31         reflect
+  1681         2104          1126.31         reflect
+  1682         2105          1126.31         reflect
+  1683         2106          1126.31         reflect
+  1684         2107          1126.31         reflect
+  1685         2109          1126.31         contract inside
+  1686         2111          1126.27         reflect
+  1687         2112          1126.27         reflect
+  1688         2113          1126.27         reflect
+  1689         2114          1126.27         reflect
+  1690         2116          1126.27         contract inside
+  1691         2117          1126.27         reflect
+  1692         2119          1126.27         contract inside
+  1693         2120          1126.27         reflect
+  1694         2121          1126.27         reflect
+  1695         2123          1126.27         contract inside
+  1696         2124          1126.27         reflect
+  1697         2125          1126.27         reflect
+  1698         2127          1126.16         reflect
+  1699         2128          1126.16         reflect
+  1700         2129          1126.16         reflect
+  1701         2130          1126.16         reflect
+  1702         2131          1126.16         reflect
+  1703         2132          1126.16         reflect
+  1704         2133          1126.16         reflect
+  1705         2135          1126.16         contract inside
+  1706         2136          1126.16         reflect
+  1707         2137          1126.16         reflect
+  1708         2138          1126.16         reflect
+  1709         2139          1126.16         reflect
+  1710         2140          1126.16         reflect
+  1711         2141          1126.16         reflect
+  1712         2142          1126.16         reflect
+  1713         2143          1126.16         reflect
+  1714         2144          1126.16         reflect
+  1715         2146          1126.14         reflect
+  1716         2148          1126.14         contract inside
+  1717         2150          1126.04         reflect
+  1718         2151          1126.04         reflect
+  1719         2152          1126.04         reflect
+  1720         2153          1126.04         reflect
+  1721         2154          1126.04         reflect
+  1722         2156          1126.04         contract inside
+  1723         2157          1126.04         reflect
+  1724         2159          1126.04         contract inside
+  1725         2160          1126.04         reflect
+  1726         2162          1126.04         contract outside
+  1727         2163          1126.04         reflect
+  1728         2164          1126.04         reflect
+  1729         2165          1126.04         reflect
+  1730         2166          1126.04         reflect
+  1731         2168          1126.04         contract inside
+  1732         2169          1126.04         reflect
+  1733         2170          1126.04         reflect
+  1734         2171          1126.04         reflect
+  1735         2173          1126.04         contract inside
+  1736         2175          1126.04         contract inside
+  1737         2177          1126.04         contract inside
+  1738         2178          1126.04         reflect
+  1739         2179          1126.04         reflect
+  1740         2181          1126.04         contract inside
+  1741         2183          1126.04         contract inside
+  1742         2184          1126.04         reflect
+  1743         2185          1126.04         reflect
+  1744         2186          1126.04         reflect
+  1745         2187          1126.04         reflect
+  1746         2189          1125.97         reflect
+  1747         2191          1125.97         contract inside
+  1748         2193          1125.96         reflect
+  1749         2194          1125.96         reflect
+  1750         2195          1125.96         reflect
+  1751         2196          1125.96         reflect
+  1752         2197          1125.96         reflect
+  1753         2198          1125.96         reflect
+  1754         2200          1125.96         contract inside
+  1755         2202          1125.87         reflect
+  1756         2204          1125.87         contract inside
+  1757         2205          1125.87         reflect
+  1758         2207          1125.86         reflect
+  1759         2208          1125.86         reflect
+  1760         2209          1125.86         reflect
+  1761         2211          1125.57         expand
+  1762         2212          1125.57         reflect
+  1763         2213          1125.57         reflect
+  1764         2214          1125.57         reflect
+  1765         2215          1125.57         reflect
+  1766         2216          1125.57         reflect
+  1767         2217          1125.57         reflect
+  1768         2218          1125.57         reflect
+  1769         2219          1125.57         reflect
+  1770         2220          1125.57         reflect
+  1771         2221          1125.57         reflect
+  1772         2222          1125.57         reflect
+  1773         2223          1125.57         reflect
+  1774         2225          1125.57         contract inside
+  1775         2226          1125.57         reflect
+  1776         2227          1125.57         reflect
+  1777         2228          1125.57         reflect
+  1778         2229          1125.57         reflect
+  1779         2230          1125.57         reflect
+  1780         2232          1125.57         contract inside
+  1781         2233          1125.57         reflect
+  1782         2234          1125.57         reflect
+  1783         2235          1125.57         reflect
+  1784         2236          1125.57         reflect
+  1785         2237          1125.57         reflect
+  1786         2238          1125.57         reflect
+  1787         2239          1125.57         reflect
+  1788         2240          1125.57         reflect
+  1789         2241          1125.57         reflect
+  1790         2242          1125.57         reflect
+  1791         2243          1125.57         reflect
+  1792         2244          1125.57         reflect
+  1793         2245          1125.57         reflect
+  1794         2246          1125.57         reflect
+  1795         2247          1125.57         reflect
+  1796         2248          1125.57         reflect
+  1797         2249          1125.57         reflect
+  1798         2250          1125.57         reflect
+  1799         2251          1125.57         reflect
+  1800         2252          1125.57         reflect
+  1801         2253          1125.57         reflect
+  1802         2254          1125.57         reflect
+  1803         2255          1125.57         reflect
+  1804         2257          1125.57         contract inside
+  1805         2258          1125.57         reflect
+  1806         2259          1125.57         reflect
+  1807         2261          1125.51         reflect
+  1808         2262          1125.51         reflect
+  1809         2263          1125.51         reflect
+  1810         2264          1125.51         reflect
+  1811         2265          1125.51         reflect
+  1812         2266          1125.51         reflect
+  1813         2268          1125.23         expand
+  1814         2269          1125.23         reflect
+  1815         2270          1125.23         reflect
+  1816         2271          1125.23         reflect
+  1817         2272          1125.23         reflect
+  1818         2273          1125.23         reflect
+  1819         2274          1125.23         reflect
+  1820         2275          1125.23         reflect
+  1821         2277          1125.23         contract inside
+  1822         2278          1125.23         reflect
+  1823         2279          1125.23         reflect
+  1824         2280          1125.23         reflect
+  1825         2281          1125.23         reflect
+  1826         2282          1125.23         reflect
+  1827         2283          1125.23         reflect
+  1828         2284          1125.23         reflect
+  1829         2285          1125.23         reflect
+  1830         2286          1125.23         reflect
+  1831         2287          1125.23         reflect
+  1832         2288          1125.23         reflect
+  1833         2289          1125.23         reflect
+  1834         2290          1125.23         reflect
+  1835         2291          1125.23         reflect
+  1836         2292          1125.23         reflect
+  1837         2293          1125.23         reflect
+  1838         2294          1125.23         reflect
+  1839         2295          1125.23         reflect
+  1840         2296          1125.23         reflect
+  1841         2297          1125.23         reflect
+  1842         2298          1125.23         reflect
+  1843         2299          1125.23         reflect
+  1844         2300          1125.23         reflect
+  1845         2301          1125.23         reflect
+  1846         2302          1125.23         reflect
+  1847         2303          1125.23         reflect
+  1848         2304          1125.23         reflect
+  1849         2306             1125         expand
+  1850         2307             1125         reflect
+  1851         2308             1125         reflect
+  1852         2309             1125         reflect
+  1853         2310             1125         reflect
+  1854         2311             1125         reflect
+  1855         2312             1125         reflect
+  1856         2313             1125         reflect
+  1857         2314             1125         reflect
+  1858         2315             1125         reflect
+  1859         2316             1125         reflect
+  1860         2317             1125         reflect
+  1861         2318             1125         reflect
+  1862         2319             1125         reflect
+  1863         2320             1125         reflect
+  1864         2321             1125         reflect
+  1865         2322             1125         reflect
+  1866         2323             1125         reflect
+  1867         2324             1125         reflect
+  1868         2325             1125         reflect
+  1869         2326             1125         reflect
+  1870         2327             1125         reflect
+  1871         2328             1125         reflect
+  1872         2329             1125         reflect
+  1873         2330             1125         reflect
+  1874         2331             1125         reflect
+  1875         2332             1125         reflect
+  1876         2333             1125         reflect
+  1877         2334             1125         reflect
+  1878         2335             1125         reflect
+  1879         2336             1125         reflect
+  1880         2337             1125         reflect
+  1881         2338             1125         reflect
+  1882         2339             1125         reflect
+  1883         2340             1125         reflect
+  1884         2341             1125         reflect
+  1885         2342             1125         reflect
+  1886         2344          1124.86         expand
+  1887         2345          1124.86         reflect
+  1888         2346          1124.86         reflect
+  1889         2347          1124.86         reflect
+  1890         2348          1124.86         reflect
+  1891         2350           1124.7         expand
+  1892         2351           1124.7         reflect
+  1893         2352           1124.7         reflect
+  1894         2353           1124.7         reflect
+  1895         2354           1124.7         reflect
+  1896         2355           1124.7         reflect
+  1897         2356           1124.7         reflect
+  1898         2357           1124.7         reflect
+  1899         2358           1124.7         reflect
+  1900         2359           1124.7         reflect
+  1901         2360           1124.7         reflect
+  1902         2361           1124.7         reflect
+  1903         2362           1124.7         reflect
+  1904         2363           1124.7         reflect
+  1905         2364           1124.7         reflect
+  1906         2365           1124.7         reflect
+  1907         2366           1124.7         reflect
+  1908         2367           1124.7         reflect
+  1909         2368           1124.7         reflect
+  1910         2369           1124.7         reflect
+  1911         2370           1124.7         reflect
+  1912         2372          1124.69         reflect
+  1913         2373          1124.69         reflect
+  1914         2374          1124.69         reflect
+  1915         2375          1124.69         reflect
+  1916         2376          1124.69         reflect
+  1917         2377          1124.69         reflect
+  1918         2378          1124.69         reflect
+  1919         2379          1124.69         reflect
+  1920         2380          1124.69         reflect
+  1921         2381          1124.69         reflect
+  1922         2383          1124.68         reflect
+  1923         2384          1124.68         reflect
+  1924         2385          1124.68         reflect
+  1925         2386          1124.68         reflect
+  1926         2387          1124.68         reflect
+  1927         2388          1124.68         reflect
+  1928         2389          1124.68         reflect
+  1929         2390          1124.68         reflect
+  1930         2391          1124.68         reflect
+  1931         2393          1124.58         expand
+  1932         2394          1124.58         reflect
+  1933         2395          1124.58         reflect
+  1934         2396          1124.58         reflect
+  1935         2397          1124.58         reflect
+  1936         2399          1124.32         expand
+  1937         2400          1124.32         reflect
+  1938         2401          1124.32         reflect
+  1939         2402          1124.32         reflect
+  1940         2403          1124.32         reflect
+  1941         2404          1124.32         reflect
+  1942         2405          1124.32         reflect
+  1943         2406          1124.32         reflect
+  1944         2407          1124.32         reflect
+  1945         2408          1124.32         reflect
+  1946         2409          1124.32         reflect
+  1947         2410          1124.32         reflect
+  1948         2412          1124.32         contract inside
+  1949         2413          1124.32         reflect
+  1950         2414          1124.32         reflect
+  1951         2415          1124.32         reflect
+  1952         2416          1124.32         reflect
+  1953         2417          1124.32         reflect
+  1954         2418          1124.32         reflect
+  1955         2419          1124.32         reflect
+  1956         2420          1124.32         reflect
+  1957         2421          1124.32         reflect
+  1958         2422          1124.32         reflect
+  1959         2423          1124.32         reflect
+  1960         2424          1124.32         reflect
+  1961         2425          1124.32         reflect
+  1962         2426          1124.32         reflect
+  1963         2427          1124.32         reflect
+  1964         2428          1124.32         reflect
+  1965         2429          1124.32         reflect
+  1966         2430          1124.32         reflect
+  1967         2431          1124.32         reflect
+  1968         2432          1124.32         reflect
+  1969         2433          1124.32         reflect
+  1970         2434          1124.32         reflect
+  1971         2435          1124.32         reflect
+  1972         2436          1124.32         reflect
+  1973         2438          1124.32         contract inside
+  1974         2439          1124.32         reflect
+  1975         2440          1124.32         reflect
+  1976         2441          1124.32         reflect
+  1977         2442          1124.32         reflect
+  1978         2444          1124.24         expand
+  1979         2445          1124.24         reflect
+  1980         2446          1124.24         reflect
+  1981         2447          1124.24         reflect
+  1982         2448          1124.24         reflect
+  1983         2449          1124.24         reflect
+  1984         2450          1124.24         reflect
+  1985         2451          1124.24         reflect
+  1986         2452          1124.24         reflect
+  1987         2453          1124.24         reflect
+  1988         2454          1124.24         reflect
+  1989         2455          1124.24         reflect
+  1990         2456          1124.24         reflect
+  1991         2457          1124.24         reflect
+  1992         2458          1124.24         reflect
+  1993         2459          1124.24         reflect
+  1994         2460          1124.24         reflect
+  1995         2461          1124.24         reflect
+  1996         2462          1124.24         reflect
+  1997         2463          1124.24         reflect
+  1998         2464          1124.24         reflect
+  1999         2466          1124.24         contract inside
+  2000         2468          1124.17         expand
+ 
+Exiting: Maximum number of iterations has been exceeded
+         - increase MaxIter option.
+         Current function value: 1124.165646 
+
+
+Final value of minus the log posterior (or likelihood):1124.165646 
+
+POSTERIOR KERNEL OPTIMIZATION PROBLEM!
+ (minus) the hessian matrix at the "mode" is not positive definite!
+=> posterior variance of the estimated parameters are not positive.
+You should try to change the initial values of the parameters using
+the estimated_params_init block, or use another optimization routine.
+[Warning: The results below are most likely wrong!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.6\matlab\dynare_estimation_1.m', 316)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation_1.m',316,0)">line 316</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.6\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation.m',105,0)">line 105</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m', 111)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m',111,0)">line 111</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m',174,0)">line 174</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 853)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',853,0)">line 853</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND = NaN.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.6\matlab\dynare_estimation_1.m', 339)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation_1.m',339,0)">line 339</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.6\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation.m',105,0)">line 105</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m', 111)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m',111,0)">line 111</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m',174,0)">line 174</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 853)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',853,0)">line 853</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>] 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+         prior mean     mode    s.d. prior pstdev
+
+psi1         1.500   1.9280     NaN norm  0.2500 
+rho_r        0.750   0.8050     NaN beta  0.1000 
+psi2         0.125   0.0970     NaN norm  0.0500 
+psi3         0.125   0.1955     NaN norm  0.0500 
+zeta_p       0.500   0.6741     NaN beta  0.1000 
+zeta_w       0.500   0.4251     NaN beta  0.1000 
+iota_w       0.500   0.4457     NaN beta  0.1500 
+iota_p       0.500   0.3740     NaN beta  0.1500 
+alp          0.300   0.2515     NaN norm  0.0500 
+Bigphi       1.250   1.3824     NaN norm  0.1200 
+h            0.700   0.7700     NaN beta  0.1000 
+nu_l         2.000   2.4856     NaN norm  0.7500 
+rstar_aux    0.250   0.7265     NaN gamm  0.1000 
+pistar_aux   0.750   0.6874     NaN gamm  0.4000 
+zstar_aux    0.400   0.3385     NaN norm  0.1000 
+s2           4.000   5.6771     NaN norm  1.5000 
+sigmac       1.500   1.2461     NaN norm  0.3700 
+ppsi         0.500   0.1957     NaN beta  0.1500 
+Lmean        0.000   1.3327     NaN norm  2.0000 
+rho_z        0.500   0.9996     NaN beta  0.2000 
+rho_b        0.500   0.3197     NaN beta  0.2000 
+rho_g        0.500   0.9938     NaN beta  0.2000 
+rho_mu       0.500   0.5460     NaN beta  0.2000 
+rho_rm       0.500   0.3433     NaN beta  0.2000 
+rho_laf      0.500   0.7715     NaN beta  0.2000 
+rho_law      0.500   0.9974     NaN beta  0.2000 
+eta_laf      0.500   0.5038     NaN beta  0.2000 
+eta_law      0.500   0.9173     NaN beta  0.2000 
+eta_gz       0.500   0.0626     NaN norm  0.2000 
+
+standard deviation of shocks
+         prior mean     mode    s.d. prior pstdev
+
+z_sh         0.100   0.5393     NaN invg  2.0000 
+g_sh         0.500   3.0890     NaN invg  2.0000 
+b_sh         0.100   0.2013     NaN invg  2.0000 
+mu_sh        0.100   0.4510     NaN invg  2.0000 
+laf_sh       0.100   0.1168     NaN invg  2.0000 
+law_sh       0.100   0.3350     NaN invg  2.0000 
+rm_sh        0.100   0.2636     NaN invg  2.0000 
+
+
+Log data density [Laplace approximation] is NaN.
+
+Mode_compute=7, fminsearch, was unsuccessfull, trying mode_compute=1, fmincon.
+[Warning: Some of the parameters have no value (zwstar) when using initial_estimation_checks. If these parameters are not initialized in a
+steadystate file or a steady_state_model-block, Dynare may not be able to solve the model...] 
+Initial value of the log posterior (or likelihood): -2312.7756
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      37    2.312776e+03    0.000e+00    9.808e+03
+    1      74    1.727519e+03    0.000e+00    4.099e+04    4.818e+00
+    2     112    1.684727e+03    0.000e+00    4.050e+04    2.041e-01
+    3     150    1.681294e+03    0.000e+00    4.122e+04    6.246e-01
+    4     188    1.637718e+03    0.000e+00    3.995e+04    4.693e-01
+    5     225    1.581482e+03    0.000e+00    3.788e+04    5.303e-01
+    6     262    1.536020e+03    0.000e+00    3.448e+04    4.666e-01
+    7     301    1.528265e+03    0.000e+00    3.469e+04    1.030e+00
+    8     340    1.525772e+03    0.000e+00    3.425e+04    7.176e-01
+    9     379    1.508315e+03    0.000e+00    3.415e+04    1.652e+00
+   10     417    1.461058e+03    0.000e+00    3.288e+04    1.240e+00
+   11     455    1.415723e+03    0.000e+00    2.975e+04    1.871e+00
+   12     492    1.403349e+03    0.000e+00    2.810e+04    1.152e+00
+   13     529    1.390943e+03    0.000e+00    2.447e+04    1.573e+00
+   14     566    1.376686e+03    0.000e+00    2.471e+04    3.910e-01
+   15     603    1.376886e+03    0.000e+00    2.363e+04    1.262e+00
+   16     641    1.375770e+03    0.000e+00    2.348e+04    2.956e+00
+   17     679    1.348090e+03    0.000e+00    1.738e+04    1.325e+00
+   18     716    1.329229e+03    0.000e+00    1.592e+04    2.084e+00
+   19     755    1.329434e+03    0.000e+00    1.579e+04    1.188e+00
+   20     793    1.306623e+03    0.000e+00    1.107e+04    2.200e+00
+   21     831    1.298977e+03    0.000e+00    7.619e+03    1.033e+00
+   22     869    1.293315e+03    0.000e+00    6.099e+03    1.275e+00
+   23     907    1.289170e+03    0.000e+00    5.774e+03    5.782e-01
+   24     945    1.285216e+03    0.000e+00    3.684e+03    1.021e+00
+   25     983    1.283654e+03    0.000e+00    3.574e+03    1.616e+00
+   26    1021    1.281424e+03    0.000e+00    2.914e+03    6.953e-01
+   27    1059    1.279354e+03    0.000e+00    2.717e+03    2.140e+00
+   28    1097    1.276684e+03    0.000e+00    2.363e+03    3.196e-01
+   29    1134    1.274766e+03    0.000e+00    2.437e+03    8.350e-01
+   30    1172    1.271355e+03    0.000e+00    2.506e+03    8.313e-01
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31    1210    1.267892e+03    0.000e+00    1.714e+03    1.418e+00
+   32    1248    1.267546e+03    0.000e+00    1.557e+03    6.526e-01
+   33    1285    1.263133e+03    0.000e+00    8.584e+02    1.026e+00
+   34    1322    1.262332e+03    0.000e+00    8.662e+02    1.175e+00
+   35    1362    1.261080e+03    0.000e+00    8.602e+02    2.050e-01
+   36    1400    1.258022e+03    0.000e+00    8.288e+02    2.463e-01
+   37    1438    1.257505e+03    0.000e+00    6.580e+02    4.646e-01
+   38    1477    1.255292e+03    0.000e+00    6.506e+02    5.842e-01
+   39    1516    1.254345e+03    0.000e+00    6.295e+02    1.731e-01
+   40    1554    1.250425e+03    0.000e+00    5.412e+02    1.004e+00
+   41    1593    1.249836e+03    0.000e+00    5.129e+02    2.397e-01
+   42    1630    1.246501e+03    0.000e+00    4.249e+02    5.633e-01
+   43    1668    1.245810e+03    0.000e+00    4.092e+02    6.968e-01
+   44    1706    1.243581e+03    0.000e+00    3.905e+02    2.488e-01
+   45    1745    1.242699e+03    0.000e+00    3.852e+02    1.809e-01
+   46    1784    1.241068e+03    0.000e+00    3.568e+02    2.895e-01
+   47    1823    1.238232e+03    0.000e+00    3.507e+02    4.329e-01
+   48    1860    1.234727e+03    0.000e+00    2.609e+02    7.943e-01
+   49    1902    1.231429e+03    0.000e+00    7.261e+01    5.292e-01
+   50    1941    1.231007e+03    0.000e+00    1.009e+02    4.670e-01
+   51    1980    1.230349e+03    0.000e+00    1.196e+02    1.462e-01
+   52    2020    1.229071e+03    0.000e+00    3.863e+02    6.285e-01
+   53    2058    1.228784e+03    0.000e+00    3.558e+02    2.258e-01
+   54    2096    1.226691e+03    0.000e+00    3.731e+02    2.476e-01
+   55    2133    1.223786e+03    0.000e+00    1.505e+02    2.470e-01
+   56    2172    1.223026e+03    0.000e+00    2.045e+02    2.210e+00
+   57    2209    1.219452e+03    0.000e+00    3.238e+02    1.458e+00
+   58    2246    1.216638e+03    0.000e+00    9.061e+02    3.066e+00
+   59    2283    1.214441e+03    0.000e+00    2.510e+02    1.094e+00
+   60    2321    1.210478e+03    0.000e+00    2.627e+02    2.124e+00
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   61    2358    1.203273e+03    0.000e+00    1.378e+04    8.596e-01
+   62    2395    1.197220e+03    0.000e+00    2.838e+03    4.774e-01
+   63    2434    1.194850e+03    0.000e+00    2.276e+03    1.273e+00
+   64    2471    1.164862e+03    0.000e+00    2.168e+03    1.306e+00
+   65    2509    1.161116e+03    0.000e+00    2.029e+03    7.858e-01
+   66    2547    1.153262e+03    0.000e+00    1.933e+03    3.827e-01
+   67    2584    1.136971e+03    0.000e+00    9.679e+02    1.330e+00
+   68    2622    1.109110e+03    0.000e+00    1.092e+03    1.739e+00
+   69    2660    1.096092e+03    0.000e+00    1.180e+03    1.123e+00
+   70    2698    1.081412e+03    0.000e+00    7.617e+02    2.110e+00
+   71    2735    1.072009e+03    0.000e+00    8.347e+02    2.721e+00
+   72    2773    1.060135e+03    0.000e+00    8.939e+02    2.712e+00
+   73    2810    1.054605e+03    0.000e+00    7.176e+02    4.552e-01
+   74    2847    1.037770e+03    0.000e+00    7.780e+02    7.573e-01
+   75    2885    1.031250e+03    0.000e+00    6.900e+02    4.669e-01
+   76    2923    1.027323e+03    0.000e+00    6.046e+02    1.021e+00
+   77    2962    1.022938e+03    0.000e+00    5.646e+02    9.456e-01
+   78    2999    1.018365e+03    0.000e+00    5.548e+02    9.874e-01
+   79    3036    1.011954e+03    0.000e+00    5.498e+02    3.466e-01
+   80    3073    1.007940e+03    0.000e+00    5.071e+02    3.282e-01
+   81    3110    1.004941e+03    0.000e+00    5.125e+02    3.498e-01
+   82    3147    1.002198e+03    0.000e+00    4.467e+02    5.013e-01
+   83    3184    1.001035e+03    0.000e+00    4.582e+02    3.532e-01
+   84    3221    1.000106e+03    0.000e+00    3.841e+02    1.029e-01
+   85    3258    9.998700e+02    0.000e+00    3.898e+02    1.506e-01
+   86    3295    9.997023e+02    0.000e+00    3.793e+02    1.615e-01
+   87    3332    9.996174e+02    0.000e+00    3.673e+02    4.041e-02
+   88    3369    9.995044e+02    0.000e+00    3.550e+02    8.819e-02
+   89    3406    9.993387e+02    0.000e+00    3.312e+02    1.834e-01
+   90    3443    9.991747e+02    0.000e+00    3.073e+02    1.307e-01
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   91    3480    9.988852e+02    0.000e+00    2.745e+02    1.844e-01
+   92    3517    9.985634e+02    0.000e+00    2.459e+02    1.235e-01
+   93    3554    9.983027e+02    0.000e+00    2.331e+02    1.104e-01
+   94    3591    9.981375e+02    0.000e+00    2.190e+02    1.674e-01
+   95    3628    9.980228e+02    0.000e+00    2.124e+02    1.509e-01
+   96    3665    9.979408e+02    0.000e+00    2.042e+02    1.201e-01
+   97    3702    9.978686e+02    0.000e+00    1.981e+02    1.028e-01
+   98    3739    9.977951e+02    0.000e+00    1.891e+02    1.072e-01
+   99    3776    9.976864e+02    0.000e+00    1.801e+02    1.422e-01
+  100    3813    9.975127e+02    0.000e+00    1.654e+02    1.641e-01
+  101    3850    9.972883e+02    0.000e+00    1.491e+02    1.423e-01
+  102    3887    9.970841e+02    0.000e+00    1.271e+02    7.792e-02
+  103    3924    9.969714e+02    0.000e+00    1.133e+02    1.442e-01
+  104    3961    9.969340e+02    0.000e+00    1.045e+02    1.152e-01
+  105    3998    9.969128e+02    0.000e+00    1.034e+02    2.960e-02
+  106    4035    9.968914e+02    0.000e+00    9.710e+01    3.261e-02
+  107    4072    9.968550e+02    0.000e+00    9.157e+01    3.871e-02
+  108    4109    9.967829e+02    0.000e+00    7.853e+01    6.768e-02
+  109    4146    9.966639e+02    0.000e+00    6.036e+01    1.164e-01
+  110    4183    9.964948e+02    0.000e+00    3.688e+01    1.112e-01
+  111    4220    9.962884e+02    0.000e+00    1.459e+01    8.193e-02
+  112    4257    9.960933e+02    0.000e+00    1.204e+01    8.508e-02
+  113    4294    9.959644e+02    0.000e+00    1.796e+01    7.060e-02
+  114    4331    9.958881e+02    0.000e+00    2.430e+01    6.331e-02
+  115    4368    9.958586e+02    0.000e+00    2.191e+01    9.627e-02
+  116    4405    9.958498e+02    0.000e+00    2.406e+01    2.347e-02
+  117    4442    9.958477e+02    0.000e+00    2.411e+01    1.990e-02
+  118    4479    9.958438e+02    0.000e+00    2.568e+01    3.658e-02
+  119    4516    9.958391e+02    0.000e+00    2.746e+01    1.801e-02
+  120    4553    9.958265e+02    0.000e+00    3.163e+01    1.507e-02
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+  121    4590    9.958105e+02    0.000e+00    3.521e+01    2.428e-02
+  122    4627    9.957973e+02    0.000e+00    3.665e+01    4.570e-02
+  123    4664    9.957920e+02    0.000e+00    3.539e+01    2.531e-02
+  124    4701    9.957906e+02    0.000e+00    3.442e+01    4.318e-03
+  125    4738    9.957901e+02    0.000e+00    3.383e+01    4.615e-03
+  126    4775    9.957895e+02    0.000e+00    3.339e+01    1.043e-02
+  127    4812    9.957888e+02    0.000e+00    3.305e+01    1.676e-02
+  128    4849    9.957871e+02    0.000e+00    3.289e+01    2.623e-02
+  129    4886    9.957829e+02    0.000e+00    3.261e+01    3.819e-02
+  130    4923    9.957727e+02    0.000e+00    3.177e+01    5.031e-02
+  131    4960    9.957500e+02    0.000e+00    2.908e+01    5.249e-02
+  132    4997    9.957098e+02    0.000e+00    2.302e+01    3.879e-02
+  133    5034    9.956593e+02    0.000e+00    1.394e+01    7.149e-02
+  134    5071    9.956172e+02    0.000e+00    5.906e+00    1.089e-01
+  135    5108    9.955923e+02    0.000e+00    3.445e+00    8.097e-02
+  136    5145    9.955813e+02    0.000e+00    1.927e+00    2.544e-02
+  137    5182    9.955783e+02    0.000e+00    8.443e-01    1.561e-02
+  138    5219    9.955784e+02    0.000e+00    4.568e-01    1.338e-02
+  139    5256    9.955704e+02    0.000e+00    1.293e+00    3.084e-02
+  140    5293    9.955695e+02    0.000e+00    3.573e-01    7.120e-03
+  141    5330    9.955694e+02    0.000e+00    1.035e-01    1.253e-03
+  142    5367    9.955694e+02    0.000e+00    7.926e-02    7.445e-04
+  143    5404    9.955694e+02    0.000e+00    2.048e-02    2.019e-04
+  144    5441    9.955694e+02    0.000e+00    2.000e-02    7.245e-05
+  145    5478    9.955690e+02    0.000e+00    9.855e-02    7.832e-03
+  146    5515    9.955690e+02    0.000e+00    8.294e-03    2.696e-04
+  147    5552    9.955690e+02    0.000e+00    4.000e-03    1.550e-04
+  148    5589    9.955690e+02    0.000e+00    1.563e-02    1.334e-03
+  149    5626    9.955690e+02    0.000e+00    5.380e-03    4.362e-04
+  150    5663    9.955690e+02    0.000e+00    1.729e-03    1.761e-04
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+  151    5700    9.955690e+02    0.000e+00    9.355e-04    8.562e-05
+  152    5738    9.955690e+02    0.000e+00    8.000e-04    2.843e-05
+  153    5775    9.955690e+02    0.000e+00    3.616e-03    2.425e-04
+  154    5812    9.955690e+02    0.000e+00    5.784e-03    2.703e-04
+  155    5849    9.955690e+02    0.000e+00    1.421e-03    1.153e-04
+  156    5886    9.955690e+02    0.000e+00    2.059e-03    1.331e-04
+  157    5923    9.955690e+02    0.000e+00    1.218e-03    8.972e-05
+  158    5960    9.955690e+02    0.000e+00    1.646e-03    1.001e-04
+  159    5997    9.955690e+02    0.000e+00    9.354e-04    5.456e-05
+  160    6034    9.955690e+02    0.000e+00    9.811e-04    7.199e-05
+  161    6071    9.955690e+02    0.000e+00    5.705e-04    1.971e-05
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg('barrier',2.000000e+00,true,true,'fmincon',4.963651e-07,'selected',1.000000e-06,0.000000e+00,'default',1.000000e-06,0.000000e+00,'',0.000000e+00);">stopping criteria details</a>>
+
+
+Final value of minus the log posterior (or likelihood):995.569008 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+         prior mean     mode    s.d. prior pstdev
+
+psi1         1.500   1.9718  0.1711 norm  0.2500 
+rho_r        0.750   0.8416  0.0210 beta  0.1000 
+psi2         0.125   0.1563  0.0387 norm  0.0500 
+psi3         0.125   0.2387  0.0261 norm  0.0500 
+zeta_p       0.500   0.7986  0.0387 beta  0.1000 
+zeta_w       0.500   0.4333  0.0550 beta  0.1000 
+iota_w       0.500   0.5879  0.1246 beta  0.1500 
+iota_p       0.500   0.1074  0.0489 beta  0.1500 
+alp          0.300   0.1431  0.0166 norm  0.0500 
+Bigphi       1.250   1.5914  0.0760 norm  0.1200 
+h            0.700   0.6626  0.0524 beta  0.1000 
+nu_l         2.000   2.9775  0.5582 norm  0.7500 
+rstar_aux    0.250   0.1295  0.0536 gamm  0.1000 
+pistar_aux   0.750   0.9708  0.2772 gamm  0.4000 
+zstar_aux    0.400   0.7620  0.0121 norm  0.1000 
+s2           4.000   3.5032  0.7949 norm  1.5000 
+sigmac       1.500   0.8713  0.0991 norm  0.3700 
+ppsi         0.500   0.4801  0.1088 beta  0.1500 
+Lmean        0.000   0.7354  1.1445 norm  2.0000 
+rho_z        0.500   0.9050  0.0325 beta  0.2000 
+rho_b        0.500   0.7650  0.0559 beta  0.2000 
+rho_g        0.500   0.9802  0.0092 beta  0.2000 
+rho_mu       0.500   0.8072  0.0567 beta  0.2000 
+rho_rm       0.500   0.0969  0.0544 beta  0.2000 
+rho_laf      0.500   0.7363  0.0587 beta  0.2000 
+rho_law      0.500   0.9695  0.0132 beta  0.2000 
+eta_laf      0.500   0.5000  0.2773 beta  0.2000 
+eta_law      0.500   0.5000  0.2773 beta  0.2000 
+eta_gz       0.500   0.4438  0.1876 norm  0.2000 
+
+standard deviation of shocks
+         prior mean     mode    s.d. prior pstdev
+
+z_sh         0.100   0.4106  0.0243 invg  2.0000 
+g_sh         0.500   2.8539  0.1556 invg  2.0000 
+b_sh         0.100   0.1413  0.0177 invg  2.0000 
+mu_sh        0.100   0.3348  0.0348 invg  2.0000 
+laf_sh       0.100   0.0771  0.0121 invg  2.0000 
+law_sh       0.100   0.3056  0.0429 invg  2.0000 
+rm_sh        0.100   0.2298  0.0139 invg  2.0000 
+
+
+Log data density [Laplace approximation] is -1070.897989.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in US_SW07_20074/metropolis\US_SW07_20074_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 1000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 15%
+                                                       Chain  2: 11.7%
+Estimation::mcmc: Total number of MH draws per chain: 1000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 301.
+Estimation::mcmc: Finally I keep 700 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter        Block 1     Block 2
+SE_z_sh          108.189      66.557
+SE_g_sh           24.938      97.868
+SE_b_sh           21.045      39.391
+SE_mu_sh          33.897      22.725
+SE_laf_sh         55.116      62.522
+SE_law_sh        103.166      85.565
+SE_rm_sh          79.072      90.307
+psi1              52.572      34.793
+rho_r            119.634      78.904
+psi2              81.946     100.426
+psi3              93.703      69.348
+zeta_p            49.504      92.047
+zeta_w           112.550      91.366
+iota_w           122.742      40.574
+iota_p           101.981      14.760
+alp               54.990      94.177
+Bigphi            27.717      34.031
+h                 59.570      84.846
+nu_l              53.667      85.034
+rstar_aux         92.811      87.613
+pistar_aux        17.826      46.533
+zstar_aux         48.319     126.207
+s2                66.427      83.897
+sigmac            62.101      80.501
+ppsi              28.916      50.243
+Lmean             10.409      27.830
+rho_z             43.232      25.979
+rho_b             60.035      77.604
+rho_g             68.932     128.734
+rho_mu            71.889      87.110
+rho_rm           114.040     113.134
+rho_laf          109.393     103.547
+rho_law          167.536     108.939
+eta_laf           17.930      59.478
+eta_law           52.859      53.949
+eta_gz            73.890      38.561
+
+[Warning: estimation:: MCMC convergence diagnostics are not computed because the total number of iterations is not bigger than 2000!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('McMCDiagnostics', 'C:\dynare\4.5.6\matlab\convergence_diagnostics\McMCDiagnostics.m', 126)" style="font-weight:bold">McMCDiagnostics</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\convergence_diagnostics\McMCDiagnostics.m',126,0)">line 126</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.6\matlab\dynare_estimation_1.m', 465)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation_1.m',465,0)">line 465</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.6\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.6\matlab\dynare_estimation.m',105,0)">line 105</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m', 122)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\MHestimate.m',122,0)">line 122</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\ALGORITHMS\Main.m',174,0)">line 174</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 853)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',853,0)">line 853</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\zsun\Documents\GitHub\MMBForecast-platform\MMB_Estimation\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>] 
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is -1096.124341.
+
+parameters
+             prior mean   post. mean        90% HPD interval    prior       pstdev
+
+psi1              1.500       2.0510      1.8315      2.3003   norm        0.2500
+rho_r             0.750       0.8320      0.7918      0.8716   beta        0.1000
+psi2              0.125       0.1609      0.0956      0.2177   norm        0.0500
+psi3              0.125       0.2594      0.2048      0.3047   norm        0.0500
+zeta_p            0.500       0.7784      0.7243      0.8367   beta        0.1000
+zeta_w            0.500       0.4773      0.3970      0.5611   beta        0.1000
+iota_w            0.500       0.5599      0.3473      0.8193   beta        0.1500
+iota_p            0.500       0.1513      0.0750      0.2522   beta        0.1500
+alp               0.300       0.1459      0.1243      0.1677   norm        0.0500
+Bigphi            1.250       1.5720      1.4996      1.6514   norm        0.1200
+h                 0.700       0.6716      0.6070      0.7283   beta        0.1000
+nu_l              2.000       3.2415      2.2957      4.1750   norm        0.7500
+rstar_aux         0.250       0.1652      0.0640      0.2615   gamm        0.1000
+pistar_aux        0.750       1.0478      0.8039      1.3808   gamm        0.4000
+zstar_aux         0.400       0.7573      0.7323      0.7737   norm        0.1000
+s2                4.000       3.7462      2.4882      4.9660   norm        1.5000
+sigmac            1.500       0.8874      0.7602      1.0791   norm        0.3700
+ppsi              0.500       0.5287      0.4275      0.6622   beta        0.1500
+Lmean             0.000       0.5954     -0.5309      1.8317   norm        2.0000
+rho_z             0.500       0.9162      0.8764      0.9523   beta        0.2000
+rho_b             0.500       0.7612      0.6412      0.8509   beta        0.2000
+rho_g             0.500       0.9790      0.9677      0.9926   beta        0.2000
+rho_mu            0.500       0.8132      0.7293      0.8953   beta        0.2000
+rho_rm            0.500       0.1641      0.0642      0.2801   beta        0.2000
+rho_laf           0.500       0.7160      0.6006      0.8234   beta        0.2000
+rho_law           0.500       0.9465      0.8945      0.9848   beta        0.2000
+eta_laf           0.500       0.4770      0.2084      0.7538   beta        0.2000
+eta_law           0.500       0.4714      0.0935      0.7570   beta        0.2000
+eta_gz            0.500       0.4797      0.1844      0.7508   norm        0.2000
+
+standard deviation of shocks
+             prior mean   post. mean        90% HPD interval    prior       pstdev
+
+z_sh              0.100       0.4220      0.3818      0.4661   invg        2.0000
+g_sh              0.500       2.8438      2.6096      3.0572   invg        2.0000
+b_sh              0.100       0.1398      0.1131      0.1617   invg        2.0000
+mu_sh             0.100       0.3568      0.3204      0.3960   invg        2.0000
+laf_sh            0.100       0.0890      0.0672      0.1054   invg        2.0000
+law_sh            0.100       0.2913      0.2233      0.3748   invg        2.0000
+rm_sh             0.100       0.2347      0.2159      0.2491   invg        2.0000
+Estimation::mcmc: Posterior (dsge) IRFs...
+Estimation::mcmc: Posterior IRFs, done!
+Estimation::mcmc: Smoothed variables
+Estimation::mcmc: Smoothed variables, done!
+Estimation::mcmc: Smoothed shocks
+Estimation::mcmc: Smoothed shocks, done!
+Estimation::mcmc: Trend_coefficients
+Estimation::mcmc: Trend_coefficients, done!
+Estimation::mcmc: Smoothed constant
+Estimation::mcmc: Smoothed constant, done!
+Estimation::mcmc: Smoothed trend
+Estimation::mcmc: Smoothed trend, done!
+Estimation::mcmc: Updated Variables
+Estimation::mcmc: Updated Variables, done!
+Estimation::mcmc: Forecasted variables (mean)
+Estimation::mcmc: Forecasted variables (mean), done!
+Estimation::mcmc: Forecasted variables (point)
+Estimation::mcmc: Forecasted variables (point), done!
+Mode_compute=1, fmincon, was successfull.

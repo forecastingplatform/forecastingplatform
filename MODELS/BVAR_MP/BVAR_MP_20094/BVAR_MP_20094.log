@@ -1,0 +1,14 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 0 equation(s).
+Evaluating expressions...done
+Processing outputs ...
+done
+Preprocessing completed.
+Loading 80 observations from us20094.xls
+
+
+Some of the VAR models sampled from the posterior distribution
+were found to be explosive (0.28 percent).
+
+Total computing time : 0h00m03s

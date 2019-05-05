@@ -53,14 +53,14 @@ global basics;
 basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08];
 
 basics.models = char([
-    'BVAR_MP  '; 
-    'BVAR_GLP '; 
-    'US_SW07  '; 
-    'US_DNGS14'; 
-    'NK_RW97  '; 
-    'DSGE_TEST'; 
-    'NK_DS04  '; 
-    'NK_WW11  ';
+    'BVAR_MP    '; 
+    'BVAR_GLP   '; 
+    'US_SW07    '; 
+    'US_DNGS14  '; 
+    'NK_RW97    '; 
+    'DSGE_TEST  '; 
+    'NK_DS04    '; 
+    'NK_WW11    ';
     'US_FRBEDO08']);
 
 basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
@@ -98,7 +98,8 @@ basics.charttitle = char([...
     '               Forecasts from Small NK US model                 ';
     ' Forecasts from the Small NK model with BGG financial frictions ';
     '      Forecasts from Del Negro and Schorfheide (2004) model     ';
-    '        Forecasts from Wieland and Wolters (2011) model         ';    
+    '        Forecasts from Wieland and Wolters (2011) model         '; 
+    '                  Forecasts from FRB/EDO model                  '; 
     ]);
 
 %% Interface settings

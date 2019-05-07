@@ -14,10 +14,10 @@ var
 xgdp_q_obs
 pgdp_q_obs
 rff_q_obs
+//rff_q_obs_frbedo
+//pgdp_q_obs_frbedo
+//xgdp_q_obs_frbedo
 
-rff_q_obs_frbedo
-pgdp_q_obs_frbedo
-xgdp_q_obs_frbedo
 pecnn_q_obs_frbedo
 pecd_q_obs_frbedo
 per_q_obs_frbedo
@@ -73,6 +73,9 @@ pk                      //price level in the k sector
 paipc paipk             //inflation rate of prices 
 paiwc paiwk            //inflation rate of nominal wages
 gammaxc gammaxk         //growth rate of output in the c or k sector, respectively, consistent with the growth rate of technology
+kcd1
+kr1
+
 
 //**************************************************************************
 // Modelbase Variables                                                   //*    
@@ -255,9 +258,14 @@ model;
 
 //****************************************************************************
 // Modelbase Variables                                                     //*
-rff_q_obs_frbedo   = r;
-pgdp_q_obs_frbedo  = paipgdp*exp(eta_pgdp);
-xgdp_q_obs_frbedo  = hgdp*exp(eta_xgdp);
+
+//rff_q_obs_frbedo   = r;
+//pgdp_q_obs_frbedo  = paipgdp*exp(eta_pgdp);
+//xgdp_q_obs_frbedo  = hgdp*exp(eta_xgdp);
+xgdp_q_obs = (hgdp*exp(eta_xgdp)-1)*100;
+pgdp_q_obs  = (paipgdp*exp(eta_pgdp)-1)*100;
+rff_q_obs = (r-1)*100;
+
 pecnn_q_obs_frbedo = paipc*ecnn/ecnn(-1)*gammaxc*exp(eta_pecnn);
 pecd_q_obs_frbedo  = paipk*ecd/ecd(-1)*gammaxk*exp(eta_pecd);
 per_q_obs_frbedo   = paipc*er/er(-1)*gammaxc*exp(eta_per);
@@ -266,10 +274,6 @@ paipc_q_obs_frbedo = paipc*exp(eta_paipc);
 paipk_q_obs_frbedo = paipk*exp(eta_paipk);
 wage_obs_frbedo    = paipc/paipgdp*gammaxc*(wc+wk)/(wc(-1)+wk(-1))*exp(eta_wage);
 hours_obs_frbedo   = (lc+lk)/(Lcstar+Lkstar);
-
-xgdp_q_obs = (hgdp*exp(eta_xgdp)-1)*100;
-pgdp_q_obs  = (paipgdp*exp(eta_pgdp)-1)*100;
-rff_q_obs = (r-1)*100;
 
 interest   = r;                                                            //*
 inflation  = paipgdp;                                                      //*
@@ -326,9 +330,10 @@ lambdacnn = lambdacd / rcd;// (78)
 lambdacnn = lambdar  / rr; // (79) 
 lambdacnn = SIGMAcnn*xicnn/(ecnn-(Hcnn/gammaxc)*ecnn(-1)) - BETA * SIGMAcnn * Hcnn/gammaxc(+1)*xicnn(+1)/(ecnn(+1)-Hcnn/gammaxc(+1)*ecnn); //(80)
 
-lambdacd= SIGMAcd*xicd/(kcd(-1)/gammaxk-Hcd/(gammaxk*gammaxk(-1))*kcd(-2)) - BETA * SIGMAcd * (Hcd/gammaxk*xicd(+1))/(kcd/gammaxk-Hcd/(gammaxk*gammaxk)*kcd(-1)); //(81)
-lambdar = SIGMAr* xir /(kr(-1) /gammaxc-Hr /(gammaxc*gammaxc(-1))*kr(-2))  - BETA * SIGMAr  * (Hr /gammaxc*xir(+1)) /(kr /gammaxc-Hr /(gammaxc*gammaxc)*kr(-1)); // (82) 
-
+lambdacd= SIGMAcd*xicd/(kcd(-1)/gammaxk-Hcd/(gammaxk*gammaxk(-1))*kcd1(-1)) - BETA * SIGMAcd * (Hcd/gammaxk*xicd(+1))/(kcd/gammaxk-Hcd/(gammaxk*gammaxk)*kcd(-1)); //(81)
+lambdar = SIGMAr* xir /(kr(-1) /gammaxc-Hr /(gammaxc*gammaxc(-1))*kr1(-1))  - BETA * SIGMAr  * (Hr /gammaxc*xir(+1)) /(kr /gammaxc-Hr /(gammaxc*gammaxc)*kr(-1)); // (82) 
+kcd1=kcd(-1);
+kr1=kr(-1);
 
 //households labor-supply decision:
 thetal * lambdalc/lambdacnn  = (thetal-1)*wc
@@ -490,4 +495,4 @@ stderr eta_paipk ,inv_gamma_pdf  ,0.005  ,2;
 stderr eta_wage  ,inv_gamma_pdf  ,0.005  ,2;
 end;
 
-varobs xgdp_q_obs_frbedo pgdp_q_obs_frbedo rff_q_obs_frbedo pecnn_q_obs_frbedo pecd_q_obs_frbedo per_q_obs_frbedo penr_q_obs_frbedo paipc_q_obs_frbedo paipk_q_obs_frbedo wage_obs_frbedo hours_obs_frbedo;
+varobs xgdp_q_obs pgdp_q_obs rff_q_obs pecnn_q_obs_frbedo pecd_q_obs_frbedo per_q_obs_frbedo penr_q_obs_frbedo paipc_q_obs_frbedo paipk_q_obs_frbedo wage_obs_frbedo hours_obs_frbedo;

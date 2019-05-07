@@ -86,7 +86,7 @@ basics.model_observables(5,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_BA
 basics.model_observables(6,:) = [1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0]; % DSGE_TEST
 basics.model_observables(7,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_DS04
 basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW11
-basics.model_observables(9,:)=  [0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1]; % US_FRBEDO08
+basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1]; % US_FRBEDO08
 
 %%
 % Title declaration:

@@ -1,5 +1,6 @@
 Vintages = {'Vintages','Available','Missing Variables'};
-
+nowcast_observables = [1, 2, 3, 8, 14, 15];
+financial_observables = [3, 8];
 Vintages(2,:) = {[],[],[]};
 temp = basics.chosenmodels;
 basics.windowlength = basics.windowlength+basics.inspf;
@@ -21,7 +22,7 @@ for vint = (2+(basics.region(find(basics.chosenmodels>0))==2)):size(DATAMAT{1}(1
     missing = zeros(1,basics.nvar);
     
     for n = 1:basics.nvar
-        if (basics.inspf == 1 && (n<4 || n == basics.nvar))
+        if (basics.inspf == 1 && (ismember(n,nowcast_observables)))
             for i = position_FirstObs:position_LastObs+basics.inspf
                 if ((cell2mat(DATAMAT{n}(i,vint))==-99)||(cell2mat(DATAMAT{n}(i,vint))==-999))
                     missing(n) = 1;
@@ -49,13 +50,13 @@ for vint = (2+(basics.region(find(basics.chosenmodels>0))==2)):size(DATAMAT{1}(1
         
         for i = 1:basics.nvar
             if basics.inspf == 1
-                if ( basics.modelvars(i) &&  (i<4 || i == basics.nvar)) % First 3 variables and the credit spread constitutes the SPF NC
+                if ( basics.modelvars(i) &&  (ismember(i, nowcast_observables))) % First 3 variables and the credit spread constitutes the SPF NC
                     VintData = [VintData [cell2mat(basics.observables{i});DATAMAT{i}(position_FirstObs:position_LastObs+basics.inspf,vint)]];
                 elseif basics.modelvars(i) 
                     VintData = [VintData [cell2mat(basics.observables{i});[DATAMAT{i}(position_FirstObs:position_LastObs,vint); NaN ]]];
                 end
             elseif basics.fnc == 1
-                if ( basics.modelvars(i) &&  (i==3 || i == basics.nvar)) % Short term rate and creadit spread
+                if ( basics.modelvars(i) &&   (ismember(i, financial_observables))) % Short term rate and creadit spread
                     VintData = [VintData [cell2mat(basics.observables{i});DATAMAT{i}(position_FirstObs:position_LastObs+basics.fnc,vint)]];
                 elseif basics.modelvars(i)
                     VintData = [VintData [cell2mat(basics.observables{i});[DATAMAT{i}(position_FirstObs:position_LastObs,vint); NaN ]]];

@@ -50,7 +50,7 @@ warning off
 handles.output = hObject;
 global basics;
 
-basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08];
+basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw];
 
 basics.models = char([
     'BVAR_MP    '; 
@@ -61,9 +61,10 @@ basics.models = char([
     'DSGE_TEST  '; 
     'NK_DS04    '; 
     'NK_WW11    ';
-    'US_FRBEDO08']);
+    'US_FRBEDO08';
+    'US_DNGS14SW';]);
 
-basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
+basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
 
 %% List of observables 
 % Set 1 in the column if it enters as an observable variable, otherwise 0.
@@ -81,12 +82,13 @@ basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the E
 basics.model_observables(1,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_MP
 basics.model_observables(2,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_GLP
 basics.model_observables(3,:) = [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % SW07
-basics.model_observables(4,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % DNS14
+basics.model_observables(4,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % DNGS14
 basics.model_observables(5,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_BAS
 basics.model_observables(6,:) = [1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0]; % DSGE_TEST
 basics.model_observables(7,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_DS04
 basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW11
 basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1]; % US_FRBEDO08
+basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
 
 %%
 % Title declaration:
@@ -100,6 +102,7 @@ basics.charttitle = char([...
     '      Forecasts from Del Negro and Schorfheide (2004) model     ';
     '        Forecasts from Wieland and Wolters (2011) model         '; 
     '                  Forecasts from FRB/EDO model                  '; 
+    '  Forecasts from Del Negro et al. (2014) w/o financial friction '; 
     ]);
 
 %% Interface settings

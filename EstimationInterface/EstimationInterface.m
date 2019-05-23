@@ -22,7 +22,7 @@ function varargout = EstimationInterface(varargin)
 
 % Edit the above text to modify the response to help EstimationInterface
 
-% Last Modified by GUIDE v2.5 07-Feb-2019 16:20:21
+% Last Modified by GUIDE v2.5 23-May-2019 22:24:10
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -50,7 +50,7 @@ warning off
 handles.output = hObject;
 global basics;
 
-basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw];
+basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg];
 
 basics.models = char([
     'BVAR_MP    '; 
@@ -62,9 +62,10 @@ basics.models = char([
     'NK_DS04    '; 
     'NK_WW11    ';
     'US_FRBEDO08';
-    'US_DNGS14SW';]);
+    'US_DNGS14SW';
+    'US_SW07_BGG']);
 
-basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
+basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
 
 %% List of observables 
 % Set 1 in the column if it enters as an observable variable, otherwise 0.
@@ -89,6 +90,8 @@ basics.model_observables(7,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_DS
 basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW11
 basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1]; % US_FRBEDO08
 basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
+basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
+
 
 %%
 % Title declaration:
@@ -102,7 +105,8 @@ basics.charttitle = char([...
     '      Forecasts from Del Negro and Schorfheide (2004) model     ';
     '        Forecasts from Wieland and Wolters (2011) model         '; 
     '                  Forecasts from FRB/EDO model                  '; 
-    '  Forecasts from Del Negro et al. (2014) w/o financial friction '; 
+    '  Forecasts from Del Negro et al. (2014) w/o financial friction ';
+    ' Forecasts from Smets Wouters (2007) with BGG financial friction'; 
     ]);
 
 %% Interface settings

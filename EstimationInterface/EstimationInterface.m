@@ -22,7 +22,7 @@ function varargout = EstimationInterface(varargin)
 
 % Edit the above text to modify the response to help EstimationInterface
 
-% Last Modified by GUIDE v2.5 23-May-2019 22:24:10
+% Last Modified by GUIDE v2.5 04-Jun-2019 12:04:06
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -63,9 +63,10 @@ basics.models = char([
     'NK_WW11    ';
     'US_FRBEDO08';
     'US_DNGS14SW';
-    'US_SW07_BGG']);
+    'US_SW07_BGG';
+    'US_DSSW07  ']);
 
-basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
+basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
 
 %% List of observables 
 % Set 1 in the column if it enters as an observable variable, otherwise 0.
@@ -91,6 +92,7 @@ basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW
 basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1]; % US_FRBEDO08
 basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
 basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
+basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DSSW07
 
 
 %%
@@ -107,6 +109,8 @@ basics.charttitle = char([...
     '                  Forecasts from FRB/EDO model                  '; 
     '  Forecasts from Del Negro et al. (2014) w/o financial friction ';
     ' Forecasts from Smets Wouters (2007) with BGG financial friction'; 
+    ' Forecasts from DelNegro Schorfheide Smets Wouters model(2007)  '; 
+
     ]);
 
 %% Interface settings
@@ -978,3 +982,4 @@ switch get(hObject,'Tag')
     case 'hvd_relative'
         basics.hvd_absolute = 0;
 end
+

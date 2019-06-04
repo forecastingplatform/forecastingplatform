@@ -50,7 +50,7 @@ warning off
 handles.output = hObject;
 global basics;
 
-basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg];
+basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg, handles.usdssw07];
 
 basics.models = char([
     'BVAR_MP    '; 
@@ -92,7 +92,7 @@ basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW
 basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1]; % US_FRBEDO08
 basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
 basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
-basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DSSW07
+basics.model_observables(12,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DSSW07
 
 
 %%

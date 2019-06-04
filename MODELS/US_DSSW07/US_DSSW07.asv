@@ -6,7 +6,7 @@
 var lambda R pic c w_tilda w phi_w psi_w L k k_bar i Q R_e r_k u 
     mc p_tilda phi_f psi_f y Delta
     z lb lphi lmu llambda_f lg lA
-	hours_obs rff_q_obs pgdp_q_obs xgdp_q_obs pcer_q_obs fpi_q_obs wage_obs; 
+	hours_obs rff_q_obs pgdp_q_obs, xgdp_q_obs, pcer_q_obs, fpi_q_obs, wage_obs; 
     // dlnY, dlnC, dlnI, lnL, dlnw, dlnP, FedFunds;
 	// dlnD, dlnDn, Spread, lsigma, lnu, n, R_d, F1, F2, F1_prim, omega, d,
 

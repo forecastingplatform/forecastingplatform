@@ -48,6 +48,8 @@ for i=1:size(basics.model_observables,2)
     end
 end
 
+
+
 var_list_ = [];
 var_list_ = strvcat(var_list_, 'rff_q_obs');
 var_list_ = strvcat(var_list_, 'pgdp_q_obs');

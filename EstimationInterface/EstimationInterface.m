@@ -50,7 +50,7 @@ warning off
 handles.output = hObject;
 global basics;
 
-basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg, handles.usdssw07];
+basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg, handles.usdssw07 , handles.usdssw07ff ];
 
 basics.models = char([
     'BVAR_MP    '; 
@@ -64,36 +64,52 @@ basics.models = char([
     'US_FRBEDO08';
     'US_DNGS14SW';
     'US_SW07_BGG';
-    'US_DSSW07  ']);
+    'US_DSSW07  ';
+    'US_DSSW07FF']);
 
-basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
+basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
 
 %% List of observables 
 % Set 1 in the column if it enters as an observable variable, otherwise 0.
 %  According to List_Observables_US.xls, the variable in the model's varobs 
 %  should be named according to Column B in the excel:
-%1.     xgdp_a_obs
-%2.     pgdp_a_obs
-%3.     rff_a_obs
-%4.     pcer_a_obs
-%5.     fpi_a_obs
-%6.     wage_obs
-%7.     hours_obs
-%8.     cp_q_obs
+% 1	xgdp_obs
+% 2	pgdp_obs
+% 3	rff_obs
+% 4	pcer_obs
+% 5	fpi_obs
+% 6	wage_obs
+% 7	hours_obs
+% 8	cp_obs
+% 9	xgdp_obs_frbedo
+% 10	pgdp_obs_frbedo
+% 11	rff_obs_frbedo
+% 12	pecnn_obs_frbedo
+% 13	pecd_obs_frbedo
+% 14	per_obs_frbedo
+% 15	penr_obs_frbedo
+% 16	paipc_obs_frbedo
+% 17	paipk_obs_frbedo
+% 18	hours_obs_frbedo
+% 19	wage_obs_frbedo
+% 20	dlnl_obs
 
-basics.model_observables(1,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_MP
-basics.model_observables(2,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_GLP
-basics.model_observables(3,:) = [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % SW07
-basics.model_observables(4,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % DNGS14
-basics.model_observables(5,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_BAS
-basics.model_observables(6,:) = [1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0]; % DSGE_TEST
-basics.model_observables(7,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_DS04
-basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW11
-basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1]; % US_FRBEDO08
-basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
-basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
-basics.model_observables(12,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DSSW07
 
+
+
+basics.model_observables(1,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_MP
+basics.model_observables(2,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_GLP
+basics.model_observables(3,:) = [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0]; % SW07
+basics.model_observables(4,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % DNGS14
+basics.model_observables(5,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_BAS
+basics.model_observables(6,:) = [1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]; % DSGE_TEST
+basics.model_observables(7,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_DS04
+basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW11
+basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 0]; % US_FRBEDO08
+basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
+basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
+basics.model_observables(12,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DSSW07
+basics.model_observables(13,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1]; % US_DSSW07FF
 
 %%
 % Title declaration:
@@ -110,7 +126,7 @@ basics.charttitle = char([...
     '  Forecasts from Del Negro et al. (2014) w/o financial friction ';
     ' Forecasts from Smets Wouters (2007) with BGG financial friction'; 
     ' Forecasts from DelNegro Schorfheide Smets Wouters model(2007)  '; 
-
+    ' Forecasts from DelNegro Schorfheide Smets Wouters with BGG FF  ';
     ]);
 
 %% Interface settings
@@ -712,7 +728,7 @@ end
             basics.modelvars = basics.model_observables(find(basics.chosenmodels>0),:);
             basics.modelvars = basics.modelvars(1,:);
         catch
-            basics.modelvars = basics.econometric_observables(find(basics.chosenmodels(1,8:end)>0),:);
+%             basics.modelvars = basics.econometric_observables(find(basics.chosenmodels(1,8:end)>0),:);
         end
         modelvars_index = (basics.modelvars>0)';
         modelvars_index = modelvars_index(:,1);

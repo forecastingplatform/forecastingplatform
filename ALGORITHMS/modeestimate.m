@@ -68,11 +68,18 @@ optimizationinfo = 1;
 global options_ oo_ optcrit
 eval(['diary ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '.log']);
 %while optimizationinfo
-
+options_.mode_check.status == 1;
 options_.mode_compute = 4; % start with Sims' algorithm
 try
+if basics.currentmodel =='US_DSSW07FF'
+    options_.mode_compute = 6; % start with Sims' algorithm
+    disp('Trying mode_compute = 6, MCMC and checking if estimation is feasible.');
+    dynare_estimation(var_list_); % run the estimation
+else
+    
     disp('Trying mode_compute = 4, Chris Sims’ csminwel, and checking if estimation is feasible.');
     dynare_estimation(var_list_); % run the estimation
+end
 catch
     optcrit = 1;
 end

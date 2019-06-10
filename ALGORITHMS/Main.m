@@ -5,7 +5,7 @@ basics.currentpath = cd;
 cd ..
 basics.thispath = cd;
 cd(basics.currentpath)
-
+% keyboard
 basics.models = basics.models;
 
 basics.colorvector = char('g','b','c','m','k','g','b','c','m','k',...

@@ -11,7 +11,7 @@ function [Fs,Fss]=conforekf_glp(y,Gamma,Su,p,T_con,bDraw)
 %--------------------------------------------------------------------------
 %OUTPUT
 %Fss:   same as y where data exist and conditional forecast replaces NaN
-%Fs:    implied states of the model
+%Fs:    
 %--------------------------------------------------------------------------
 %COMMENT
 %Original code based on Michele Lenza, Carlo Altavilla. Adapted by Matyas Farkas  

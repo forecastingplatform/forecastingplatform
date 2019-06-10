@@ -230,8 +230,8 @@ if ~isempty(findobj(basics.modelslist,'Tag',get(hObject,'Tag')))
  
  if strcmp(get(hObject,'Tag'),'bvarglp')
         set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'off')
-               set(handles.inspf,'enable', 'off');  set(handles.inspf,'Value', 0);
-              set(handles.fnc,'enable', 'off');  set(handles.inspf,'Value', 0); 
+%                set(handles.inspf,'enable', 'off');  set(handles.inspf,'Value', 0);
+%               set(handles.fnc,'enable', 'off');  set(handles.inspf,'Value', 0); 
 
         basics.EstimationMethod = zeros(1,3);
         basics.EstimationMethod(1,1) = 2;

@@ -109,7 +109,7 @@ basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 0]; % US_
 basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
 basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
 basics.model_observables(12,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DSSW07
-basics.model_observables(13,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1]; % US_DSSW07FF
+basics.model_observables(13,:)= [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1]; % US_DSSW07FF
 
 %%
 % Title declaration:

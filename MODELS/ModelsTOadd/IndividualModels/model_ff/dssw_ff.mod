@@ -1,13 +1,11 @@
-//Based on replication files of  "Forecasting with DSGE models with Financial Frictions a la BGG" - by Marcin Kolasa and Micha Rubaszek
-//Adapted to the forecast platform: Matyas Farkas
-//close all;
+//DelNegro-Schorfheide-Smets-Wouters model from JBES augmented with financial frictions a la BGG
 
+close all;
 
-var lambda  R  pic  c  w_tilda  w  phi_w  psi_w  L  k  k_bar  i  Q  d  n  R_e  r_k  u  R_d  
-    F1  F2  F1_prim  omega  mc  p_tilda  phi_f  psi_f  y  Delta 
-    z  lb  lphi  lmu  llambda_f  lg  lA  lsigma  lnu 
-	hours_obs rff_q_obs pgdp_q_obs xgdp_q_obs pcer_q_obs fpi_q_obs wage_obs dlnl_obs cp_q_obs; 
-   // dlnY, dlnC, dlnI, lnL, dlnw, dlnP, FedFunds, dlnD, dlnDn, Spread;
+var lambda, R, pic, c, w_tilda, w, phi_w, psi_w, L, k, k_bar, i, Q, d, n, R_e, r_k, u, R_d, 
+    F1, F2, F1_prim, omega, mc, p_tilda, phi_f, psi_f, y, Delta,
+    z, lb, lphi, lmu, llambda_f, lg, lA, lsigma, lnu,
+    dlnY, dlnC, dlnI, lnL, dlnw, dlnP, FedFunds, dlnD, dlnDn, Spread;
 
 varexo eps_z, eps_b, eps_phi, eps_mu, eps_lambda_f, eps_g, eps_R, eps_sigma, eps_nu;
 // eps_A
@@ -15,7 +13,7 @@ varexo eps_z, eps_b, eps_phi, eps_mu, eps_lambda_f, eps_g, eps_R, eps_sigma, eps
 parameters phi, lambda_w, delta, alpha, zeta_p, iota_p, s_bis, h, nu_l, zeta_w, iota_w, r_star, psi_1, psi_2,
 rho_R, pi_star, gamma_star, lambda_f, gg_star, sigma, nu, chi, we, a_bis,
 rho_z, rho_b, rho_phi, rho_mu, rho_lambda_f, rho_g, rho_A, rho_sigma, rho_nu,
-L_adj, D_adj, scalehours;
+L_adj, D_adj;
 
 phi         = 0.8;
 lambda_w    = 0.3;
@@ -51,10 +49,10 @@ rho_sigma   = 0.9;
 rho_nu      = 0.9;
 
 a_bis  = 0.2;
-L_adj  = 1.2918; // 662;
+L_adj  = 662;
 D_adj  = 0*0.3;
-scalehours = 1;
 
+@#include "params_110q4.m"
 
 model;
 
@@ -103,18 +101,6 @@ lA=0; //lA=rho_A*lA(-1)+eps_A/100;
 lsigma=(1-rho_sigma)*log(sigma)+rho_sigma*lsigma(-1)+eps_sigma/100;
 lnu=(1-rho_nu)*log(nu)+rho_nu*lnu(-1)+eps_nu/100;
 
-// measurement equations
-xgdp_q_obs=100*(log(y/y(-1))+z);
-pcer_q_obs=100*(log(c/c(-1))+z);
-fpi_q_obs=100*(log(i/i(-1))+z);
-wage_obs=100*(log(w/w(-1))+z);
-pgdp_q_obs = 100*log((pic));
-rff_q_obs =    100*(R-1);
-hours_obs = scalehours*log(L) + L_adj;
-dlnl_obs=(log(d/d(-1))+z+log(pic))+D_adj/100;
-cp_q_obs=400*(R_d-R);
-
-/*
 dlnY=100*(log(y/y(-1))+z);
 dlnC=100*(log(c/c(-1))+z);
 dlnI=100*(log(i/i(-1))+z);
@@ -125,7 +111,6 @@ FedFunds=400*(R-1);
 dlnD=100*(log(d/d(-1))+z)+D_adj;
 dlnDn=100*(log(d/d(-1))+z+log(pic))+D_adj;
 Spread=400*(R_d-R);
-*/
 
 end;
 
@@ -147,6 +132,7 @@ var eps_nu; stderr 1;
 end;
 */
 
+@#include "shocks_110q4.m"
 
 estimated_params;
 alpha,              beta_pdf,       0.33,   0.05;
@@ -166,7 +152,7 @@ pi_star,            normal_pdf,     3.01,   1.5;
 gamma_star,         gamma_pdf,      2,      1;
 lambda_f,           gamma_pdf,      0.15,   0.1;
 gg_star,            gamma_pdf,      0.3,    0.1;
-L_adj,1.2918,-10.0,10.0,normal_pdf,     0.0, 		2;   //662,    10; 650, 670; constelab,1.2918,-10.0,10.0,NORMAL_PDF,0.0,2.0
+L_adj,              normal_pdf,    662,    1;//, 650, 670;
 D_adj,              normal_pdf,    0.5,    0.1;//, 0, 1;
 chi,                beta_pdf,       0.12,   0.01;
 nu,                 beta_pdf,       0.975,  0.001;
@@ -187,7 +173,6 @@ stderr eps_mu,      inv_gamma_pdf, 0.5, inf;
 stderr eps_b,       inv_gamma_pdf, 0.5, inf;
 stderr eps_g,       inv_gamma_pdf, 0.5, inf;
 stderr eps_R,       inv_gamma_pdf, 0.25, inf;
-scalehours,1,0.01,10,uniform_pdf,,,0.01,10;
 //stderr eps_A,       inv_gamma_pdf, 0.5, inf;
 stderr eps_sigma,   inv_gamma_pdf, 0.5, inf;
 stderr eps_nu,      inv_gamma_pdf, 0.5, inf;
@@ -195,15 +180,15 @@ stderr eps_nu,      inv_gamma_pdf, 0.5, inf;
 end;
 
 estimated_params_init;
-alpha,              0.33; 	//0.2647;//0.154;
-zeta_p,             0.6;  	// 0.5567;//0.77;
-iota_p,             0.5;  	//0.1332;//0.06;
-s_bis,              4;  	//0.3014;//0.5;
-h,                  0.7;	//0.7427;//0.77;
-a_bis,              0.2;	//0.2492;//0.24;
-nu_l,               2;		//2.1929;//2.01;
-zeta_w,             0.6;	//0.2223;//0.25;
-iota_w,              0.5;	//0.0735;//0.12;
+alpha,              0.2647;//0.154;
+zeta_p,             0.5567;//0.77;
+iota_p,             0.1332;//0.06;
+s_bis,              0.3014;//0.5;
+h,                  0.7427;//0.77;
+a_bis,              0.2492;//0.24;
+nu_l,               2.1929;//2.01;
+zeta_w,             0.2223;//0.25;
+iota_w,             0.0735;//0.12;
 r_star,             1.7943;//1.01;
 psi_1,              2.0128;//1.69;
 psi_2,              0.1185;//0.03;
@@ -212,7 +197,7 @@ pi_star,            3.3172;//3.90;
 gamma_star,         1.3957;//1.54;
 lambda_f,           0.1841;//0.24;
 gg_star,            0.3022;//0.29;
-L_adj,              1.2918; //  661.8189;//659;
+L_adj,              661.8189;//659;
 D_adj,              0.1877;//0.5;
 chi,                0.12;
 nu,                 0.9779;
@@ -237,7 +222,7 @@ stderr eps_R,       0.4504;
 stderr eps_sigma,   9.0206;
 stderr eps_nu,      0.8327;
 end;
-*/
+
 
 estimated_params_bounds;
 alpha,              0.1,    0.5;
@@ -262,8 +247,7 @@ nu,                 0.9,    0.999;
 sigma,              0.2,    0.5;
 end;
 
-varobs xgdp_q_obs hours_obs wage_obs pgdp_q_obs rff_q_obs pcer_q_obs fpi_q_obs dlnl_obs cp_q_obs;
-//varobs dlnY, dlnC, dlnI, lnL, dlnw, dlnP, FedFunds, dlnDn, Spread;
+varobs dlnY, dlnC, dlnI, lnL, dlnw, dlnP, FedFunds, dlnDn, Spread;
 
 //load options_dssw_ff;
 //options_.nobs      = nobs;
@@ -276,5 +260,5 @@ varobs xgdp_q_obs hours_obs wage_obs pgdp_q_obs rff_q_obs pcer_q_obs fpi_q_obs d
 //options_.parallel_info = struct('RemoteTmpFolder','', 'leaveSlaveOpen',0);
 //parallel='c1';
 
-//estimation(mode_compute=4,datafile=data,mode_file=dssw_ff_mode,plot_priors=0,nodiagnostic,mh_replic=1,mh_nblocks=4,load_mh_file,mh_jscale=0.25,mh_drop=0.2) dlnY, dlnC, dlnI, dlnw, lnL, dlnP, FedFunds, dlnDn, Spread;
-stoch_simul(order=1,irf=0)  xgdp_q_obs hours_obs wage_obs pgdp_q_obs rff_q_obs pcer_q_obs fpi_q_obs dlnl_obs cp_q_obs;
+estimation(mode_compute=4,datafile=data,mode_file=dssw_ff_mode,plot_priors=0,nodiagnostic,mh_replic=1,mh_nblocks=4,load_mh_file,mh_jscale=0.25,mh_drop=0.2) dlnY, dlnC, dlnI, dlnw, lnL, dlnP, FedFunds, dlnDn, Spread;
+//stoch_simul(order=1,irf=0) dlnY, dlnC, dlnI, dlnw, lnL, dlnP, FedFunds, dlnDn, Spread;

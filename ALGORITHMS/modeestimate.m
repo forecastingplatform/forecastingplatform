@@ -71,7 +71,7 @@ eval(['diary ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vin
 options_.mode_check.status == 1;
 options_.mode_compute = 4; % start with Sims' algorithm
 try
-if basics.currentmodel =='US_DSSW07FF'
+if (basics.currentmodel =='US_DSSW07FF') || (basics.currentmodel =='US_DSSW07  ')
     options_.mode_compute = 6; % start with Sims' algorithm
     disp('Trying mode_compute = 6, MCMC and checking if estimation is feasible.');
     dynare_estimation(var_list_); % run the estimation
@@ -142,7 +142,7 @@ end
 global oo_ M_ %options_
 MarginalDensityLaPlace = oo_.MarginalDensity.LaplaceApproximation;
 
-eval(['save ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '_estimationresults MarginalDensityLaPlace M_ options_']);
+eval(['save ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '_estimation_results MarginalDensityLaPlace M_ options_ oo_']);
 
 ModelOutput.MLLaPlace = oo_.MarginalDensity.LaplaceApproximation; % save ML for fit measurement
 

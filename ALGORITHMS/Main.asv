@@ -125,14 +125,14 @@ for m = 1:size(basics.chosenmodels,2)
                             basics.foldername = [ basics.foldername '_fnc']; % Financial variable real time were included in nowcasts 
                         end
                       
-                        if basics.vintagenr  == 1
+                        
                             try
                                 rmdir([basics.thispath '\OUTPUT\' basics.modelzone basics.foldername '_modeforecast'],'s')
                                 rehash
                             catch
                             end
                             mkdir([basics.thispath '\OUTPUT\' basics.modelzone basics.foldername '_modeforecast'])
-                        end             
+                                                              
                         %%
                         if basics.inspf
                             filename = [basics.thispath '\OUTPUT\' basics.modelzone basics.foldername '_modeforecast\' basics.currentmodel '_spfnc_' num2str(basics.vintage(basics.vintagenr,:))];
@@ -142,6 +142,8 @@ for m = 1:size(basics.chosenmodels,2)
                             filename = [basics.thispath '\OUTPUT\' basics.modelzone basics.foldername '_modeforecast\' basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:))];
                         end
                         %forecast mean
+                        for i = 1:4
+                            basics.vintagnr = i
                         eval(['xgdp_a_obsf_mean = ' basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:)) '.Mean.xgdp_a_obs;']);
                         eval(['pgdp_a_obsf_mean = ' basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:)) '.Mean.pgdp_a_obs;']);
                         eval(['rff_a_obsf_mean  = ' basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:)) '.Mean.rff_a_obs;']);
@@ -156,7 +158,7 @@ for m = 1:size(basics.chosenmodels,2)
                         
                         xlswrite(filename,...
                             [{'xgdp_a_obsf','pgdp_a_obsf','rff_a_obsf'};num2cell([xgdp_a_obsf_mean pgdp_a_obsf_mean rff_a_obsf_mean])],'Median')
-                        
+                        end
                         cd('..\..');
                     elseif (find(basics.EstimationMethod == 1) == 3) % Bayesian Metropolis-Hastings Estimate
                         

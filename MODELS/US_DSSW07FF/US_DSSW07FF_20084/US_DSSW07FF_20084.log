@@ -9,68 +9,6 @@ Computing dynamic model derivatives:
 Processing outputs ...
 done
 Preprocessing completed.
-yle="font-weight:bold">gmhmaxlik</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\gmhmaxlik.m',100,0)">line 100</a>)
-    [PostMode, PostVariance, Scale, PostMean] = gmhmaxlik_core(fun, OldPostMode, bounds, gmhmaxlikOptions, Scale, flag, MeanPar,
-    OldPostVariance, varargin{:});
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_minimize_objective', 'C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m', 254)" style="font-weight:bold">dynare_minimize_objective</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m',254,0)">line 254</a>)
-    [opt_par_values, hessian_mat, Scale, fval] = gmhmaxlik(objective_function, start_par_value, ...
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 220)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',220,0)">line 220</a>)
-    [xparam1, fval, exitflag, hh, options_, Scale, new_rat_hess_info] =
-    dynare_minimize_objective(objective_function,xparam1,options_.mode_compute,options_,[bounds.lb
-    bounds.ub],bayestopt_.name,bayestopt_,hh,dataset_,dataset_info,options_,M_,estim_params_,bayestopt_,bounds,oo_);
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
-    dynare_estimation_1(var_list,dname);} 
-if system_dependent('IsDebugMode')==1, dbstep; end
-<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\modeestimate.m',73,1)">73  </a>try
-if system_dependent('IsDebugMode')==1, dbquit; end
-basics.chosenmodel
-{Undefined variable "basics" or class "basics.chosenmodel".} 
-load('variables.mat')
-clear
-close all
-clc
-load('variables.mat')
-basics.chosenmodel
-{Reference to non-existent field 'chosenmodel'.} 
-basics.chosenmodels
-ans =
-     0     0     0     0     0     0     0     0     0     0     0     0     1
-basics.currentmodel
-ans =
-    'US_DSSW07FF'
-Main
-if system_dependent('IsDebugMode')==1, dbcont; end
-[Warning: Directory already exists.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m', 44)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',44,0)">line 44</a>)] 
-[Warning: Directory already exists.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m', 44)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',44,0)">line 44</a>)] 
-if system_dependent('IsDebugMode')==1, dbcont; end
-
-Configuring Dynare ...
-[mex] Generalized QZ.
-[mex] Sylvester equation solution.
-[mex] Kronecker products.
-[mex] Sparse kronecker products.
-[mex] Local state space iteration (second order).
-[mex] Bytecode evaluation.
-[mex] k-order perturbation solver.
-[mex] k-order solution simulation.
-[mex] Quasi Monte-Carlo sequence (Sobol).
-[mex] Markov Switching SBVAR.
-
-Using 64-bit preprocessor
-Starting Dynare (version 4.5.7).
-Starting preprocessing of the model file ...
-Found 47 equation(s).
-Evaluating expressions...done
-Computing static model derivatives:
- - order 1
-Computing dynamic model derivatives:
- - order 1
-Processing outputs ...
-done
-Preprocessing completed.
-
 
 STEADY-STATE RESULTS:
 
@@ -250,11 +188,11 @@ cp_q_obs              9.93          0.47          0.06         17.05          0.
 
 All endogenous are constant or non stationary, not displaying correlations and auto-correlations
 
-Total computing time : 0h00m05s
+Total computing time : 0h00m01s
 Trying mode_compute = 6, MCMC and checking if estimation is feasible.
 Prior distribution for parameter rho_sigma has unbounded density!
 Prior distribution for parameter rho_nu has unbounded density!
-Initial value of the log posterior (or likelihood): -424301.8441
+Initial value of the log posterior (or likelihood): -424692.8671
 [Warning: gmhmaxlik: Unknown option (MaxIter)!] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gmhmaxlik', 'C:\dynare\4.5.7\matlab\optimization\gmhmaxlik.m', 59)" style="font-weight:bold">gmhmaxlik</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\gmhmaxlik.m',59,0)">line 59</a>)
   In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_minimize_objective', 'C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m', 254)" style="font-weight:bold">dynare_minimize_objective</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m',254,0)">line 254</a>)
@@ -265,79 +203,79 @@ Initial value of the log posterior (or likelihood): -424301.8441
 
 ==========================================================
    Change in the posterior covariance matrix = 10.
-   Change in the posterior mean = 0.88415.
-   Mode improvement = 376893.3625
-   New value of jscale = 9.0295e-05
+   Change in the posterior mean = 0.95877.
+   Mode improvement = 381220.341
+   New value of jscale = 8.4941e-05
 ==========================================================
 
 ==========================================================
-   Change in the posterior covariance matrix = 0.11118.
-   Change in the posterior mean = 8.1109.
-   Mode improvement = 46269.4605
-   New value of jscale = 0.025889
+   Change in the posterior covariance matrix = 0.10734.
+   Change in the posterior mean = 8.0357.
+   Mode improvement = 42405.6007
+   New value of jscale = 0.032264
 ==========================================================
 
 ==========================================================
-   Change in the posterior covariance matrix = 0.74293.
-   Change in the posterior mean = 3.476.
-   Mode improvement = 677.4684
-   New value of jscale = 0
+   Change in the posterior covariance matrix = 0.31266.
+   Change in the posterior mean = 2.0283.
+   Mode improvement = 700.1951
+   New value of jscale = 0.15314
 ==========================================================
 
-Optimal value of the scale parameter = 0
+Optimal value of the scale parameter = 0.15314
 
 
-Final value of minus the log posterior (or likelihood):461.552640 
+Final value of minus the log posterior (or likelihood):366.730297 
 
 RESULTS FROM POSTERIOR ESTIMATION
 parameters
            prior mean     mode    s.d. prior pstdev
 
-alpha          0.330   0.3479  0.0040 beta  0.0500 
-zeta_p         0.600   0.6588  0.0181 beta  0.2000 
-iota_p         0.500   0.4382  0.0096 beta  0.2000 
-s_bis          0.500   0.4855  0.0148 gamm  0.1000 
-h              0.700   0.6857  0.0035 beta  0.0500 
-a_bis          0.200   0.2301  0.0049 gamm  0.1000 
-nu_l           2.000   1.8528  0.0285 gamm  0.7500 
-zeta_w         0.600   0.2800  0.0324 beta  0.2000 
-iota_w         0.500   0.2501  0.0317 beta  0.2000 
-r_star         2.000   1.1915  0.2829 gamm  1.0000 
-psi_1          1.500   1.5926  0.0310 gamm  0.4000 
-psi_2          0.200   0.0410  0.0319 gamm  0.1000 
-rho_R          0.500   0.2801  0.0369 beta  0.2000 
-pi_star        3.010   1.0551  0.3602 norm  1.5000 
-gamma_star     2.000   3.2687  0.3113 gamm  1.0000 
-lambda_f       0.150   0.2273  0.0113 gamm  0.1000 
-gg_star        0.300   0.3370  0.0296 gamm  0.1000 
-L_adj          0.000   0.5079  0.1877 norm  2.0000 
+alpha          0.330   0.3844  0.0081 beta  0.0500 
+zeta_p         0.600   0.7831  0.0163 beta  0.2000 
+iota_p         0.500   0.2862  0.0214 beta  0.2000 
+s_bis          0.500   0.2814  0.0078 gamm  0.1000 
+h              0.700   0.7338  0.0031 beta  0.0500 
+a_bis          0.200   0.3783  0.0182 gamm  0.1000 
+nu_l           2.000   0.6940  0.1905 gamm  0.7500 
+zeta_w         0.600   0.5709  0.0310 beta  0.2000 
+iota_w         0.500   0.1950  0.0124 beta  0.2000 
+r_star         2.000   0.5312  0.1597 gamm  1.0000 
+psi_1          1.500   1.4586  0.0214 gamm  0.4000 
+psi_2          0.200   0.0301  0.0299 gamm  0.1000 
+rho_R          0.500   0.7181  0.0114 beta  0.2000 
+pi_star        3.010   2.6835  0.0829 norm  1.5000 
+gamma_star     2.000   1.6871  0.0849 gamm  1.0000 
+lambda_f       0.150   0.4086  0.0137 gamm  0.1000 
+gg_star        0.300   0.2216  0.0099 gamm  0.1000 
+L_adj          0.000   2.8574  0.4004 norm  2.0000 
 D_adj          0.500   0.0000  0.0000 norm  0.1000 
-chi            0.120   0.1055  0.0020 beta  0.0100 
-nu             0.975   0.9750  0.0001 beta  0.0010 
-sigma          0.300   0.3002  0.0007 gamm  0.0100 
-rho_z          0.200   0.0393  0.0110 beta  0.1000 
-rho_phi        0.600   0.7963  0.0352 beta  0.2000 
-rho_lambda_f   0.600   0.9373  0.0130 beta  0.2000 
-rho_mu         0.800   0.8349  0.0104 beta  0.0500 
-rho_b          0.600   0.7851  0.0150 beta  0.2000 
-rho_g          0.800   0.8245  0.0109 beta  0.0500 
-rho_sigma      0.800   0.9140  0.0112 beta  0.2000 
-rho_nu         0.800   0.8985  0.0107 beta  0.2000 
-scalehours     5.005   9.9963  0.0390 unif  2.8839 
+chi            0.120   0.1229  0.0008 beta  0.0100 
+nu             0.975   0.9752  0.0001 beta  0.0010 
+sigma          0.300   0.2934  0.0012 gamm  0.0100 
+rho_z          0.200   0.0081  0.0041 beta  0.1000 
+rho_phi        0.600   0.8160  0.0235 beta  0.2000 
+rho_lambda_f   0.600   0.9366  0.0125 beta  0.2000 
+rho_mu         0.800   0.8551  0.0054 beta  0.0500 
+rho_b          0.600   0.9281  0.0184 beta  0.2000 
+rho_g          0.800   0.9490  0.0061 beta  0.0500 
+rho_sigma      0.800   0.8820  0.0191 beta  0.2000 
+rho_nu         0.800   0.7085  0.0111 beta  0.2000 
+scalehours     5.005   9.9992  0.0283 unif  2.8839 
 
 standard deviation of shocks
            prior mean     mode    s.d. prior pstdev
 
-eps_z          0.500   3.1668  0.3187 invg     Inf 
-eps_phi        2.000  10.3346  0.4944 invg     Inf 
-eps_lambda_f   0.500  10.5968  0.8619 invg     Inf 
-eps_mu         0.500   2.3211  0.1523 invg     Inf 
-eps_b          0.500   4.8856  0.4403 invg     Inf 
-eps_g          0.500   0.6506  0.0712 invg     Inf 
-eps_R          0.250   0.3141  0.4052 invg     Inf 
-eps_sigma      0.500   8.7125  0.1826 invg     Inf 
-eps_nu         0.500   0.7985  0.0806 invg     Inf 
+eps_z          0.500   4.2555  0.1532 invg     Inf 
+eps_phi        2.000  10.5447  0.5592 invg     Inf 
+eps_lambda_f   0.500   7.5260  0.0941 invg     Inf 
+eps_mu         0.500   0.4194  0.0681 invg     Inf 
+eps_b          0.500   4.3643  0.2045 invg     Inf 
+eps_g          0.500   0.6961  0.1171 invg     Inf 
+eps_R          0.250   0.1441  0.2515 invg     Inf 
+eps_sigma      0.500   9.6274  0.1293 invg     Inf 
+eps_nu         0.500   0.7529  0.1096 invg     Inf 
 
 
-Log data density [Laplace approximation] is -668.243624.
+Log data density [Laplace approximation] is -582.554323.
 

@@ -703,7 +703,7 @@ for i=3:size(Obs,1)
     basics.variables_a{i-2} = Obs_a(i,2);
 end
 
-        str = date;
+        str = date; 
         for y = 1950:str2num(str([8:11]))+20
             for q = 1:4
                 OBSERVATION = [OBSERVATION;[num2str(y) ':Q' num2str(q)]];

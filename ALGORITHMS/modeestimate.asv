@@ -17,8 +17,6 @@ cd('..');
 
 % Number of Replications
 options_.mh_replic = 0;
-% Set fixed random seed
-rng('default')
 
 % Optimization Algorithm
 options_.mode_compute = 4 ;

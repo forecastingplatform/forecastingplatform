@@ -1,0 +1,23 @@
+the growth rate of nominal loans to ﬁrms ∆logD
+Loans to ﬁrms: Credit market instruments liabilities of the non-farm non-ﬁnancial business sector. Source: Federal Reserve Board.
+
+Nonfarm nonfinancial corporate business; credit market instruments; liability
+Nonfarm nonfinancial corporate business credit market instruments liability
+
+
+
+the growth rate of mortgage loans ∆log Di
+Mortgage loans: Home mortgages liabilities of the private domestic nonﬁnancial sectors, excluding state and local governments. Source: Federal Reserve Board.
+
+
+
+
+
+the spread on loans to ﬁrms Rd−R
+Spread on loans to ﬁrms: Diﬀerence between the industrial BBB corporate bond yield, backcasted using BAA corporate bond yields, and the federal funds rate. Source: Bloomberg and Federal Reserve Board.
+
+the spread on mortgage loans Ri − R
+Spread on mortgage loans: Diﬀerence between the eﬀective interest rate on conventional single-family mortgages and the federal funds rate. Source: Federal Housing Finance Agency and Federal Reserve Board.
+
+
+Labor: Average weekly hours in the non-farm business sector, multiplied with the civilian employment (16 years and over), and divided by the population level (16 years and over). Source: Bureau of Labor Statistics.

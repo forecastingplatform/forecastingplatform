@@ -1,0 +1,35 @@
+The benchmark model has only 4 observable variables. 6 These are real GDP, the unemployment rate, CPI ination (headline or core), and the federal funds rate.
+
+Gross Domestic Product (SAAR, Bil.Chn.2005.$)
+Fed Funds Target Rate (avg,%)
+Consumer Price Index (SA, 1982-84=100)
+Civilian Unemployment Rate (SA, %)
+
+
+
+
+The model with financial-real linkages adds a block of equations with respect to the financial variable BLT, which is an unweighted average of the responses to four questions with respect to tightening terms and conditions in the Federal Reserve Board's quarterly Senior Loan Officer Opinion Survey on Bank Lending Practices.
+
+More precisely, for each of four questions on bank credit standards on loan applications, 11 net tightening in BLT is equal to the sum of the percentage of banks responding “tightened considerably” and “tightened somewhat” less the sum of the percentage of banks responding “eased somewhat” and “eased considerably”. These net tightening variables are each weighted by one quarter to give the overall BLT variable.
+
+
+
+Question 1a on C&I loans or credit lines to large and middle-market firms
+question 1b on C&I loans or credit lines to small firms
+question 8 on commercial real estate loans
+question 10 on mortgage loans to purchase homes.
+
+
+
+Average of:
+
+FRB Sr Officers Survey: Banks Tightening C.I Loans to Large Firms (percent)
+FRB Sr Officers Survey: Banks Tightening C.I Loans to Small Firms (percent)
+FRB Sr Loan Off Survey: Tightening Standards for Commercial Real Estate (percent)
+FRB Sr Loan Survey: Res Mortgages: Net Share, Banks Tightening (Haver Est, percent)
+
+
+2013 version
+"
+ The questions relate to C&I loans or credit lines to large and middle-market firms, C&I loans or credit lines to small firms, commercial real estate loans, and mortgage loans to purchase homes. Since the second quarter of 2008, the question on mortgage loans to purchase homes has been subdivided into questions on prime mortgages, nontra- ditional mortgages and subprime mortgages. Responses to these three residential mortgage loan questions have been consolidated for our purposes.
+"

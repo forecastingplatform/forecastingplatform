@@ -50,7 +50,7 @@ warning off
 handles.output = hObject;
 global basics;
 
-basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg];
+basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest, handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg, handles.qpmus];
 
 basics.models = char([
     'BVAR_MP    '; 
@@ -63,9 +63,10 @@ basics.models = char([
     'NK_WW11    ';
     'US_FRBEDO08';
     'US_DNGS14SW';
-    'US_SW07_BGG']);
+    'US_SW07_BGG';
+    'QPM_US     ';    ]);
 
-basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
+basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add the Euro Area data in future releases)
 
 %% List of observables 
 % Set 1 in the column if it enters as an observable variable, otherwise 0.
@@ -80,18 +81,18 @@ basics.region = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; % 1 for the US data (will add
 %7.     hours_obs
 %8.     cp_q_obs
 
-basics.model_observables(1,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_MP
-basics.model_observables(2,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_GLP
-basics.model_observables(3,:) = [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % SW07
-basics.model_observables(4,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0]; % DNGS14
-basics.model_observables(5,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_BAS
-basics.model_observables(6,:) = [1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0]; % DSGE_TEST
-basics.model_observables(7,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_DS04
-basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW11
-basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1]; % US_FRBEDO08
-basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
-basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
-
+basics.model_observables(1,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_MP
+basics.model_observables(2,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % BVAR_GLP
+basics.model_observables(3,:) = [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % SW07
+basics.model_observables(4,:) = [1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % DNGS14
+basics.model_observables(5,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_BAS
+basics.model_observables(6,:) = [1 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % DSGE_TEST
+basics.model_observables(7,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_DS04
+basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % NK_WW11
+basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 0 0 0 0 0]; % US_FRBEDO08
+basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
+basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
+basics.model_observables(12,:)= [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1]; % QPM_US
 
 %%
 % Title declaration:

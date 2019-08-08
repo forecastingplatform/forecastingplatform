@@ -92,7 +92,8 @@ basics.model_observables(8,:)=  [1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 basics.model_observables(9,:)=  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 0 0 0 0 0]; % US_FRBEDO08
 basics.model_observables(10,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_DNGS14_SW
 basics.model_observables(11,:)= [1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]; % US_SW07_BGG
-basics.model_observables(12,:)= [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1]; % QPM_US
+basics.model_observables(12,:)= [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1]; % QPM_US
+% basics.model_observables(12,:)= [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1]; % QPM_US
 
 %%
 % Title declaration:
@@ -720,7 +721,9 @@ end
                 
                 header = DATAMAT{i}(1,:); header_q = header(1);
                 for ii = 2:size(header,2)
-                    a = header(ii); a = a{1}; a = a(end-3:end);
+                    a = header(ii);
+                    a = a{1};
+                    a = a(end-3:end);
                     header_q = [header_q;a ];
                 end
                 

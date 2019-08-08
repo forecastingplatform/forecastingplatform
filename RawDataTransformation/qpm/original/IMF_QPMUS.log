@@ -1,0 +1,89 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: IMF_QPMUS.mod:137.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
+Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
+Found 49 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'C:\dynare\4.5.7\matlab\evaluate_steady_state.m', 263)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state.m',263,0)">line 263</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady_', 'C:\dynare\4.5.7\matlab\steady_.m', 55)" style="font-weight:bold">steady_</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\steady_.m',55,0)">line 55</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady', 'C:\dynare\4.5.7\matlab\steady.m', 81)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\steady.m',81,0)">line 81</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IMF_QPMUS', 'C:\forecastingplatform\RawDataTransformation\qpm\original\IMF_QPMUS.m', 500)" style="font-weight:bold">IMF_QPMUS</a> (<a href="matlab: opentoline('C:\forecastingplatform\RawDataTransformation\qpm\original\IMF_QPMUS.m',500,0)">line 500</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
+] 
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : NaN
+Equation number 2 : NaN
+Equation number 3 : NaN
+Equation number 4 : NaN
+Equation number 5 : NaN
+Equation number 6 : NaN
+Equation number 7 : NaN
+Equation number 8 : NaN
+Equation number 9 : NaN
+Equation number 10 : NaN
+Equation number 11 : NaN
+Equation number 12 : NaN
+Equation number 13 : NaN
+Equation number 14 : NaN
+Equation number 15 : NaN
+Equation number 16 : NaN
+Equation number 17 : NaN
+Equation number 18 : NaN
+Equation number 19 : NaN
+Equation number 20 : NaN
+Equation number 21 : NaN
+Equation number 22 : NaN
+Equation number 23 : NaN
+Equation number 24 : NaN
+Equation number 25 : NaN
+Equation number 26 : NaN
+Equation number 27 : NaN
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print_info', 'C:\dynare\4.5.7\matlab\print_info.m', 90)" style="font-weight:bold">print_info</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\print_info.m',90,0)">line 90</a>)
+The steady state contains NaN or Inf
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady', 'C:\dynare\4.5.7\matlab\steady.m', 104)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\steady.m',104,0)">line 104</a>)
+    print_info(info,options_.noprint, options_);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IMF_QPMUS', 'C:\forecastingplatform\RawDataTransformation\qpm\original\IMF_QPMUS.m', 500)" style="font-weight:bold">IMF_QPMUS</a> (<a href="matlab: opentoline('C:\forecastingplatform\RawDataTransformation\qpm\original\IMF_QPMUS.m',500,0)">line 500</a>)
+steady;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
+evalin('base',fname) ;
+} 
+Forecastplatform
+Generating vintages...
+{Undefined function or variable 'DATAMAT'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>GenerateDataIdentifier', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 745)" style="font-weight:bold">EstimationInterface>GenerateDataIdentifier</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',745,0)">line 745</a>)
+                DATAMAT{i} = DATAMAT{i-1};
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 832)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',832,0)">line 832</a>)
+    GenerateDataIdentifier(hObject, eventdata, handles);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>
+} 
+Error while evaluating UIControl Callback.
+

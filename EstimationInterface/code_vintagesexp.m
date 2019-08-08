@@ -1,5 +1,5 @@
 Vintages = {'Vintages','Available','Missing Variables'};
-nowcast_observables = [1, 2, 3, 8, 14, 15];
+nowcast_observables = [1, 2, 14, 15];
 financial_observables = [3, 8];
 Vintages(2,:) = {[],[],[]}; 
 temp = basics.chosenmodels;

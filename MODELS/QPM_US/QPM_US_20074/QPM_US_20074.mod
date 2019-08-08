@@ -204,7 +204,6 @@ corr RES_LGDP_US_BAR,RES_PIE_US, beta_pdf, 0.05, 0.02;
 end;
 
 varobs UNR_US RS_US LCPI_US LGDP_US BLT_US
-xgdp_q_obs
 ;
 
 
@@ -213,18 +212,7 @@ LGDP_US (growth_us_ss/4);
 LCPI_US (pietar_us_ss/4);
 end;
 
-
-options_.kalman_algo = 5;
-options_.plot_priors = 0;
-//estimation(datafile=data,xls_sheet=data,xls_range=V1:Z69,nobs=[56],nograph,mode_compute=5,mh_replic=0,smoother,mh_jscale=0.25,mh_nblocks=1,filter_step_ahead=[1:12],forecast=12,conf_sig=0.9,presample=4) Y_US PIE_US4 PIE_US RS_US UNR_US UNR_US_BAR GROWTH_US GROWTH4_US GROWTH4_US_BAR BLT_US GROWTH_US_BAR UNR_US_GAP RR_US RR_US_BAR RR_US_GAP BLT_US_GAP BLT_US_BAR; //filtered_vars
-estimation(nodiagnostic,datafile=data,xls_sheet=data,xls_range=V1:Z69,nobs=56,nograph,mode_compute=0,mh_replic=0,mode_file=IMF_QPMUS_mode,smoother,mh_jscale=0.25,mh_nblocks=1,filter_step_ahead=[1:12],forecast=12,conf_sig=0.9,presample=4) Y_US PIE_US4 PIE_US RS_US UNR_US UNR_US_BAR GROWTH_US GROWTH4_US GROWTH4_US_BAR BLT_US GROWTH_US_BAR UNR_US_GAP RR_US RR_US_BAR RR_US_GAP BLT_US_GAP BLT_US_BAR; //filtered_vars
-
-
-
-
 shocks;
 var RES_RS_US;
 stderr 1.8201+pietar_us_ss;
 end;
-
-//stoch_simul (order=1,irf = 20, ar=100) RS_US PIE_US Y_US LGDP_US;

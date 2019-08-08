@@ -353,8 +353,7 @@ options_.varobs(2)  = {'RS_US'};
 options_.varobs(3)  = {'LCPI_US'};
 options_.varobs(4)  = {'LGDP_US'};
 options_.varobs(5)  = {'BLT_US'};
-options_.varobs(6)  = {'xgdp_q_obs'};
-options_.varobs_id = [ 3 11 13 9 21 28  ];
+options_.varobs_id = [ 3 11 13 9 21  ];
 M_.Sigma_e = zeros(11, 11);
 M_.Correlation_matrix = eye(11, 11);
 M_.H = 0;
@@ -544,27 +543,6 @@ tmp1 = strmatch('LCPI_US',options_.varobs,'exact');
 options_.trend_coeffs{tmp1} = 'M_.params(15)/4';
 tmp1 = strmatch('LGDP_US',options_.varobs,'exact');
 options_.trend_coeffs{tmp1} = 'M_.params(6)/4';
-options_.kalman_algo = 5;
-options_.plot_priors = 0;
-options_.forecast = 12;
-options_.forecasts.conf_sig = 0.9;
-options_.mh_jscale = 0.25;
-options_.mh_nblck = 1;
-options_.mh_replic = 0;
-options_.mode_compute = 0;
-options_.nodiagnostic = 1;
-options_.nograph = 1;
-options_.presample = 4;
-options_.smoother = 1;
-options_.datafile = 'data';
-options_.mode_file = 'IMF_QPMUS_mode';
-options_.xls_range = 'V1:Z69';
-options_.xls_sheet = 'data';
-options_.filter_step_ahead = [1;2;3;4;5;6;7;8;9;10;11;12;];
-options_.nobs = 56;
-options_.order = 1;
-var_list_ = char('Y_US','PIE_US4','PIE_US','RS_US','UNR_US','UNR_US_BAR','GROWTH_US','GROWTH4_US','GROWTH4_US_BAR','BLT_US','GROWTH_US_BAR','UNR_US_GAP','RR_US','RR_US_BAR','RR_US_GAP','BLT_US_GAP','BLT_US_BAR');
-oo_recursive_=dynare_estimation(var_list_);
 %
 % SHOCKS instructions
 %

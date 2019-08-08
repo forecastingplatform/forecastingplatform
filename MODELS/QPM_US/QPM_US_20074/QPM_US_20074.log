@@ -13,9 +13,7 @@ Computing dynamic model derivatives:
 Processing outputs ...
 done
 Preprocessing completed.
-..
-WARNING: QPM_US_20074.mod:142.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
-Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
+ion of endo leads >= 2: added 6 auxiliary variables and equations.
 Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
 Found 50 equation(s).
 Evaluating expressions...done
@@ -28,165 +26,104 @@ Processing outputs ...
 done
 Preprocessing completed.
 
-[Warning: Matrix is singular to working precision.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'C:\dynare\4.5.7\matlab\evaluate_steady_state.m', 263)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state.m',263,0)">line 263</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady_', 'C:\dynare\4.5.7\matlab\steady_.m', 55)" style="font-weight:bold">steady_</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\steady_.m',55,0)">line 55</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady', 'C:\dynare\4.5.7\matlab\steady.m', 81)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\steady.m',81,0)">line 81</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('QPM_US_20074', 'C:\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074.m', 505)" style="font-weight:bold">QPM_US_20074</a> (<a href="matlab: opentoline('C:\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074.m',505,0)">line 505</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('modeestimate', 'C:\forecastingplatform\ALGORITHMS\modeestimate.m', 12)" style="font-weight:bold">modeestimate</a> (<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\modeestimate.m',12,0)">line 12</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\forecastingplatform\ALGORITHMS\Main.m', 97)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\Main.m',97,0)">line 97</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 869)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',869,0)">line 869</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>
-] 
+
+STEADY-STATE RESULTS:
+
+RR_US             		 1.8456
+RR_US_BAR         		 1.8456
+UNR_US            		 6.6
+UNR_US_GAP        		 0
+UNR_US_BAR        		 6.6
+PIE_US            		 2.5
+PIE_US4           		 2.5
+Y_US              		 0
+LGDP_US           		 907.428
+LGDP_US_BAR       		 907.428
+RS_US             		 4.3456
+G_US              		 2.7599
+LCPI_US           		 498.839
+E4_PIE_US4        		 2.5
+E1_Y_US           		 0
+E1_PIE_US         		 2.5
+UNR_G_US          		 0
+GROWTH_US         		 2.7599
+GROWTH4_US        		 2.7599
+GROWTH4_US_BAR    		 2.7599
+BLT_US            		 -8.87
+BLT_US_BAR        		 -8.87
+E                 		 0
+E2                		 0
+GROWTH_US_BAR     		 2.7599
+RR_US_GAP         		 0
+BLT_US_GAP        		 0
+xgdp_q_obs        		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+       5.323e-19       -5.323e-19                0
+       8.098e-19       -8.098e-19                0
+       3.184e-18       -3.184e-18                0
+       3.416e-18       -3.416e-18                0
+       1.382e-17       -1.382e-17                0
+       1.517e-17        1.517e-17                0
+       4.886e-17       -4.886e-17                0
+       5.272e-17       -5.272e-17                0
+       5.861e-17        5.861e-17                0
+       9.552e-17        9.552e-17                0
+             0.1              0.1                0
+          0.4822          -0.4822                0
+          0.5118         -0.05828           0.5085
+          0.5118         -0.05828          -0.5085
+          0.6648           0.6648                0
+          0.6992           0.6992                0
+          0.7796           0.7796                0
+             0.9              0.9                0
+           0.951           0.9252           0.2203
+           0.951           0.9252          -0.2203
+               1                1                0
+               1                1                0
+               1                1                0
+               1                1                0
+           1.156            1.156                0
+           1.718          -0.2063            1.706
+           1.718          -0.2063           -1.706
+           1.824           -1.824                0
+           7.308            7.308                0
+       3.152e+04        1.576e+04         2.73e+04
+       3.152e+04        1.576e+04        -2.73e+04
+       3.152e+04       -3.152e+04                0
+       1.371e+55       -1.371e+55                0
 
 
+There are 9 eigenvalue(s) larger than 1 in modulus 
+for 9 forward-looking variable(s)
 
+The rank condition is verified.
 
-Residuals of the static equations:
+Total computing time : 0h00m01s
+Note: 1 warning(s) encountered in the preprocessor
+<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\modeestimate.m',73,1)">73  </a>options_.mode_compute = 4; % start with Sims' algorithm
+options_.mode_compute
 
-Equation number 1 : NaN
-Equation number 2 : NaN
-Equation number 3 : NaN
-Equation number 4 : NaN
-Equation number 5 : NaN
-Equation number 6 : NaN
-Equation number 7 : NaN
-Equation number 8 : NaN
-Equation number 9 : NaN
-Equation number 10 : NaN
-Equation number 11 : NaN
-Equation number 12 : NaN
-Equation number 13 : NaN
-Equation number 14 : NaN
-Equation number 15 : NaN
-Equation number 16 : NaN
-Equation number 17 : NaN
-Equation number 18 : NaN
-Equation number 19 : NaN
-Equation number 20 : NaN
-Equation number 21 : NaN
-Equation number 22 : NaN
-Equation number 23 : NaN
-Equation number 24 : NaN
-Equation number 25 : NaN
-Equation number 26 : NaN
-Equation number 27 : NaN
-Equation number 28 : NaN
+ans =
 
+     4
 
-{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print_info', 'C:\dynare\4.5.7\matlab\print_info.m', 90)" style="font-weight:bold">print_info</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\print_info.m',90,0)">line 90</a>)
-The steady state contains NaN or Inf
+var_list_
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('steady', 'C:\dynare\4.5.7\matlab\steady.m', 104)" style="font-weight:bold">steady</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\steady.m',104,0)">line 104</a>)
-    print_info(info,options_.noprint, options_);
+var_list_ =
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('QPM_US_20074', 'C:\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074.m', 505)" style="font-weight:bold">QPM_US_20074</a> (<a href="matlab: opentoline('C:\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074.m',505,0)">line 505</a>)
-steady;
+  3×10 <a href="matlab:helpPopup char" style="font-weight:bold">char</a> array
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
-evalin('base',fname) ;
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('modeestimate', 'C:\forecastingplatform\ALGORITHMS\modeestimate.m', 12)" style="font-weight:bold">modeestimate</a> (<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\modeestimate.m',12,0)">line 12</a>)
-eval(['dynare ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '.mod;']);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\forecastingplatform\ALGORITHMS\Main.m', 97)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\Main.m',97,0)">line 97</a>)
-                        eval([basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:)) ' = modeestimate(basics);']); % function for the
-                        estimation
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
-evalin('caller', strcat(script, ';'));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 869)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',869,0)">line 869</a>)
-    run Main
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
-        feval(varargin{:});
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
-    gui_mainfcn(gui_State, varargin{:});
-
-Error in
-<a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>
-} 
-Error while evaluating UIControl Callback.
-
-opentoline('C:\dynare\4.5.7\matlab\print_info.m',90,0)
-Forecastplatform
-Generating vintages...
-{Undefined function or variable 'DATAMAT'.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>GenerateDataIdentifier', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 745)" style="font-weight:bold">EstimationInterface>GenerateDataIdentifier</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',745,0)">line 745</a>)
-                DATAMAT{i} = DATAMAT{i-1};
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 832)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',832,0)">line 832</a>)
-    GenerateDataIdentifier(hObject, eventdata, handles);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
-        feval(varargin{:});
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
-    gui_mainfcn(gui_State, varargin{:});
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>
-} 
-Error while evaluating UIControl Callback.
-
-dynare estimation
-
-Configuring Dynare ...
-[mex] Generalized QZ.
-[mex] Sylvester equation solution.
-[mex] Kronecker products.
-[mex] Sparse kronecker products.
-[mex] Local state space iteration (second order).
-[mex] Bytecode evaluation.
-[mex] k-order perturbation solver.
-[mex] k-order solution simulation.
-[mex] Quasi Monte-Carlo sequence (Sobol).
-[mex] Markov Switching SBVAR.
-
-
-The file estimation.mod could not be located in the "Current Folder". Check whether you typed in the correct filename
-and whether the file is really located in the "Current Folder".
-
-Current folder is C:\forecastingplatform\RawDataTransformation\qpm\original, and contains the following mod files:
-
-IMF_QPMUS.mod
-{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 172)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',172,0)">line 172</a>)
-dynare:: can't open estimation.mod
-} 
-dynare IMF_QPMUS
-
-Configuring Dynare ...
-[mex] Generalized QZ.
-[mex] Sylvester equation solution.
-[mex] Kronecker products.
-[mex] Sparse kronecker products.
-[mex] Local state space iteration (second order).
-[mex] Bytecode evaluation.
-[mex] k-order perturbation solver.
-[mex] k-order solution simulation.
-[mex] Quasi Monte-Carlo sequence (Sobol).
-[mex] Markov Switching SBVAR.
-
-Using 64-bit preprocessor
-Starting Dynare (version 4.5.7).
-Starting preprocessing of the model file ...
-WARNING: IMF_QPMUS.mod:137.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
-Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
-Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
-Found 49 equation(s).
-Evaluating expressions...done
-Computing static model derivatives:
- - order 1
-Computing dynamic model derivatives:
- - order 1
- - order 2
-Processing outputs ...
-done
-Preprocessing completed.
+    'rff_q_obs '
+    'pgdp_q_obs'
+    'xgdp_q_obs'
 

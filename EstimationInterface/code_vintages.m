@@ -1,19 +1,24 @@
 Vintages = {'Vintages','Available','Missing Variables'};
-nowcast_observables = [1, 2, 14, 15];
+nowcast_observables = [1, 2, 3, 8, 14, 15];
 financial_observables = [3, 8];
 Vintages(2,:) = {[],[],[]};
 temp = basics.chosenmodels;
 basics.windowlength = basics.windowlength+basics.inspf;
+regioncontrol = basics.region(find(basics.chosenmodels>0))==2;
+if size(regioncontrol,2) >1
+    regioncontrol = regioncontrol(1);
+end
+
 
 % basics.nvar = 3*basics.inspf+(1-basics.inspf)*basics.nvar;
 
-for vint = (2+(basics.region(find(basics.chosenmodels>0))==2)):size(DATAMAT{1}(1,:),2)-basics.vintrev*(basics.vintrev>1)-basics.inspf-basics.fnc
+for vint = (2+(regioncontrol)):size(DATAMAT{1}(1,:),2)-basics.vintrev*(basics.vintrev>1)-basics.inspf-basics.fnc
     
     a = cellstr(DATAMAT{1}(1,vint)); a = a{1}; m = size(a,2)-3; vintagename = get_vint_name(a);
     
     Vintages(vint,1) = {vintagename};
     
-    l = find(strcmp(VINTAGES,{[a(m:m+1) 'Q' a(end)]})==1)-1-(basics.region(find(basics.chosenmodels>0))==2);
+    l = find(strcmp(VINTAGES,{[a(m:m+1) 'Q' a(end)]})==1)-1-(regioncontrol);
     
     position_LastObs = find(strcmp(DATAMAT{1}(:,1),OBSERVATION(l,:))==1);
     

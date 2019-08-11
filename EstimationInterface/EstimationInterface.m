@@ -173,72 +173,93 @@ function models_Callback(hObject, eventdata, handles)
 
 global basics;
 
-for i = 1:size(basics.modelslist,2)
-    basics.chosenmodels(i) = 0;
-end
-val=get(hObject,'Value');
-set(basics.modelslist,'Value',0)
-set(findall(handles.bvarpriors, '-property', 'enable'), 'enable', 'off')
-set(handles.inspf,'enable', 'on');  set(handles.inspf,'Value', 0);  
-set(handles.fnc,'enable', 'on');  set(handles.fnc,'Value', 0); 
-set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'on')
+
 
 if ~isempty(findobj(basics.modelslist,'Tag',get(hObject,'Tag')))
+    % Set interface values to default, unless one chooses the BVAR models
+    if find(basics.modelslist==findobj(basics.modelslist,'Tag',get(hObject,'Tag'))) >2 % no BVAR selected
+        
+    for i = 1:size(basics.modelslist,2)
+        basics.chosenmodels(i) = 0;
+    end
+    val=get(hObject,'Value');
+    set(basics.modelslist,'Value',0)
+    set(findall(handles.bvarpriors, '-property', 'enable'), 'enable', 'off')
+    set(handles.inspf,'enable', 'on');  set(handles.inspf,'Value', 0);
+    set(handles.fnc,'enable', 'on');  set(handles.fnc,'Value', 0);
+    set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'on')
+
     basics.chosenmodels(find(basics.modelslist==findobj(basics.modelslist,'Tag',get(hObject,'Tag')))) = val;
     set(basics.modelslist(find(basics.modelslist==findobj(basics.modelslist,'Tag',get(hObject,'Tag')))),'Value',val)
     basics.spf = [];
-        
-    %%
-        set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'on')
-        set(findall(handles.mhsettingspanel, '-property', 'enable'), 'enable', 'off')
-        set(findall(handles.plottingpanel, '-property', 'enable'), 'enable', 'off');
-        set(handles.irf,'Value', 0);
-        set(handles.hvd,'Value', 0);
-        basics.irf = 0; basics.hvd = 0;
-        basics.DataArea = '..\DATA\USDATA';
-        if find(basics.modelslist==findobj(basics.modelslist,'Tag',get(hObject,'Tag'))) == 2
-            set(handles.spf, 'enable', 'on')
-            set(handles.inspf, 'enable', 'on')
-            set(handles.fnc,'enable', 'on');  
-        end
-        basics.benchmarklist = ls('..//OUTPUT//USMODELS');
-        basics.benchmarklist = basics.benchmarklist(3:end,:);
-        set(handles.densitybenchmark,'String',basics.benchmarklist(find(cellfun(@isempty,strfind(cellstr(basics.benchmarklist),'_MH'))==0),:));
-        basics.region(1,1:2) = 1;
     
-      if strcmp(get(hObject,'Tag'),'bvarmp')
-        set(findall(handles.bvarpriors, '-property', 'enable'), 'enable', 'on')
+    %%
+    set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'on')
+    set(findall(handles.mhsettingspanel, '-property', 'enable'), 'enable', 'off')
+    set(findall(handles.plottingpanel, '-property', 'enable'), 'enable', 'off');
+    set(handles.irf,'Value', 0);
+    set(handles.hvd,'Value', 0);
+    basics.irf = 0; basics.hvd = 0;
+    basics.DataArea = '..\DATA\USDATA';
+    if find(basics.modelslist==findobj(basics.modelslist,'Tag',get(hObject,'Tag'))) == 2
+        set(handles.spf, 'enable', 'on')
+        set(handles.inspf, 'enable', 'on')
+        set(handles.fnc,'enable', 'on');
+    end
+    basics.benchmarklist = ls('..//OUTPUT//USMODELS');
+    basics.benchmarklist = basics.benchmarklist(3:end,:);
+    set(handles.densitybenchmark,'String',basics.benchmarklist(find(cellfun(@isempty,strfind(cellstr(basics.benchmarklist),'_MH'))==0),:));
+    basics.region(1,1:2) = 1;
+    
+    elseif strcmp(get(hObject,'Tag'),'bvarmp')
 
-               set(handles.inspf,'enable', 'off');  set(handles.inspf,'Value', 0);
-               set(handles.fnc,'enable', 'off');  set(handles.fnc,'Value', 0); 
-               set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'off')
+        set(findall(handles.bvarpriors, '-property', 'enable'), 'enable', 'on')
+        
+        if sum(basics.chosenmodels) == 0 % Check if any other model is selected, if not then use default SW07 dataset for BVARMP
+            
+        set(handles.inspf,'enable', 'off');  set(handles.inspf,'Value', 0);
+        set(handles.fnc,'enable', 'off');  set(handles.fnc,'Value', 0);
+        set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'off')
         if ~get(hObject,'Value')
-                set(findall(handles.bvarpriors, '-property', 'enable'), 'enable', 'off')
-               set(handles.inspf,'enable', 'on');    
-               set(handles.fnc,'enable', 'on'); 
+            set(findall(handles.bvarpriors, '-property', 'enable'), 'enable', 'off')
+            set(handles.inspf,'enable', 'on');
+            set(handles.fnc,'enable', 'on');
         end
         basics.EstimationMethod = zeros(1,3);
         basics.EstimationMethod(1,1) = 1;
         basics.chosenmodels(1,1) = 1;
         basics.benchmarklist1=[{basics.benchmarklist(find(cellfun(@isempty,strfind(cellstr(basics.benchmarklist),'_MH'))==0),:)};{'BVAR_MP'}];
         set(handles.densitybenchmark,'String',cellstr(basics.benchmarklist1));
-
-     end
- 
- if strcmp(get(hObject,'Tag'),'bvarglp')
+        else % If any other model is selected, then make their data the data for BVARMP.
+            dsge_indx = find(basics.chosenmodels);
+            basics.model_observables(1,:) = basics.model_observables(dsge_indx ,:); % BVAR_MP data updating
+            basics.chosenmodels(1,1) = 1;
+            basics.benchmarklist1=[{basics.benchmarklist(find(cellfun(@isempty,strfind(cellstr(basics.benchmarklist),'_MH'))==0),:)};{'BVAR_MP'}];
+            set(handles.densitybenchmark,'String',cellstr(basics.benchmarklist1));
+        end
+    
+    
+    elseif strcmp(get(hObject,'Tag'),'bvarglp')
+         if sum(basics.chosenmodels) == 0 % Check if any other model is selected, if not then use default SW07 dataset for BVARGLP
         set(findall(handles.estpanel, '-property', 'enable'), 'enable', 'off')
-               set(handles.inspf,'enable', 'off');  set(handles.inspf,'Value', 0);
-              set(handles.fnc,'enable', 'off');  set(handles.inspf,'Value', 0); 
-
+        %                set(handles.inspf,'enable', 'off');  set(handles.inspf,'Value', 0);
+        %               set(handles.fnc,'enable', 'off');  set(handles.inspf,'Value', 0);
+        
         basics.EstimationMethod = zeros(1,3);
         basics.EstimationMethod(1,1) = 2;
         basics.chosenmodels(1,2) = 1;
         basics.benchmarklist1=[{basics.benchmarklist(find(cellfun(@isempty,strfind(cellstr(basics.benchmarklist),'_MH'))==0),:)};{'BVAR_GLP'}];
-%         if (strcmp(basics.benchmarklist1,'BVAR_MP')==0)
+        set(handles.densitybenchmark,'String',cellstr(basics.benchmarklist1));
+         else
+            dsge_indx = find(basics.chosenmodels);
+            basics.model_observables(2,:) = basics.model_observables(dsge_indx ,:); % BVAR_MP data updating
+            basics.EstimationMethod(1,1) = 2;
+            basics.chosenmodels(1,2) = 1;
+            basics.benchmarklist1=[{basics.benchmarklist(find(cellfun(@isempty,strfind(cellstr(basics.benchmarklist),'_MH'))==0),:)};{'BVAR_MP'}];
             set(handles.densitybenchmark,'String',cellstr(basics.benchmarklist1));
-%         end
- end
-
+         end
+    
+    end
 end
 guidata(hObject, handles);
 

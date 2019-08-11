@@ -149,7 +149,7 @@ end;
 
 
 estimated_params;
-alpha,              beta_pdf,       0.33,   0.05;
+alpha,              beta_pdf,       0.33,   0.025; //MF: Original prior: alpha,              beta_pdf,       0.33,   0.05; 
 zeta_p,             beta_pdf,       0.6,    0.2;
 iota_p,             beta_pdf,       0.5,    0.2;
 s_bis,              gamma_pdf,      0.5,    0.1;
@@ -158,19 +158,19 @@ a_bis,              gamma_pdf,      0.2,    0.1;
 nu_l,               gamma_pdf,      2,      0.75;
 zeta_w,             beta_pdf,       0.6,    0.2;
 iota_w,             beta_pdf,       0.5,    0.2;
-r_star,             gamma_pdf,      2,      1;
+r_star,             gamma_pdf,      2,      0.1;  //MF: Original prior: r_star,             gamma_pdf,      2,      1;
 psi_1,              gamma_pdf,      1.5,    0.4;
 psi_2,              gamma_pdf,      0.2,    0.1;
 rho_R,              beta_pdf,       0.5,    0.2;
 pi_star,            normal_pdf,     3.01,   1.5;
-gamma_star,         gamma_pdf,      2,      1;
-lambda_f,           gamma_pdf,      0.15,   0.1;
-gg_star,            gamma_pdf,      0.3,    0.1;
-L_adj,1.2918,-10.0,10.0,normal_pdf,     0.0, 		2;   //662,    10; 650, 670; constelab,1.2918,-10.0,10.0,NORMAL_PDF,0.0,2.0
-D_adj,              normal_pdf,    0.5,    0.1;//, 0, 1;
-chi,                beta_pdf,       0.12,   0.01;
-nu,                 beta_pdf,       0.975,  0.001;
-sigma,              gamma_pdf,      0.3,    0.01;
+gamma_star,         gamma_pdf,      2,      0.1;   //MF: Orignal prior: gamma_star,         gamma_pdf,      2,      1;
+lambda_f,           gamma_pdf,      0.5,   0.1;  // MF: Original prior: lambda_f,           gamma_pdf,      0.15,   0.1;
+gg_star,            gamma_pdf,      0.3,    0.01; //MF: Orignal prior: gg_star,            gamma_pdf,      0.3,    0.01;
+L_adj,1.2918,-10.0,10.0,normal_pdf,     0.0, 		2;   // Original data file whad different mean for labour, platfrom common labour is differently scaled. 662,    10; 650, 670; constelab,1.2918,-10.0,10.0,NORMAL_PDF,0.0,2.0
+D_adj,              normal_pdf,    0.5,    0.1;
+chi,                beta_pdf,       0.12,   0.0001;  //MF: Tightening up the prior gives more normal shape, thus original prior: chi,                beta_pdf,       0.12,   0.01;  
+nu,                 beta_pdf,       0.975,  0.00001; //MF: Tightening up the prior gives more normal shape, thus original prior: nu,                 beta_pdf,       0.975,  0.001;
+sigma,              gamma_pdf,      0.3,    0.001; //MF: Original prior: sigma,              gamma_pdf,      0.3,    0.01;
 rho_z,              beta_pdf,       0.2,    0.1;
 rho_phi,            beta_pdf,       0.6,    0.2;
 rho_lambda_f,       beta_pdf,       0.6,    0.2;
@@ -211,7 +211,7 @@ rho_R,              0.5;	//0.5849;//0.74;
 pi_star,            3;		//3.3172;//3.90;
 gamma_star,         2; 	//1.3957;//1.54;
 lambda_f,           0.15; 	//0.1841;//0.24;
-gg_star,            0.2;	//0.3022;//0.29;
+gg_star,            0.3; // MF: Original inintial value was : 0.2;	//0.3022;//0.29;
 L_adj,              1.2918; //  661.8189;//659;
 D_adj,              0*0.3; 	//0.1877;//0.5;
 chi,                0.12;	//0.12;
@@ -240,23 +240,23 @@ end;
 
 
 estimated_params_bounds;
-alpha,              0.1,    0.5;
-zeta_p,             0,      1;
-iota_p,             0,      1;
+alpha,              0.25,    0.4; //MF: Tightening up the parameter bounds of the prior makes model more stable, original bounds: 0.1,    0.4;
+zeta_p,             0.4,     0.99; //MF: Tightening up the parameter bounds of the prior makes model more stable, original bounds: 0,      1; 
+iota_p,              0.4,     0.99; //MF: Tightening up the parameter bounds of the prior makes model more stable, original bounds: 0,      1; 
 s_bis,              0,      10;
 h,                  0,      1;
 a_bis,              0,      10;
 nu_l,               0,      10;
 zeta_w,             0,      1;
 iota_w,             0,      1;
-r_star,             0.5,      4;
-psi_1,              1,      3;
+r_star,             0.5,      4; //MF: Tightening up the parameter bounds of the prior makes model more stable, original bounds: 0.5,      4; 
+psi_1,              1,      3; //MF: Tightening up the parameter bounds of the prior makes model more stable, original bounds: 1,      3;
 psi_2,              0,      1;
 rho_R,              0,      1;
-pi_star,            0,      6;
-gamma_star,         0,      4;
-lambda_f,           0,      1;
-gg_star,            0.1,    0.4;
+pi_star,            0,      4; // MF: original bounds:  0,      6;
+gamma_star,         0,      3; //MF: Original bounds :  0,      4;
+lambda_f,           0,     1; //MF: Original bounds :  0.1,      1;
+gg_star,            0.1,    0.4; 
 chi,                0.05,   0.25;
 nu,                 0.9,    0.999;
 sigma,              0.2,    0.5;
@@ -277,4 +277,5 @@ varobs xgdp_q_obs hours_obs wage_obs pgdp_q_obs rff_q_obs pcer_q_obs fpi_q_obs d
 //parallel='c1';
 
 //estimation(mode_compute=4,datafile=data,mode_file=dssw_ff_mode,plot_priors=0,nodiagnostic,mh_replic=1,mh_nblocks=4,load_mh_file,mh_jscale=0.25,mh_drop=0.2) dlnY, dlnC, dlnI, dlnw, lnL, dlnP, FedFunds, dlnDn, Spread;
+dynare_sensitivity ;
 stoch_simul(order=1,irf=0)  xgdp_q_obs hours_obs wage_obs pgdp_q_obs rff_q_obs pcer_q_obs fpi_q_obs dlnl_obs cp_q_obs;

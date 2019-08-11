@@ -17,7 +17,7 @@ alpha=M_.params(4);
 check = 0;
 
 f_omega = @(omega)solve_omega(omega,beta,sigma,nu,chi,we);
-omega   = fzero(f_omega,0.95);
+omega   = fzero(f_omega,0.95); %omega   = fzero(f_omega,0.95);
 F1      = normcdf((log(omega)+0.5*sigma^2)/sigma);
 F2      = normcdf((log(omega)+0.5*sigma^2)/sigma-sigma);
 F1_prim = normpdf((log(omega)+0.5*sigma^2)/sigma)/omega/sigma;
@@ -25,8 +25,20 @@ R       = exp((gamma_star/400))*(pi_star/400+1) /(1/(r_star/400+1));
 R_e     = R/(nu/(1/(r_star/400+1))*(1-omega*(1-F1)-F2)+(we+1)*(omega*(1-F1)+(1-chi)*F2));
 r_k     = R_e/(pi_star/400+1) -1+delta;
 w       = (1-alpha)*(1+lambda_f)^(-1/(1-alpha))*(r_k/alpha)^(-alpha/(1-alpha));
-f_k= @(k)solve_k(k,g_star,alpha,gamma,beta,delta,h,chi,lambda_w,phi,nu_l,r_k,w,F2,R_e,pic_star);
-k       = fzero(f_k,25);
+% f_k= @(k)solve_k(k,g_star,alpha,gamma,beta,delta,h,chi,lambda_w,phi,nu_l,r_k,w,F2,R_e,pic_star);
+f_k = @(k) (k-solve_k1(k,alpha,r_k,w,h,phi,nu_l,lambda_w,gamma_star,r_star,delta,gg_star,pi_star,R_e,F2,chi));
+optimset('TolX',1e-20);
+k = fzero(f_k,25);
+if isnan(k) 
+    k = fzero(f_k,150);
+%     disp('Changing starting value of k...')
+%         for j = 1:1000
+%         [kj(j),~,exitflag(j),~]  = fzero(f_k,j);
+%         end
+%         hold on;
+%         plot([1:1000],kj);
+%         fprintf('Success! k is equal to : %f\n', k);  % Method 1
+end
 L       = (1-alpha)/alpha*r_k*k/w;
 y       = k^alpha*L^(1-alpha);
 lambda  = (1+lambda_w)*phi*L^nu_l/w;
@@ -66,7 +78,7 @@ pgdp_q_obs = 100*log(pic);
 rff_q_obs =    100*(R-1);
 hours_obs = scalehours*log(L) + L_adj;
 dlnD=z+D_adj;
-dlnl_obs=(z+log(pic))+D_adj;
+dlnl_obs=(z+log(pic))+D_adj/100;
 cp_q_obs=400*(R_d-R);
 
 % dlnY=100*z;
@@ -86,6 +98,23 @@ for jj=1:size(M_.endo_names);
     ys(jj,1)=eval(M_.endo_names(jj,:));
 end
 end
+
+function k1 = solve_k1(k,alpha,r_k,w,h,phi,nu_l,lambda_w,gamma_star,r_star,delta,gg_star,pi_star,R_e,F2,chi)
+
+L       = (1-alpha)/alpha*r_k*k/w;
+y       = k^alpha*L^(1-alpha);
+lambda  = (1+lambda_w)*phi*L^nu_l/w;
+c       = (exp((gamma_star/400))-(1/(r_star/400+1))*h)/(lambda*(exp((gamma_star/400))-h));
+i       = (exp((gamma_star/400))-1+delta)*k;
+lg=log((1/(1-gg_star)));
+
+% From y = 1/exp(lg)*y=c+i+(steady_state(r_k)*(u-1)+a_bis/2*(u-1)^2)*k_bar(-1)/exp(z)+chi*F2*R_e*Q(-1)*k_bar(-1)/exp(z)/pic;
+k1 = (1/exp(lg)*y - c- i)*exp(gamma_star/400)*(pi_star/400+1)/(chi*F2*R_e)/exp((gamma_star/400));
+
+% k1  = ((c+i)*exp(lg))^(1/alpha)/(L^((1-alpha)/alpha));
+
+end
+% 
 function f = solve_k(k,g_star,alpha,gamma,beta,delta,h,chi,lambda_w,phi,nu_l,r_k,w,F2,R_e,pic_star)
 
 f = 1/g_star*((1-alpha)/alpha*r_k/w)^(1-alpha)*k-w*(exp(gamma)-beta*h)/((1+lambda_w)*phi*((1-alpha)/alpha*r_k*k/w)^nu_l*(exp(gamma)-h))-(exp(gamma)-1+delta)*k-chi*F2*R_e*k/pic_star ;
@@ -115,3 +144,17 @@ end
 assignin('base','M_',M_);
 assignin('base','ys',ys);
 %}
+
+%function k1 = solve_k1(k,alpha,r_k,w,h,phi,nu_l,lambda_w,gamma_star,r_star,delta,gg_star,pi_star,R_e,F2,chi)
+%
+%L       = (1-alpha)/alpha*r_k*k/w;
+%y       = k^alpha*L^(1-alpha);
+%lambda  = (1+lambda_w)*phi*L^nu_l/w;
+%c       = (exp((gamma_star/400))-(1/(r_star/400+1))*h)/(lambda*(exp((gamma_star/400))-h));
+%i       = (exp((gamma_star/400))-1+delta)*k;
+%lg=log((1/(1-gg_star)));
+% From y = 1/exp(lg)*y=c+i+(steady_state(r_k)*(u-1)+a_bis/2*(u-1)^2)*k_bar(-1)/exp(z)+chi*F2*R_e*Q(-1)*k_bar(-1)/exp(z)/pic;
+% k1 = (1/exp(lg)*y - c- i)*exp(gamma_star/400)*(pi_star/400+1)/(chi*F2*R_e)/exp((gamma_star/400));
+% k1  = ((c+i)*exp(lg))^(1/alpha)/(L^((1-alpha)/alpha));
+
+%end

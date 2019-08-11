@@ -486,7 +486,7 @@ estim_params_.var_endo = zeros(0, 10);
 estim_params_.corrx = zeros(0, 11);
 estim_params_.corrn = zeros(0, 11);
 estim_params_.param_vals = zeros(0, 10);
-estim_params_.param_vals = [estim_params_.param_vals; 4, NaN, (-Inf), Inf, 1, 0.33, 0.05, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 4, NaN, (-Inf), Inf, 1, 0.33, 0.025, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 5, NaN, (-Inf), Inf, 1, 0.6, 0.2, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 6, NaN, (-Inf), Inf, 1, 0.5, 0.2, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 7, NaN, (-Inf), Inf, 2, 0.5, 0.1, NaN, NaN, NaN ];
@@ -495,19 +495,19 @@ estim_params_.param_vals = [estim_params_.param_vals; 24, NaN, (-Inf), Inf, 2, 0
 estim_params_.param_vals = [estim_params_.param_vals; 9, NaN, (-Inf), Inf, 2, 2, 0.75, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 10, NaN, (-Inf), Inf, 1, 0.6, 0.2, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 11, NaN, (-Inf), Inf, 1, 0.5, 0.2, NaN, NaN, NaN ];
-estim_params_.param_vals = [estim_params_.param_vals; 12, NaN, (-Inf), Inf, 2, 2, 1, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 12, NaN, (-Inf), Inf, 2, 2, 0.1, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 13, NaN, (-Inf), Inf, 2, 1.5, 0.4, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 14, NaN, (-Inf), Inf, 2, 0.2, 0.1, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 15, NaN, (-Inf), Inf, 1, 0.5, 0.2, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 16, NaN, (-Inf), Inf, 3, 3.01, 1.5, NaN, NaN, NaN ];
-estim_params_.param_vals = [estim_params_.param_vals; 17, NaN, (-Inf), Inf, 2, 2, 1, NaN, NaN, NaN ];
-estim_params_.param_vals = [estim_params_.param_vals; 18, NaN, (-Inf), Inf, 2, 0.15, 0.1, NaN, NaN, NaN ];
-estim_params_.param_vals = [estim_params_.param_vals; 19, NaN, (-Inf), Inf, 2, 0.3, 0.1, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 17, NaN, (-Inf), Inf, 2, 2, 0.1, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 18, NaN, (-Inf), Inf, 2, 0.5, 0.1, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 19, NaN, (-Inf), Inf, 2, 0.3, 0.01, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 34, 1.2918, (-10.0), 10.0, 3, 0.0, 2, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 35, NaN, (-Inf), Inf, 3, 0.5, 0.1, NaN, NaN, NaN ];
-estim_params_.param_vals = [estim_params_.param_vals; 22, NaN, (-Inf), Inf, 1, 0.12, 0.01, NaN, NaN, NaN ];
-estim_params_.param_vals = [estim_params_.param_vals; 21, NaN, (-Inf), Inf, 1, 0.975, 0.001, NaN, NaN, NaN ];
-estim_params_.param_vals = [estim_params_.param_vals; 20, NaN, (-Inf), Inf, 2, 0.3, 0.01, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 22, NaN, (-Inf), Inf, 1, 0.12, 0.0001, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 21, NaN, (-Inf), Inf, 1, 0.975, 0.00001, NaN, NaN, NaN ];
+estim_params_.param_vals = [estim_params_.param_vals; 20, NaN, (-Inf), Inf, 2, 0.3, 0.001, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 25, NaN, (-Inf), Inf, 1, 0.2, 0.1, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 27, NaN, (-Inf), Inf, 1, 0.6, 0.2, NaN, NaN, NaN ];
 estim_params_.param_vals = [estim_params_.param_vals; 29, NaN, (-Inf), Inf, 1, 0.6, 0.2, NaN, NaN, NaN ];
@@ -626,7 +626,7 @@ tmp1 = find(estim_params_.param_vals(:,1)==19);
 if isempty(tmp1)
     disp(sprintf('Parameter %s is not estimated (the value provided in estimated_params_init is not used).', deblank(M_.param_names(19,:))))
 else
-    estim_params_.param_vals(tmp1,2) = 0.2;
+    estim_params_.param_vals(tmp1,2) = 0.3;
 end
 tmp1 = find(estim_params_.param_vals(:,1)==34);
 if isempty(tmp1)
@@ -762,14 +762,14 @@ else
 end
 skipline()
 tmp1 = find(estim_params_.param_vals(:,1)==4);
-estim_params_.param_vals(tmp1,3) = 0.1;
-estim_params_.param_vals(tmp1,4) = 0.5;
+estim_params_.param_vals(tmp1,3) = 0.25;
+estim_params_.param_vals(tmp1,4) = 0.4;
 tmp1 = find(estim_params_.param_vals(:,1)==5);
-estim_params_.param_vals(tmp1,3) = 0;
-estim_params_.param_vals(tmp1,4) = 1;
+estim_params_.param_vals(tmp1,3) = 0.4;
+estim_params_.param_vals(tmp1,4) = 0.99;
 tmp1 = find(estim_params_.param_vals(:,1)==6);
-estim_params_.param_vals(tmp1,3) = 0;
-estim_params_.param_vals(tmp1,4) = 1;
+estim_params_.param_vals(tmp1,3) = 0.4;
+estim_params_.param_vals(tmp1,4) = 0.99;
 tmp1 = find(estim_params_.param_vals(:,1)==7);
 estim_params_.param_vals(tmp1,3) = 0;
 estim_params_.param_vals(tmp1,4) = 10;
@@ -802,10 +802,10 @@ estim_params_.param_vals(tmp1,3) = 0;
 estim_params_.param_vals(tmp1,4) = 1;
 tmp1 = find(estim_params_.param_vals(:,1)==16);
 estim_params_.param_vals(tmp1,3) = 0;
-estim_params_.param_vals(tmp1,4) = 6;
+estim_params_.param_vals(tmp1,4) = 4;
 tmp1 = find(estim_params_.param_vals(:,1)==17);
 estim_params_.param_vals(tmp1,3) = 0;
-estim_params_.param_vals(tmp1,4) = 4;
+estim_params_.param_vals(tmp1,4) = 3;
 tmp1 = find(estim_params_.param_vals(:,1)==18);
 estim_params_.param_vals(tmp1,3) = 0;
 estim_params_.param_vals(tmp1,4) = 1;
@@ -821,6 +821,8 @@ estim_params_.param_vals(tmp1,4) = 0.999;
 tmp1 = find(estim_params_.param_vals(:,1)==20);
 estim_params_.param_vals(tmp1,3) = 0.2;
 estim_params_.param_vals(tmp1,4) = 0.5;
+options_gsa = struct();
+dynare_sensitivity(options_gsa);
 options_.irf = 0;
 options_.order = 1;
 var_list_ = char('xgdp_q_obs','hours_obs','wage_obs','pgdp_q_obs','rff_q_obs','pcer_q_obs','fpi_q_obs','dlnl_obs','cp_q_obs');

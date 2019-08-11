@@ -25,7 +25,7 @@ function [residual, g1, g2, g3] = QPM_US_20074_static(y, x, params)
 % Warning : this file is generated automatically by Dynare
 %           from model file (.mod)
 
-residual = zeros( 50, 1);
+residual = zeros( 52, 1);
 
 %
 % Model equations
@@ -104,30 +104,32 @@ residual(26)= lhs-rhs;
 lhs =y(24);
 rhs =params(18)*(0.04*(y(23)+y(23))+0.08*(y(23)+y(23))+0.12*(y(23)+y(23))+0.16*(y(23)+y(23))+y(23)*0.2);
 residual(27)= lhs-rhs;
-residual(28) = y(28);
-lhs =y(29);
-rhs =y(8);
-residual(29)= lhs-rhs;
 lhs =y(30);
-rhs =y(8);
+rhs =y(18)/4-y(6);
+residual(28)= lhs-rhs;
+lhs =y(29);
+rhs =y(6);
+residual(29)= lhs-rhs;
+lhs =y(28);
+rhs =y(11);
 residual(30)= lhs-rhs;
 lhs =y(31);
 rhs =y(8);
 residual(31)= lhs-rhs;
 lhs =y(32);
-rhs =y(7);
+rhs =y(8);
 residual(32)= lhs-rhs;
 lhs =y(33);
-rhs =y(7);
+rhs =y(8);
 residual(33)= lhs-rhs;
 lhs =y(34);
 rhs =y(7);
 residual(34)= lhs-rhs;
 lhs =y(35);
-rhs =y(23);
+rhs =y(7);
 residual(35)= lhs-rhs;
 lhs =y(36);
-rhs =y(23);
+rhs =y(7);
 residual(36)= lhs-rhs;
 lhs =y(37);
 rhs =y(23);
@@ -148,34 +150,40 @@ lhs =y(42);
 rhs =y(23);
 residual(42)= lhs-rhs;
 lhs =y(43);
-rhs =y(9);
+rhs =y(23);
 residual(43)= lhs-rhs;
 lhs =y(44);
-rhs =y(9);
+rhs =y(23);
 residual(44)= lhs-rhs;
 lhs =y(45);
 rhs =y(9);
 residual(45)= lhs-rhs;
 lhs =y(46);
-rhs =y(10);
+rhs =y(9);
 residual(46)= lhs-rhs;
 lhs =y(47);
-rhs =y(10);
+rhs =y(9);
 residual(47)= lhs-rhs;
 lhs =y(48);
 rhs =y(10);
 residual(48)= lhs-rhs;
 lhs =y(49);
-rhs =y(6);
+rhs =y(10);
 residual(49)= lhs-rhs;
 lhs =y(50);
-rhs =y(6);
+rhs =y(10);
 residual(50)= lhs-rhs;
+lhs =y(51);
+rhs =y(6);
+residual(51)= lhs-rhs;
+lhs =y(52);
+rhs =y(6);
+residual(52)= lhs-rhs;
 if ~isreal(residual)
   residual = real(residual)+imag(residual).^2;
 end
 if nargout >= 2,
-  g1 = zeros(50, 50);
+  g1 = zeros(52, 52);
 
   %
   % Jacobian matrix
@@ -233,22 +241,24 @@ if nargout >= 2,
   g1(26,15)=1;
   g1(27,23)=(-params(18));
   g1(27,24)=1;
-  g1(28,28)=1;
-  g1(29,8)=(-1);
+  g1(28,6)=1;
+  g1(28,18)=(-0.25);
+  g1(28,30)=1;
+  g1(29,6)=(-1);
   g1(29,29)=1;
-  g1(30,8)=(-1);
-  g1(30,30)=1;
+  g1(30,11)=(-1);
+  g1(30,28)=1;
   g1(31,8)=(-1);
   g1(31,31)=1;
-  g1(32,7)=(-1);
+  g1(32,8)=(-1);
   g1(32,32)=1;
-  g1(33,7)=(-1);
+  g1(33,8)=(-1);
   g1(33,33)=1;
   g1(34,7)=(-1);
   g1(34,34)=1;
-  g1(35,23)=(-1);
+  g1(35,7)=(-1);
   g1(35,35)=1;
-  g1(36,23)=(-1);
+  g1(36,7)=(-1);
   g1(36,36)=1;
   g1(37,23)=(-1);
   g1(37,37)=1;
@@ -262,22 +272,26 @@ if nargout >= 2,
   g1(41,41)=1;
   g1(42,23)=(-1);
   g1(42,42)=1;
-  g1(43,9)=(-1);
+  g1(43,23)=(-1);
   g1(43,43)=1;
-  g1(44,9)=(-1);
+  g1(44,23)=(-1);
   g1(44,44)=1;
   g1(45,9)=(-1);
   g1(45,45)=1;
-  g1(46,10)=(-1);
+  g1(46,9)=(-1);
   g1(46,46)=1;
-  g1(47,10)=(-1);
+  g1(47,9)=(-1);
   g1(47,47)=1;
   g1(48,10)=(-1);
   g1(48,48)=1;
-  g1(49,6)=(-1);
+  g1(49,10)=(-1);
   g1(49,49)=1;
-  g1(50,6)=(-1);
+  g1(50,10)=(-1);
   g1(50,50)=1;
+  g1(51,6)=(-1);
+  g1(51,51)=1;
+  g1(52,6)=(-1);
+  g1(52,52)=1;
   if ~isreal(g1)
     g1 = real(g1)+2*imag(g1);
   end
@@ -286,13 +300,13 @@ if nargout >= 3,
   % Hessian matrix
   %
 
-  g2 = sparse([],[],[],50,2500);
+  g2 = sparse([],[],[],52,2704);
 if nargout >= 4,
   %
   % Third order derivatives
   %
 
-  g3 = sparse([],[],[],50,125000);
+  g3 = sparse([],[],[],52,140608);
 end
 end
 end

@@ -9,7 +9,18 @@ var RR_US RR_US_BAR
     BLT_US BLT_US_BAR
     E E2
     GROWTH_US_BAR RR_US_GAP BLT_US_GAP
-    xgdp_q_obs
+    
+
+//**************************************************************************
+
+// Common Variables                                                      //*    
+
+   rff_q_obs pgdp_q_obs xgdp_q_obs 			                             //*  
+
+//**************************************************************************
+
+
+
 
 ;
 
@@ -112,7 +123,21 @@ E1_Y_US = Y_US(+1);
 E2 = theta*(0.04*(E(-1)+E(-9))+0.08*(E(-2)+E(-8))+0.12*(E(-3)+E(-7))+0.16*(E(-4)+E(-6))+0.2*E(-5));
 
 
-xgdp_q_obs = LGDP_US - LGDP_US(-1);
+
+
+//**************************************************************************
+
+// Measurement equations                                                 //*
+
+xgdp_q_obs = GROWTH_US/4 -PIE_US;     	                                 //*
+
+pgdp_q_obs =PIE_US;				                                         //*  
+
+rff_q_obs  =RS_US;                        						         //*  
+
+//**************************************************************************
+
+
 
 end;
 
@@ -211,6 +236,8 @@ observation_trends;
 LGDP_US (growth_us_ss/4);
 LCPI_US (pietar_us_ss/4);
 end;
+
+
 
 shocks;
 var RES_RS_US;

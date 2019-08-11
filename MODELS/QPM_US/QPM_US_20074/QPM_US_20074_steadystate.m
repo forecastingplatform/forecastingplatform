@@ -47,6 +47,12 @@ GROWTH_US_BAR = growth_us_ss;
 RR_US_GAP = 0;
 BLT_US_GAP = 0;
 
+xgdp_q_obs = GROWTH_US/4 -PIE_US;     	                                 
+pgdp_q_obs =PIE_US;				                                         
+rff_q_obs  =RS_US;                        						         
+
+
+
 check = 0;
 
 ys = [
@@ -77,4 +83,7 @@ E2
 GROWTH_US_BAR
 RR_US_GAP
 BLT_US_GAP
+xgdp_q_obs
+pgdp_q_obs
+rff_q_obs
     ];

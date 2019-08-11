@@ -1,6 +1,0 @@
-function f = solve_k(k)
-
-global g_star alpha gamma beta h r_k w;
-
-f = 1/g_star*((1-alpha)/alpha*r_k/w)^(1-alpha)*k-w*(exp(gamma)-beta*h)/((1+lambda_w)*phi*((1-alpha)/alpha*r_k*k/w)^nu_l*(exp(gamma)-h));
- 

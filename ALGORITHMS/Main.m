@@ -5,7 +5,7 @@ basics.currentpath = cd;
 cd ..
 basics.thispath = cd;
 cd(basics.currentpath)
-% keyboard
+
 basics.models = basics.models;
 
 basics.colorvector = char('g','b','c','m','k','g','b','c','m','k',...
@@ -125,14 +125,14 @@ for m = 1:size(basics.chosenmodels,2)
                             basics.foldername = [ basics.foldername '_fnc']; % Financial variable real time were included in nowcasts 
                         end
                       
-                        if basics.vintagenr  == 1
+                        
                             try
                                 rmdir([basics.thispath '\OUTPUT\' basics.modelzone basics.foldername '_modeforecast'],'s')
                                 rehash
                             catch
                             end
                             mkdir([basics.thispath '\OUTPUT\' basics.modelzone basics.foldername '_modeforecast'])
-                        end             
+                                                              
                         %%
                         if basics.inspf
                             filename = [basics.thispath '\OUTPUT\' basics.modelzone basics.foldername '_modeforecast\' basics.currentmodel '_spfnc_' num2str(basics.vintage(basics.vintagenr,:))];

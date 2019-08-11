@@ -4,12 +4,9 @@ Vintages = {'Vintages','Available','Missing Variables'};
 
 Vintages(2,:)={[],[],[]};
 temp = basics.chosenmodels;
-regioncontrol = basics.region(find(basics.chosenmodels>0))==2;
-if size(regioncontrol,2) >1
-    regioncontrol = regioncontrol(1);
-end
 
-for vint = (2+(regioncontrol)):size(DATAMAT{1}(1,:),2)-basics.qh-1
+
+for vint = (2+(basics.region(find(basics.chosenmodels>0))==2)):size(DATAMAT{1}(1,:),2)-basics.qh-1
     
     a = cellstr(DATAMAT{1}(1,vint)); a = a{1}; m = size(a,2)-3;  vintangename = get_vint_name(a);
     
@@ -17,7 +14,7 @@ for vint = (2+(regioncontrol)):size(DATAMAT{1}(1,:),2)-basics.qh-1
     
     l = find(strcmp(VINTAGES,{[a(m:m+1) 'Q' a(end)]})==1);
     
-    position_FirstObs = find(strcmp(DATAMAT{1}(:,1),OBSERVATION(l,:))==1)-1+basics.inspf+basics.fnc-(regioncontrol);
+    position_FirstObs = find(strcmp(DATAMAT{1}(:,1),OBSERVATION(l,:))==1)-1+basics.inspf+basics.fnc-(basics.region(find(basics.chosenmodels>0))==2);
     
     if position_FirstObs+basics.forecasthorizon <= (size(DATAMAT{1},1)-basics.qh+1-basics.inspf+basics.fnc)
         NowCastRev=[];
@@ -27,7 +24,7 @@ for vint = (2+(regioncontrol)):size(DATAMAT{1}(1,:),2)-basics.qh-1
         % find the dates!
         NowCastRev = regexprep(NowCastRev,':','');
             for n = 1:3 
-                rev = get_revised(DATAMAT, n,position_FirstObs,basics.qh+(regioncontrol));
+                rev = get_revised(DATAMAT, n,position_FirstObs,basics.qh+(basics.region(find(basics.chosenmodels>0))==2));
                 if (cell2mat(rev)~=-99)&&(cell2mat(rev)~=-999)
                     NowCastRev = [NowCastRev {4*cell2mat(rev)}];
                 end
@@ -41,7 +38,7 @@ for vint = (2+(regioncontrol)):size(DATAMAT{1}(1,:),2)-basics.qh-1
         
         for i = 1:basics.forecasthorizon
             for n = 1:3
-                rev = get_revised(DATAMAT, n,position_FirstObs+i,basics.qh+(regioncontrol));
+                rev = get_revised(DATAMAT, n,position_FirstObs+i,basics.qh+(basics.region(find(basics.chosenmodels>0))==2));
                 if (cell2mat(rev)~=-99)&&(cell2mat(rev)~=-999)
                     DATAMATrev{n}(i,1) = {4*cell2mat(rev)};
                 end
@@ -66,7 +63,7 @@ for vint = (2+(regioncontrol)):size(DATAMAT{1}(1,:),2)-basics.qh-1
         % find the dates!
         NowCastRev = regexprep(NowCastRev,':','');
             for n = 1:3
-                rev = get_revised(DATAMAT, n,position_FirstObs,basics.qh+(regioncontrol));
+                rev = get_revised(DATAMAT, n,position_FirstObs,basics.qh+(basics.region(find(basics.chosenmodels>0))==2));
                 if (cell2mat(rev)~=-99)&&(cell2mat(rev)~=-999)
                     NowCastRev = [NowCastRev {4*cell2mat(rev)}];
                 end
@@ -74,7 +71,7 @@ for vint = (2+(regioncontrol)):size(DATAMAT{1}(1,:),2)-basics.qh-1
         end
         for i = 1:forecasthorizon1
             for n = 1:3
-                rev = get_revised(DATAMAT, n,position_FirstObs+i,basics.qh+(regioncontrol));
+                rev = get_revised(DATAMAT, n,position_FirstObs+i,basics.qh+(basics.region(find(basics.chosenmodels>0))==2));
                 if (cell2mat(rev)~=-99)&&(cell2mat(rev)~=-999)
                     DATAMATrev{n}(i,1) = {4*cell2mat(rev)};
                 end

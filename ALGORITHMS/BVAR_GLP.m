@@ -7,23 +7,7 @@ data = xlsread([basics.datalocation '\ExcelFileVintages\' basics.zone deblank(nu
 %              FORECASTING PLATFORM DENOTES ALL VARIABLES IN PERCENTAGES,
 %              THUS ALL VARIABLES ARE DIVIDED BY 100 BEFORE RUNNING THE
 %              ESTIMATION- TO MAKE THEM CONSISTENT WITH GLP NOTATION!
-if basics.fnc || basics.inspf
-res = bvarGLP(data(1:end-1,:),4,'mcmc',1,'MCMCconst',1,'Ndraws',basics.bvarNdraws,'hz',basics.forecasthorizon,'MCMCfcast',1);
-     for i =1:basics.bvarNdraws/2 % loop through draws 
-      if i==100*floor(.01*i);
-                        disp(['Now running the conditioning on ',num2str(i),'th mcmc iteration (out of ',num2str(basics.bvarNdraws/2),')'])
-      end
-            temp=squeeze(res.mcmc.beta(:,:,i));
-            Gamma=[temp(2:end,:);temp(1,:)];
-            Su=squeeze(res.mcmc.sigma(:,:,i));
-            datakf = [data; NaN(basics.forecasthorizon-1,size(data,2))];
-            [~,datacf(:,:,i)] = conforekf_glp(datakf,Gamma,Su,4,size(datakf,1)-1,1);  % conditinoal forecasts
-            res.mcmc.Dforecast(:,:,i)= datacf(end-basics.forecasthorizon+1:end,:,i);
-      end
-
-else
 res = bvarGLP(data,4,'mcmc',1,'MCMCconst',1,'Ndraws',basics.bvarNdraws,'hz',basics.forecasthorizon,'MCMCfcast',1);
-end
 display(['MCMC acceptance rate is: ' num2str(res.mcmc.ACCrate)]);
 eval(['save ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) 'res.mat']);
 

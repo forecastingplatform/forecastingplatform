@@ -2,9 +2,9 @@ function vintangename=get_vint_name(a)
 
 global basics
 
-if strcmp(basics.DataArea,'..\DATA\USDATA') || strcmp(basics.DataArea,'..//DATA//USDATA')
+if strcmp(basics.DataArea,'..\DATA\USDATA') 
              zone = 'us';
-elseif strcmp(basics.DataArea,'..\DATA\EADATA')  || strcmp(basics.DataArea,'..//DATA//EADATA')
+elseif strcmp(basics.DataArea,'..\DATA\EADATA') 
              zone = 'ea';
 end
 

@@ -17,8 +17,6 @@ cd('..');
 
 % Number of Replications
 options_.mh_replic = 0;
-% Set fixed random seed
-rng('default')
 
 % Optimization Algorithm
 options_.mode_compute = 4 ;
@@ -40,10 +38,7 @@ options_.prefilter = 0;
 options_.order = 1;
 eval(['options_.datafile = ''' basics.datalocation '\ExcelFileVintages\' basics.zone deblank(num2str(basics.vintage(basics.vintagenr,:))) ''';']);
 options_.optim_opt = '''MaxIter'',2000';
-<<<<<<< HEAD
 
-=======
->>>>>>> STASHBRANCH
 options_csminwel.maxiter = 1000000;
 options_newrat.maxiter = 1000000;
 options_.varobs=[];
@@ -74,26 +69,11 @@ optimizationinfo = 1;
 global options_ oo_ optcrit
 eval(['diary ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '.log']);
 %while optimizationinfo
-<<<<<<< HEAD
 
 options_.mode_compute = 4; % start with Sims' algorithm
 try
     disp('Trying mode_compute = 4, Chris Sims’ csminwel, and checking if estimation is feasible.');
     dynare_estimation(var_list_); % run the estimation
-=======
-options_.mode_check.status == 1;
-options_.mode_compute = 4; % start with Sims' algorithm
-try
-if strcmp(basics.currentmodel,'US_DSSW07FF') || strcmp(basics.currentmodel,'US_DSSW07  ') || (strcmp(basics.currentmodel,'US_DSSW07HH'))
-    options_.mode_compute = 6; % start with Sims' algorithm
-    disp('Trying mode_compute = 6, MCMC and checking if estimation is feasible.');
-    dynare_estimation(var_list_); % run the estimation
-else
-    
-    disp('Trying mode_compute = 4, Chris Sims’ csminwel, and checking if estimation is feasible.');
-    dynare_estimation(var_list_); % run the estimation
-end
->>>>>>> STASHBRANCH
 catch
     optcrit = 1;
 end
@@ -130,7 +110,6 @@ if options_.mode_compute == 1 & optcrit==1% oo_.MarginalDensity.LaplaceApproxima
     catch
         optcrit = 1;
     end
-<<<<<<< HEAD
 end
 if options_.mode_compute == 3 & optcrit==1 %oo_.MarginalDensity.LaplaceApproximation <-1000% NaN optcrit ==1
     options_.mode_compute = 5;
@@ -143,20 +122,6 @@ if options_.mode_compute == 3 & optcrit==1 %oo_.MarginalDensity.LaplaceApproxima
         optcrit = 1;
     end
 end
-=======
-end
-if options_.mode_compute == 3 & optcrit==1 %oo_.MarginalDensity.LaplaceApproximation <-1000% NaN optcrit ==1
-    options_.mode_compute = 5;
-    disp('Mode_compute=3,fminunc was unsuccessfull, trying mode_compute=5, Marco Ratto’s newrat.');
-    optcrit =0;
-    try
-        dynare_estimation(var_list_);
-        disp('Mode_compute=5,newrat, was successfull.');
-    catch
-        optcrit = 1;
-    end
-end
->>>>>>> STASHBRANCH
 if options_.mode_compute == 5 & optcrit==1% oo_.MarginalDensity.LaplaceApproximation == NaN
     options_.mode_compute = 6;
     disp('Mode_compute=5, newrat, was unsuccessfull, trying mode_compute=6,  Monte-Carlo based optimization.')
@@ -172,7 +137,7 @@ end
 global oo_ M_ %options_
 MarginalDensityLaPlace = oo_.MarginalDensity.LaplaceApproximation;
 
-eval(['save ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '_estimation_results MarginalDensityLaPlace M_ options_ oo_']);
+eval(['save ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '_estimationresults MarginalDensityLaPlace M_ options_']);
 
 ModelOutput.MLLaPlace = oo_.MarginalDensity.LaplaceApproximation; % save ML for fit measurement
 

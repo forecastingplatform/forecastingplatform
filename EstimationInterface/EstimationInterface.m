@@ -760,6 +760,7 @@ end
                         [DATAMAT{i}(find(strcmp(DATAMAT{i}(:,1), FirstObs)):end,1), DATAMAT{i}(find(strcmp(DATAMAT{i}(:,1), FirstObs)):end,...
                         s:find(strcmp(header_q,  Last)))]];
                 end
+                
             else
                 
                 DATAMAT{i} = DATAMAT{i-1};

@@ -243,3 +243,5 @@ shocks;
 var RES_RS_US;
 stderr 1.8201+pietar_us_ss;
 end;
+
+estimation(datafile='data.xls',xls_range=V1:Z69,mh_replic=0,first_obs=1,mh_nblocks = 1,mode_compute=4, forecast=10) rff_q_obs, pgdp_q_obs, xgdp_q_obs;

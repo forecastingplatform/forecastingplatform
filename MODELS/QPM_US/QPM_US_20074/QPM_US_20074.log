@@ -13,6 +13,49 @@ Computing dynamic model derivatives:
 Processing outputs ...
 done
 Preprocessing completed.
+a>)
+DynareDataset = DynareDataset{DynareOptions.varobs{:}};
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_init', 'C:\dynare\4.5.7\matlab\dynare_estimation_init.m', 538)" style="font-weight:bold">dynare_estimation_init</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_init.m',538,0)">line 538</a>)
+[dataset_, dataset_info, newdatainterfaceflag] = makedataset(options_, options_.dsge_var*options_.dsge_varlag, gsa_flag);
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 116)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',116,0)">line 116</a>)
+    dynare_estimation_init(var_list_, dname, [], M_, options_, oo_, estim_params_, bayestopt_);
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
+    dynare_estimation_1(var_list,dname);
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('QPM_US_20074', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074.m', 568)" style="font-weight:bold">QPM_US_20074</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074.m',568,0)">line 568</a>)
+oo_recursive_=dynare_estimation(var_list_);
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
+evalin('base',fname) ;} 
+dynare QPM_US_20074
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: QPM_US_20074.mod:167.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
+Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
+Found 52 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
 
 STEADY-STATE RESULTS:
 
@@ -97,117 +140,21 @@ for 9 forward-looking variable(s)
 
 The rank condition is verified.
 
-Total computing time : 0h00m01s
-Note: 1 warning(s) encountered in the preprocessor
-Trying mode_compute = 4, Chris Sims’ csminwel, and checking if estimation is feasible.
-
-initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
-initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
-initial_estimation_checks:: for a particular combination of parameters and data realizations.
-initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
-
-ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
-ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
-ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
-ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
-ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
-
-
-Mode_compute=4, Chris Sims, csminwel algorithm was unsuccessfull, trying mode_compute=7, fminsearch.
-
-initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
-initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
-initial_estimation_checks:: for a particular combination of parameters and data realizations.
-initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
-
-ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
-ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
-ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
-ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
-ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
-
-
-Mode_compute=7, fminsearch, was unsuccessfull, trying mode_compute=1, fmincon.
-
-initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
-initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
-initial_estimation_checks:: for a particular combination of parameters and data realizations.
-initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
-
-ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
-ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
-ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
-ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
-ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
-
-
-Mode_compute=1, fmincon, was unsuccessfull, trying mode_compute=3, fminunc.
-
-initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
-initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
-initial_estimation_checks:: for a particular combination of parameters and data realizations.
-initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
-
-ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
-ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
-ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
-ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
-ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
-
-
-Mode_compute=3,fminunc was unsuccessfull, trying mode_compute=5, Marco Ratto’s newrat.
-
-initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
-initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
-initial_estimation_checks:: for a particular combination of parameters and data realizations.
-initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
-
-ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
-ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
-ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
-ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
-ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
-
-
-Mode_compute=5, newrat, was unsuccessfull, trying mode_compute=6,  Monte-Carlo based optimization.
-
-initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
-initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
-initial_estimation_checks:: for a particular combination of parameters and data realizations.
-initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
-
-ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
-ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
-ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
-ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
-ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
-
-
-Mode_compute=6, Monte-Carlo based optimization failed, please check the model.
-{Reference to non-existent field 'MarginalDensity'.
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('modeestimate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\modeestimate.m', 138)" style="font-weight:bold">modeestimate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\modeestimate.m',138,0)">line 138</a>)
-MarginalDensityLaPlace = oo_.MarginalDensity.LaplaceApproximation;
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m', 97)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',97,0)">line 97</a>)
-                        eval([basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:)) ' = modeestimate(basics);']); %
-                        function for the estimation
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
-evalin('caller', strcat(script, ';'));
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 888)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',888,0)">line 888</a>)
-    run Main
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
-        feval(varargin{:});
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
-    gui_mainfcn(gui_State, varargin{:});
-Error in
-<a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>} 
-Error while evaluating UIControl Callback.
-
-[Warning: A value of class "matlab.internal.video.PluginManager" was indexed with no subscripts specified. Currently the result of
-this operation is the indexed value itself, but in a future release, it will be an error.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader/createChannel', 'C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 495)" style="font-weight:bold">matlab.internal.VideoReader/createChannel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',495,0)">line 495</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader', 'C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 192)" style="font-weight:bold">matlab.internal.VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',192,0)">line 192</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader/init', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 598)" style="font-weight:bold">VideoReader/init</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',598,0)">line 598</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 171)" style="font-weight:bold">VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',171,0)">line 171</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>getVideoInfo', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m', 205)" style="font-weight:bold">finfo>getVideoInfo</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m',205,0)">line 205</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>openAsMultimediaFile', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m', 194)" style="font-weight:bold">finfo>openAsMultimediaFile</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m',194,0)">line 194</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\general\finfo.m', 79)" style="font-weight:bold">finfo</a> (<a hr
+Initial value of the log posterior (or likelihood): -804.2932
+[Warning: Error occurred while evaluating listener callback.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('openExcelWorkbook', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\iofun\private\openExcelWorkbook.m', 27)" style="font-weight:bold">openExcelWorkbook</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\iofun\private\openExcelWorkbook.m',27,0)">line 27</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlsreadCOM', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\iofun\private\xlsreadCOM.m', 13)" style="font-weight:bold">xlsreadCOM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\iofun\private\xlsreadCOM.m',13,0)">line 13</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlsread', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\iofun\xlsread.m', 244)" style="font-weight:bold">xlsread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\iofun\xlsread.m',244,0)">line 244</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('QPM_US_20074_steadystate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074_steadystate.m', 15)" style="font-weight:bold">QPM_US_20074_steadystate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\QPM_US\QPM_US_20074\QPM_US_20074_steadystate.m',15,0)">line 15</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state_file', 'C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m', 52)" style="font-weight:bold">evaluate_steady_state_file</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m',52,0)">line 52</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'C:\dynare\4.5.7\matlab\evaluate_steady_state.m', 212)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state.m',212,0)">line 212</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('resol', 'C:\dynare\4.5.7\matlab\resol.m', 104)" style="font-weight:bold">resol</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\resol.m',104,0)">line 104</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_resolve', 'C:\dynare\4.5.7\matlab\dynare_resolve.m', 69)" style="font-weight:bold">dynare_resolve</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_resolve.m',69,0)">line 69</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dsge_likelihood', 'C:\dynare\4.5.7\matlab\dsge_likelihood.m', 252)" style="font-weight:bold">dsge_likelihood</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dsge_likelihood.m',252,0)">line 252</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('penalty_objective_function', 'C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m', 33)" style="font-weight:bold">penalty_objective_function</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('numgrad2', 'C:\dynare\4.5.7\matlab\optimization\numgrad2.m', 36)" style="font-weight:bold">numgrad2</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\numgrad2.m',36,0)">line 36</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1>get_num_grad', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 317)" style="font-weight:bold">csminwel1>get_num_grad</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',317,0)">line 317</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 102)" style="font-weight:bold">csminwel1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_minimize_objective', 'C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m', 205)" style="font-weight:bold">dynare_minimize_objective</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m',205,0)">line 205</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 220)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',220,0)">line 220</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_es

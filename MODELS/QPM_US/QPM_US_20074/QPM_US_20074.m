@@ -556,6 +556,16 @@ options_.trend_coeffs{tmp1} = 'M_.params(6)/4';
 %
 M_.exo_det_length = 0;
 M_.Sigma_e(4, 4) = (M_.params(15)+1.8201)^2;
+options_.forecast = 10;
+options_.mh_nblck = 1;
+options_.mh_replic = 0;
+options_.mode_compute = 4;
+options_.datafile = 'data.xls';
+options_.xls_range = 'V1:Z69';
+options_.first_obs = 1;
+options_.order = 1;
+var_list_ = char('rff_q_obs','pgdp_q_obs','xgdp_q_obs');
+oo_recursive_=dynare_estimation(var_list_);
 save('QPM_US_20074_results.mat', 'oo_', 'M_', 'options_');
 if exist('estim_params_', 'var') == 1
   save('QPM_US_20074_results.mat', 'estim_params_', '-append');

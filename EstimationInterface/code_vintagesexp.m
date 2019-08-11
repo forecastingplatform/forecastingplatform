@@ -3,11 +3,13 @@ nowcast_observables = [1, 2, 14, 15];
 financial_observables = [3, 8];
 Vintages(2,:) = {[],[],[]}; 
 temp = basics.chosenmodels;
-% basics.chosenmodels(:,8:9)= 0;
 modelvars_index = find(basics.modelvars>0)';
-
+regioncontrol=basics.region(find(basics.chosenmodels>0))==2;
+if size(regioncontrol,2) >1
+    regioncontrol = regioncontrol(1);
+end
 first_var=0; 
-for vint = (2+(basics.region(find(basics.chosenmodels>0))==2)):(size(DATAMAT{1}(1,:),2)-(basics.vintrev+basics.inspf)+1)
+for vint = (2+regioncontrol):(size(DATAMAT{1}(1,:),2)-(basics.vintrev+basics.inspf)+1)
     for i = 1:basics.nvar
         try
             first_var(i) = max(find(cell2mat(DATAMAT{i}(2:end,vint))==-99))+2;
@@ -26,13 +28,13 @@ if l0>l1
     FirstObs = DATAMAT{1}(FirstObsAll,1);
 end
 position_LastObs = 0; l = 0; 
-for vint = (2+(basics.region(find(basics.chosenmodels>0))==2)):size(DATAMAT{1}(1,:),2)-basics.vintrev*(basics.vintrev>1) -basics.inspf
+for vint = (2+regioncontrol):size(DATAMAT{1}(1,:),2)-basics.vintrev*(basics.vintrev>1) -basics.inspf
     
     a = cellstr(DATAMAT{1}(1,vint)); a = a{1}; m = size(a,2)-3;
     
     vintagename = get_vint_name(a);
     Vintages(vint,1) = {vintagename};
-     l = find(strcmp(VINTAGES,{[a(m:m+1) 'Q' a(end)]})==1)-(basics.region(find(basics.chosenmodels>0))==2);
+     l = find(strcmp(VINTAGES,{[a(m:m+1) 'Q' a(end)]})==1)-(regioncontrol);
    % l = find(strcmp(VINTAGES,{[a(m:m+1) 'Q' a(end)]})==1)-1;%-(basics.region(find(basics.chosenmodels>0))==2) 
     
     position_LastObs = find(strcmp(DATAMAT{1}(:,1), OBSERVATION(l,:)))-1; 

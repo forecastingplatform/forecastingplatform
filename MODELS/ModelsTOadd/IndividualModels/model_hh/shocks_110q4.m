@@ -1,0 +1,13 @@
+shocks;
+var eps_z; stderr 0.7741;
+var eps_b; stderr 4.8038;
+var eps_phi; stderr 10.6124;
+var eps_mu; stderr 4.5483;
+var eps_lambda_f; stderr 3.7628;
+var eps_g; stderr 0.6054;
+var eps_R; stderr 0.2504;
+var eps_a; stderr 11.3032;
+var eps_m; stderr 1.6543;
+var eps_mu_o; stderr 4.2060;
+var eps_lambda_d; stderr 33.2907;
+end;

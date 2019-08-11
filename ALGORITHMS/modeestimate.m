@@ -50,8 +50,8 @@ for i=1:size(basics.model_observables,2)
 end
 
 var_list_ = [];
-var_list_ = strvcat(var_list_, 'rff_q_obs');
-var_list_ = strvcat(var_list_, 'pgdp_q_obs');
+% var_list_ = strvcat(var_list_, 'rff_q_obs');
+% var_list_ = strvcat(var_list_, 'pgdp_q_obs');
 var_list_ = strvcat(var_list_, 'xgdp_q_obs');
 
 %% NEW code to determine the xls range
@@ -142,12 +142,12 @@ eval(['save ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vint
 ModelOutput.MLLaPlace = oo_.MarginalDensity.LaplaceApproximation; % save ML for fit measurement
 
 ModelOutput.Mean.xgdp_a_obs = oo_.forecast.Mean.xgdp_q_obs(1:basics.forecasthorizon)*4; % get rid of + maximum lag at both ends
-ModelOutput.Mean.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Mean.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Mean.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Mean.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
 
 ModelOutput.Median.xgdp_a_obs = oo_.forecast.Mean.xgdp_q_obs(1:basics.forecasthorizon)*4; % get rid of + maximum lag at both ends
-ModelOutput.Median.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Median.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Median.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Median.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
 
 close all
 

@@ -67,8 +67,8 @@ clear Letters
 
 %%
 var_list_ = [];
-var_list_ = strvcat(var_list_, 'rff_q_obs');
-var_list_ = strvcat(var_list_, 'pgdp_q_obs');
+% var_list_ = strvcat(var_list_, 'rff_q_obs');
+% var_list_ = strvcat(var_list_, 'pgdp_q_obs');
 var_list_ = strvcat(var_list_, 'xgdp_q_obs');
 %%
 
@@ -171,24 +171,24 @@ ModelOutput.MLLaPlace = oo_.MarginalDensity.LaplaceApproximation; % save ML for 
 ModelOutput.MLMHM     = oo_.MarginalDensity.ModifiedHarmonicMean; %Modified Harmonic Mean
 % %everything is annualized and saved with '_a_'
 ModelOutput.Mean.xgdp_a_obs = oo_.PointForecast.Mean.xgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Mean.pgdp_a_obs = oo_.PointForecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Mean.rff_a_obs  = oo_.PointForecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Mean.pgdp_a_obs = oo_.PointForecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Mean.rff_a_obs  = oo_.PointForecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
 
 ModelOutput.Median.xgdp_a_obs = oo_.PointForecast.Median.xgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Median.pgdp_a_obs = oo_.PointForecast.Median.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Median.rff_a_obs  = oo_.PointForecast.Median.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Median.pgdp_a_obs = oo_.PointForecast.Median.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Median.rff_a_obs  = oo_.PointForecast.Median.rff_q_obs(1:basics.forecasthorizon)*4;
 
 ModelOutput.Distribution.xgdp_a_obs = oo_.PointForecast.deciles.xgdp_q_obs(:,1:basics.forecasthorizon)*4;
-ModelOutput.Distribution.pgdp_a_obs = oo_.PointForecast.deciles.pgdp_q_obs(:,1:basics.forecasthorizon)*4;
-ModelOutput.Distribution.rff_a_obs  = oo_.PointForecast.deciles.rff_q_obs(:,1:basics.forecasthorizon)*4;
+% ModelOutput.Distribution.pgdp_a_obs = oo_.PointForecast.deciles.pgdp_q_obs(:,1:basics.forecasthorizon)*4;
+% ModelOutput.Distribution.rff_a_obs  = oo_.PointForecast.deciles.rff_q_obs(:,1:basics.forecasthorizon)*4;
 
 ModelOutput.HPDinf.xgdp_a_obs = oo_.PointForecast.HPDinf.xgdp_q_obs(1:basics.forecasthorizon)*4; 
-ModelOutput.HPDinf.pgdp_a_obs = oo_.PointForecast.HPDinf.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.HPDinf.rff_a_obs  = oo_.PointForecast.HPDinf.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.HPDinf.pgdp_a_obs = oo_.PointForecast.HPDinf.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.HPDinf.rff_a_obs  = oo_.PointForecast.HPDinf.rff_q_obs(1:basics.forecasthorizon)*4;
 
 ModelOutput.HPDsup.xgdp_a_obs = oo_.PointForecast.HPDsup.xgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.HPDsup.pgdp_a_obs = oo_.PointForecast.HPDsup.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.HPDsup.rff_a_obs  = oo_.PointForecast.HPDsup.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.HPDsup.pgdp_a_obs = oo_.PointForecast.HPDsup.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.HPDsup.rff_a_obs  = oo_.PointForecast.HPDsup.rff_q_obs(1:basics.forecasthorizon)*4;
 
 close all
 

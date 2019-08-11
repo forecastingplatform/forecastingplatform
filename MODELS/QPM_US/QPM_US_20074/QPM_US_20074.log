@@ -13,7 +13,27 @@ Computing dynamic model derivatives:
 Processing outputs ...
 done
 Preprocessing completed.
-ion of endo leads >= 2: added 6 auxiliary variables and equations.
+<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\modeestimate.m',73,1)">73  </a>options_.mode_compute = 4; % start with Sims' algorithm
+Forecastplatform
+Generating vintages...
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: QPM_US_20074.mod:142.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
+Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
 Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
 Found 50 equation(s).
 Evaluating expressions...done
@@ -110,20 +130,115 @@ The rank condition is verified.
 
 Total computing time : 0h00m01s
 Note: 1 warning(s) encountered in the preprocessor
-<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\modeestimate.m',73,1)">73  </a>options_.mode_compute = 4; % start with Sims' algorithm
-options_.mode_compute
+Trying mode_compute = 4, Chris Sims’s csminwel, and checking if estimation is feasible.
 
-ans =
+initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
+initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
+initial_estimation_checks:: for a particular combination of parameters and data realizations.
+initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
 
-     4
+ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
+ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
+ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
+ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
+ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
 
-var_list_
 
-var_list_ =
+Mode_compute=5, Marco Ratto’s newrat, was unsuccessfull, trying mode_compute=7, fminsearch.
 
-  3×10 <a href="matlab:helpPopup char" style="font-weight:bold">char</a> array
+initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
+initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
+initial_estimation_checks:: for a particular combination of parameters and data realizations.
+initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
 
-    'rff_q_obs '
-    'pgdp_q_obs'
-    'xgdp_q_obs'
+ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
+ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
+ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
+ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
+ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
 
+
+Mode_compute=7, fminsearch, was unsuccessfull, trying mode_compute=1, fmincon.
+
+initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
+initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
+initial_estimation_checks:: for a particular combination of parameters and data realizations.
+initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
+
+ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
+ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
+ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
+ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
+ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
+
+
+Mode_compute=1, fmincon, was unsuccessfull, trying mode_compute=3, fminunc.
+
+initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
+initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
+initial_estimation_checks:: for a particular combination of parameters and data realizations.
+initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
+
+ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
+ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
+ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
+ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
+ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
+
+
+Mode_compute=3 was unsuccessfull, trying mode_compute=5, Marco Ratto’s newrat.
+
+initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
+initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
+initial_estimation_checks:: for a particular combination of parameters and data realizations.
+initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
+
+ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
+ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
+ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
+ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
+ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
+
+
+Mode_compute=3, fminunc, was unsuccessfull, trying mode_compute=6,  Monte-Carlo based optimization.
+
+initial_estimation_checks:: The forecast error variance in the multivariate Kalman filter became singular.
+initial_estimation_checks:: This is often a sign of stochastic singularity, but can also sometimes happen by chance
+initial_estimation_checks:: for a particular combination of parameters and data realizations.
+initial_estimation_checks:: If you think the latter is the case, you should try with different initial values for the estimated parameters.
+
+ESTIMATION_CHECKS: There was an error in computing the likelihood for initial parameter values.
+ESTIMATION_CHECKS: If this is not a problem with the setting of options (check the error message below),
+ESTIMATION_CHECKS: you should try using the calibrated version of the model as starting values. To do
+ESTIMATION_CHECKS: this, add an empty estimated_params_init-block with use_calibration option immediately before the estimation
+ESTIMATION_CHECKS: command (and after the estimated_params-block so that it does not get overwritten):
+
+
+Mode_compute=6, Monte-Carlo based optimization failed, please check the model.
+{Reference to non-existent field 'MarginalDensity'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\forecastingplatform\ALGORITHMS\MHestimate.m', 165)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\MHestimate.m',165,0)">line 165</a>)
+MarginalDensityLaPlace = oo_.MarginalDensity.LaplaceApproximation;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\forecastingplatform\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\forecastingplatform\ALGORITHMS\Main.m',174,0)">line 174</a>)
+                        eval([deblank(basics.models(m,:)) '_' num2str(basics.vintage(basics.vintagenr,:)) ' = MHestimate(basics);']); % function for
+                        the estimation
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+evalin('caller', strcat(script, ';'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 867)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',867,0)">line 867</a>)
+    run Main
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+
+Error in
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>
+} 
+Error while evaluating UIControl Callback.
+
+matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\forecastingplatform\ALGORITHMS\MHestimate.m', 165)

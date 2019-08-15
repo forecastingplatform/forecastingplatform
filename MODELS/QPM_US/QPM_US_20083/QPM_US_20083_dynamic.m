@@ -1,4 +1,4 @@
-function [residual, g1, g2, g3] = QPM_US_20074_dynamic(y, x, params, steady_state, it_)
+function [residual, g1, g2, g3] = QPM_US_20083_dynamic(y, x, params, steady_state, it_)
 %
 % Status : Computes dynamic model for Dynare
 %

@@ -1,4 +1,4 @@
-function [residual, g1, g2, g3] = QPM_US_20074_static(y, x, params)
+function [residual, g1, g2, g3] = QPM_US_20083_static(y, x, params)
 %
 % Status : Computes static model for Dynare
 %

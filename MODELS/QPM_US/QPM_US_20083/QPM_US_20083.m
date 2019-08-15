@@ -17,7 +17,7 @@ dseries('initialize');
 % Define global variables.
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
-M_.fname = 'QPM_US_20074';
+M_.fname = 'QPM_US_20083';
 M_.dynare_version = '4.5.7';
 oo_.dynare_version = '4.5.7';
 options_.dynare_version = '4.5.7';
@@ -26,7 +26,7 @@ options_.dynare_version = '4.5.7';
 %
 global_initialization;
 diary off;
-diary('QPM_US_20074.log');
+diary('QPM_US_20083.log');
 M_.exo_names = 'RES_RR_US_BAR';
 M_.exo_names_tex = 'RES\_RR\_US\_BAR';
 M_.exo_names_long = 'RES_RR_US_BAR';
@@ -371,8 +371,8 @@ options_.block=0;
 options_.bytecode=0;
 options_.use_dll=0;
 M_.hessian_eq_zero = 1;
-erase_compiled_function('QPM_US_20074_static');
-erase_compiled_function('QPM_US_20074_dynamic');
+erase_compiled_function('QPM_US_20083_static');
+erase_compiled_function('QPM_US_20083_dynamic');
 M_.orig_eq_nbr = 30;
 M_.eq_nbr = 52;
 M_.ramsey_eq_nbr = 0;
@@ -556,34 +556,24 @@ options_.trend_coeffs{tmp1} = 'M_.params(6)/4';
 %
 M_.exo_det_length = 0;
 M_.Sigma_e(4, 4) = (M_.params(15)+1.8201)^2;
-options_.forecast = 10;
-options_.mh_nblck = 1;
-options_.mh_replic = 0;
-options_.mode_compute = 4;
-options_.datafile = 'data.xls';
-options_.xls_range = 'V1:Z69';
-options_.first_obs = 1;
-options_.order = 1;
-var_list_ = char('rff_q_obs','pgdp_q_obs','xgdp_q_obs');
-oo_recursive_=dynare_estimation(var_list_);
-save('QPM_US_20074_results.mat', 'oo_', 'M_', 'options_');
+save('QPM_US_20083_results.mat', 'oo_', 'M_', 'options_');
 if exist('estim_params_', 'var') == 1
-  save('QPM_US_20074_results.mat', 'estim_params_', '-append');
+  save('QPM_US_20083_results.mat', 'estim_params_', '-append');
 end
 if exist('bayestopt_', 'var') == 1
-  save('QPM_US_20074_results.mat', 'bayestopt_', '-append');
+  save('QPM_US_20083_results.mat', 'bayestopt_', '-append');
 end
 if exist('dataset_', 'var') == 1
-  save('QPM_US_20074_results.mat', 'dataset_', '-append');
+  save('QPM_US_20083_results.mat', 'dataset_', '-append');
 end
 if exist('estimation_info', 'var') == 1
-  save('QPM_US_20074_results.mat', 'estimation_info', '-append');
+  save('QPM_US_20083_results.mat', 'estimation_info', '-append');
 end
 if exist('dataset_info', 'var') == 1
-  save('QPM_US_20074_results.mat', 'dataset_info', '-append');
+  save('QPM_US_20083_results.mat', 'dataset_info', '-append');
 end
 if exist('oo_recursive_', 'var') == 1
-  save('QPM_US_20074_results.mat', 'oo_recursive_', '-append');
+  save('QPM_US_20083_results.mat', 'oo_recursive_', '-append');
 end
 
 

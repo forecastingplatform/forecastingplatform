@@ -1,4 +1,4 @@
-function y = QPM_US_20074_set_auxiliary_variables(y, x, params)
+function y = QPM_US_20083_set_auxiliary_variables(y, x, params)
 %
 % Status : Computes static model for Dynare
 %

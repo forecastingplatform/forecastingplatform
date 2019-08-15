@@ -55,16 +55,16 @@ EIGENVALUES:
                0               -0                0
                0               -0                0
                0               -0                0
-       5.323e-19       -5.323e-19                0
-       8.098e-19       -8.098e-19                0
-       3.184e-18       -3.184e-18                0
-       3.416e-18       -3.416e-18                0
-       1.382e-17       -1.382e-17                0
-       1.517e-17        1.517e-17                0
-       4.886e-17       -4.886e-17                0
-       5.272e-17       -5.272e-17                0
-       5.861e-17        5.861e-17                0
-       9.552e-17        9.552e-17                0
+        1.14e-18        -1.14e-18                0
+       3.202e-18        3.202e-18                0
+       5.267e-18       -5.267e-18                0
+       8.651e-18       -8.651e-18                0
+       9.425e-18        9.425e-18                0
+       1.091e-17       -1.091e-17                0
+       1.209e-17        1.209e-17                0
+       2.108e-17        2.108e-17                0
+       5.157e-17        5.157e-17                0
+       5.509e-17       -5.509e-17                0
              0.1              0.1                0
           0.4822          -0.4822                0
           0.5118         -0.05828           0.5085
@@ -95,291 +95,24 @@ for 9 forward-looking variable(s)
 
 The rank condition is verified.
 
-Initial value of the log posterior (or likelihood): -418.4018
------------------
-f at the beginning of new iteration,       418.4017780303
-Predicted improvement:       68.768911743
-lambda =          1; f =          332.7413371
-Norm of dx    0.11728
-----
-Improvement on iteration 1 =       85.660440924
------------------
-f at the beginning of new iteration,       332.7413371063
-Predicted improvement:       21.771949203
-lambda =          1; f =          298.8085206
-lambda =     1.9332; f =          281.4567711
-Norm of dx   0.088686
-----
-Improvement on iteration 2 =       51.284566027
------------------
-f at the beginning of new iteration,       281.4567710789
-Predicted improvement:       11.546134401
-lambda =          1; f =          263.7764343
-lambda =     1.9332; f =          264.3425865
-Norm of dx    0.10054
-----
-Improvement on iteration 3 =       17.680336732
------------------
-f at the beginning of new iteration,       263.7764343465
-Predicted improvement:        8.534978489
-lambda =          1; f =          260.6956389
-lambda =    0.33333; f =          259.1919926
-lambda =    0.64439; f =          257.5157449
-Norm of dx    0.10561
-----
-Improvement on iteration 4 =        6.260689459
------------------
-f at the beginning of new iteration,       257.5157448871
-Predicted improvement:        3.742119154
-lambda =          1; f =          251.6272696
-lambda =     1.9332; f =          248.5559568
-Norm of dx   0.036551
-----
-Improvement on iteration 5 =        8.959788132
------------------
-f at the beginning of new iteration,       248.5559567551
-Predicted improvement:        1.979581737
-lambda =          1; f =          245.6923316
-lambda =     1.9332; f =          244.8298944
-Norm of dx   0.056523
-----
-Improvement on iteration 6 =        3.726062331
------------------
-f at the beginning of new iteration,       244.8298944242
-Predicted improvement:        0.877055996
-lambda =          1; f =          243.2058743
-lambda =     1.9332; f =          241.9132612
-lambda =     3.7372; f =          239.9689502
-lambda =     7.2247; f =          237.9993369
-Norm of dx   0.018816
-----
-Improvement on iteration 7 =        6.830557571
------------------
-f at the beginning of new iteration,       237.9993368536
-Predicted improvement:        1.470506237
-lambda =          1; f =          235.5156423
-lambda =     1.9332; f =          233.9981198
-lambda =     3.7372; f =          233.1757120
-Norm of dx   0.055396
-----
-Improvement on iteration 8 =        4.823624808
------------------
-f at the beginning of new iteration,       233.1757120456
-Predicted improvement:        0.926035519
-lambda =          1; f =          231.5339327
-lambda =     1.9332; f =          230.4148929
-lambda =     3.7372; f =          229.5909887
-Norm of dx   0.022758
-----
-Improvement on iteration 9 =        3.584723386
------------------
-f at the beginning of new iteration,       229.5909886598
-Predicted improvement:        1.826219180
-lambda =          1; f =          226.3958207
-lambda =     1.9332; f =          229.3694178
-lambda =     1.3017; f =          225.7596371
-lambda =     1.6503; f =          225.8645332
-Norm of dx   0.055491
-----
-Improvement on iteration 10 =        3.831351551
------------------
-f at the beginning of new iteration,       225.7596371084
-Predicted improvement:        1.179638533
-lambda =          1; f =          225.7596726
-lambda =    0.33333; f =          225.6477884
-lambda =    0.11111; f =          225.5460035
-lambda =     0.2148; f =          225.4707622
-Norm of dx   0.088181
-----
-Improvement on iteration 11 =        0.288874863
------------------
-f at the beginning of new iteration,       225.4707622456
-Predicted improvement:        0.868992694
-lambda =          1; f =          224.5098658
-Norm of dx   0.045313
-----
-Improvement on iteration 12 =        0.960896420
------------------
-f at the beginning of new iteration,       224.5098658259
-Predicted improvement:        0.405998959
-lambda =          1; f =          223.8177144
-lambda =     1.9332; f =          223.4041121
-lambda =     3.7372; f =          223.3565632
-Norm of dx   0.036089
-----
-Improvement on iteration 13 =        1.153302652
------------------
-f at the beginning of new iteration,       223.3565631743
-Predicted improvement:        0.408106769
-lambda =          1; f =          222.8698326
-Norm of dx   0.036368
-----
-Improvement on iteration 14 =        0.486730573
------------------
-f at the beginning of new iteration,       222.8698326017
-Predicted improvement:        0.116546266
-lambda =          1; f =          222.6961235
-lambda =     1.9332; f =          222.6406683
-Norm of dx   0.011268
-----
-Improvement on iteration 15 =        0.229164304
------------------
-f at the beginning of new iteration,       222.6406682977
-Predicted improvement:        0.105700000
-lambda =          1; f =          222.4482518
-lambda =     1.9332; f =          222.3029488
-lambda =     3.7372; f =          222.1166091
-Norm of dx   0.011234
-----
-Improvement on iteration 16 =        0.524059213
------------------
-f at the beginning of new iteration,       222.1166090844
-Predicted improvement:        0.290058662
-lambda =          1; f =          221.7767524
-Norm of dx   0.032592
-----
-Improvement on iteration 17 =        0.339856698
------------------
-f at the beginning of new iteration,       221.7767523864
-Predicted improvement:        0.082053785
-lambda =          1; f =          221.6379245
-lambda =     1.9332; f =          221.5554369
-Norm of dx   0.010394
-----
-Improvement on iteration 18 =        0.221315505
------------------
-f at the beginning of new iteration,       221.5554368816
-Predicted improvement:        0.127385363
-lambda =          1; f =          221.3913200
-Norm of dx   0.014722
-----
-Improvement on iteration 19 =        0.164116883
------------------
-f at the beginning of new iteration,       221.3913199988
-Predicted improvement:        0.053107197
-lambda =          1; f =          221.3148129
-lambda =     1.9332; f =          221.2970481
-Norm of dx  0.0078981
-----
-Improvement on iteration 20 =        0.094271909
------------------
-f at the beginning of new iteration,       221.2970480897
-Predicted improvement:        0.021248000
-lambda =          1; f =          221.2625433
-lambda =     1.9332; f =          221.2437721
-Norm of dx  0.0027434
-----
-Improvement on iteration 21 =        0.053276027
------------------
-f at the beginning of new iteration,       221.2437720625
-Predicted improvement:        0.025313930
-lambda =          1; f =          221.2046088
-lambda =     1.9332; f =          221.1885006
-Norm of dx  0.0070996
-----
-Improvement on iteration 22 =        0.055271419
------------------
-f at the beginning of new iteration,       221.1885006434
-Predicted improvement:        0.014484894
-lambda =          1; f =          221.1637280
-lambda =     1.9332; f =          221.1482273
-lambda =     3.7372; f =          221.1394104
-Norm of dx   0.004511
-----
-Improvement on iteration 23 =        0.049090284
------------------
-f at the beginning of new iteration,       221.1394103598
-Predicted improvement:        0.020568762
-lambda =          1; f =          221.1044088
-lambda =     1.9332; f =          221.0830865
-lambda =     3.7372; f =          221.0745954
-Norm of dx  0.0045115
-----
-Improvement on iteration 24 =        0.064814983
------------------
-f at the beginning of new iteration,       221.0745953766
-Predicted improvement:        0.040500092
-lambda =          1; f =          221.0058311
-lambda =     1.9332; f =          220.9621699
-lambda =     3.7372; f =          220.9267782
-Norm of dx  0.0072307
-[Warning: Error occurred while evaluating listener callback.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('openExcelWorkbook', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\openExcelWorkbook.m', 27)" style="font-weight:bold">openExcelWorkbook</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\openExcelWorkbook.m',27,0)">line 27</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlsreadCOM', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\xlsreadCOM.m', 13)" style="font-weight:bold">xlsreadCOM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\xlsreadCOM.m',13,0)">line 13</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlsread', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\xlsread.m', 241)" style="font-weight:bold">xlsread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\xlsread.m',241,0)">line 241</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IMF_QPM_US_steadystate', 'C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US_steadystate.m', 15)" style="font-weight:bold">IMF_QPM_US_steadystate</a> (<a href="matlab: opentoline('C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US_steadystate.m',15,0)">line 15</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state_file', 'C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m', 52)" style="font-weight:bold">evaluate_steady_state_file</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m',52,0)">line 52</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'C:\dynare\4.5.7\matlab\evaluate_steady_state.m', 212)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state.m',212,0)">line 212</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('resol', 'C:\dynare\4.5.7\matlab\resol.m', 104)" style="font-weight:bold">resol</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\resol.m',104,0)">line 104</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_resolve', 'C:\dynare\4.5.7\matlab\dynare_resolve.m', 69)" style="font-weight:bold">dynare_resolve</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_resolve.m',69,0)">line 69</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dsge_likelihood', 'C:\dynare\4.5.7\matlab\dsge_likelihood.m', 252)" style="font-weight:bold">dsge_likelihood</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dsge_likelihood.m',252,0)">line 252</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('penalty_objective_function', 'C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m', 33)" style="font-weight:bold">penalty_objective_function</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m',33,0)">line 33</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('numgrad2', 'C:\dynare\4.5.7\matlab\optimization\numgrad2.m', 36)" style="font-weight:bold">numgrad2</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\numgrad2.m',36,0)">line 36</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1>get_num_grad', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 317)" style="font-weight:bold">csminwel1>get_num_grad</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',317,0)">line 317</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 141)" style="font-weight:bold">csminwel1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',141,0)">line 141</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_minimize_objective', 'C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m', 205)" style="font-weight:bold">dynare_minimize_objective</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m',205,0)">line 205</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 220)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',220,0)">line 220</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IMF_QPM_US', 'C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US.m', 560)" style="font-weight:bold">IMF_QPM_US</a> (<a href="matlab: opentoline('C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US.m',560,0)">line 560</a>)
-  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)] 
-{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('openExcelWorkbook', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\openExcelWorkbook.m', 38)" style="font-weight:bold">openExcelWorkbook</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\openExcelWorkbook.m',38,0)">line 38</a>)
+<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',46,1)">46  </a>var_list = check_list_of_variables(options_, M_, var_list);
+dbquite
+{Undefined function or variable 'dbquite'.} 
+dbquit
+load('variables.mat')
+clc
+clear
+load('variables.mat')
+basics.path = cd;
+% Data loading
 
+data = xlsread([basics.datalocation '\ExcelFileVintages\' basics.zone deblank(num2str(basics.vintage(basics.vintagenr,:)))],1);
 
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlsreadCOM', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\xlsreadCOM.m', 13)" style="font-weight:bold">xlsreadCOM</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\private\xlsreadCOM.m',13,0)">line 13</a>)
-    [~, workbookHandle,workbookState] = openExcelWorkbook(Excel, file, readOnly);
+% go to subdirectoy of current vintage
+cd([basics.thispath '\MODELS\' basics.currentmodel '\' basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:))]);
 
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlsread', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\xlsread.m', 241)" style="font-weight:bold">xlsread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\xlsread.m',241,0)">line 241</a>)
-        [numericData, textData, rawData, customOutput] = xlsreadCOM(file, sheet, range, Excel, customFun);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IMF_QPM_US_steadystate', 'C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US_steadystate.m', 15)" style="font-weight:bold">IMF_QPM_US_steadystate</a> (<a href="matlab: opentoline('C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US_steadystate.m',15,0)">line 15</a>)
-data = xlsread('data', 'data', 'V2:Z69');
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state_file', 'C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m', 52)" style="font-weight:bold">evaluate_steady_state_file</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m',52,0)">line 52</a>)
-    [ys,check] = h_steadystate(ys_init, exo_ss);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'C:\dynare\4.5.7\matlab\evaluate_steady_state.m', 212)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state.m',212,0)">line 212</a>)
-    [ys,params,info] = evaluate_steady_state_file(ys_init,exo_ss,M, options,steadystate_check_flag);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('resol', 'C:\dynare\4.5.7\matlab\resol.m', 104)" style="font-weight:bold">resol</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\resol.m',104,0)">line 104</a>)
-[dr.ys,M.params,info] = evaluate_steady_state(oo.steady_state,M,options,oo,~options.steadystate.nocheck);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_resolve', 'C:\dynare\4.5.7\matlab\dynare_resolve.m', 69)" style="font-weight:bold">dynare_resolve</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_resolve.m',69,0)">line 69</a>)
-[dr,info,Model,DynareOptions,DynareResults] = resol(0,Model,DynareOptions,DynareResults);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dsge_likelihood', 'C:\dynare\4.5.7\matlab\dsge_likelihood.m', 252)" style="font-weight:bold">dsge_likelihood</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dsge_likelihood.m',252,0)">line 252</a>)
-[T,R,SteadyState,info,Model,DynareOptions,DynareResults] = dynare_resolve(Model,DynareOptions,DynareResults,'restrict');
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('penalty_objective_function', 'C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m', 33)" style="font-weight:bold">penalty_objective_function</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m',33,0)">line 33</a>)
-[fval, info, exit_flag, arg1, arg2] = fcn(x, varargin{:});
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('numgrad2', 'C:\dynare\4.5.7\matlab\optimization\numgrad2.m', 36)" style="font-weight:bold">numgrad2</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\numgrad2.m',36,0)">line 36</a>)
-        fh = penalty_objective_function(x, fcn, penalty, varargin{:});
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1>get_num_grad', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 317)" style="font-weight:bold">csminwel1>get_num_grad</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',317,0)">line 317</a>)
-    [g,badg] = numgrad2(fcn, f0, x0, penalty, epsilon, varargin{:});
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 141)" style="font-weight:bold">csminwel1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',141,0)">line 141</a>)
-                [g1, badg1]=get_num_grad(method,fcn,penalty,f1,x1,epsilon,varargin{:});
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_minimize_objective', 'C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m', 205)" style="font-weight:bold">dynare_minimize_objective</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m',205,0)">line 205</a>)
-        csminwel1(objective_function, start_par_value, H0, analytic_grad, crit, nit, numgrad, epsilon, Verbose, Save_files, varargin{:});
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 220)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',220,0)">line 220</a>)
-    [xparam1, fval, exitflag, hh, options_, Scale, new_rat_hess_info] =
-    dynare_minimize_objective(objective_function,xparam1,options_.mode_compute,options_,[bounds.lb
-    bounds.ub],bayestopt_.name,bayestopt_,hh,dataset_,dataset_info,options_,M_,estim_params_,bayestopt_,bounds,oo_);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
-    dynare_estimation_1(var_list,dname);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IMF_QPM_US', 'C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US.m', 560)" style="font-weight:bold">IMF_QPM_US</a> (<a href="matlab: opentoline('C:\forecastingplatform\RawDataTransformation\qpm\code\IMF_QPM_US.m',560,0)">line 560</a>)
-oo_recursive_=dynare_estimation(var_list_);
-
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.5.7\matlab\dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare.m',235,0)">line 235</a>)
-evalin('base',fname) ;
-} 
-Forecastplatform
-Generating vintages...
+% evaluate dynare file
+eval(['dynare ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '.mod;']);
 
 Configuring Dynare ...
 [mex] Generalized QZ.
@@ -396,10 +129,10 @@ Configuring Dynare ...
 Using 64-bit preprocessor
 Starting Dynare (version 4.5.7).
 Starting preprocessing of the model file ...
-WARNING: QPM_US_20074.mod:142.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
+WARNING: QPM_US_20083.mod:167.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
 Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
 Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
-Found 50 equation(s).
+Found 52 equation(s).
 Evaluating expressions...done
 Computing static model derivatives:
  - order 1

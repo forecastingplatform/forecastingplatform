@@ -1,0 +1,1273 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 37 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+ - order 2
+ - derivatives of Jacobian/Hessian w.r. to parameters
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+ - derivatives of Jacobian/Hessian w.r. to parameters
+Processing outputs ...
+done
+Preprocessing completed.
+k',hObject,eventdata,guidata(hObject))</a>} 
+Interrupt while evaluating UIControl Callback.
+
+Forecastplatform
+[Warning: The file 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m' could not be cleared because it
+contains MATLAB code that is currently executing.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Forecastplatform', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m', 2)" style="font-weight:bold">Forecastplatform</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m',2,0)">line 2</a>)] 
+[Warning: The file 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m' could not be cleared because it
+contains MATLAB code that is currently executing.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Forecastplatform', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m', 2)" style="font-weight:bold">Forecastplatform</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m',2,0)">line 2</a>)] 
+[Warning: The file 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m' could not be cleared because it
+contains MATLAB code that is currently executing.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Forecastplatform', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m', 2)" style="font-weight:bold">Forecastplatform</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m',2,0)">line 2</a>)] 
+Generating vintages...
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 37 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+ - order 2
+ - derivatives of Jacobian/Hessian w.r. to parameters
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+ - derivatives of Jacobian/Hessian w.r. to parameters
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+lambda     		 0.643038
+R          		 1.01761
+pic        		 1.0075
+c          		 1.57287
+w_tilda    		 1.64135
+w          		 1.64135
+phi_w      		 1273.62
+psi_w      		 13.7624
+L          		 1.0074
+k          		 23.244
+k_bar      		 23.3605
+i          		 0.69761
+Q          		 1
+R_e        		 1.01761
+r_k        		 0.0350376
+u          		 1
+mc         		 0.869565
+p_tilda    		 1
+phi_f      		 3.93802
+psi_f      		 4.52873
+y          		 2.8381
+Delta      		 1
+z          		 0.005
+lb         		 0
+lphi       		 -0.223144
+lmu        		 0
+llambda_f  		 -1.89712
+lg         		 0.223144
+lA         		 0
+llamda_fma 		 0
+hours_obs  		 1.29918
+rff_q_obs  		 1.76129
+pgdp_q_obs 		 0.747201
+xgdp_q_obs 		 0.5
+pcer_q_obs 		 0.5
+fpi_q_obs  		 0.5
+wage_obs   		 0.5
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+       2.344e-16       -2.344e-16                0
+        2.61e-16         2.61e-16                0
+          0.3923           0.3923                0
+           0.552           0.5067           0.2189
+           0.552           0.5067          -0.2189
+             0.6              0.6                0
+          0.6516           0.6516                0
+          0.8122           0.8122                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+          0.9558           0.9558                0
+           1.046            1.046                0
+           1.138            1.138                0
+           1.256            1.209           0.3407
+           1.256            1.209          -0.3407
+           1.354            1.354                0
+           1.668            1.668                0
+           1.675            1.675                0
+           1.675            1.675                0
+        6.95e+16        -6.95e+16                0
+       1.059e+17       -1.059e+17                0
+       1.879e+17       -1.879e+17                0
+       1.336e+19        1.336e+19                0
+       2.499e+19        2.499e+19                0
+
+
+There are 13 eigenvalue(s) larger than 1 in modulus 
+for 13 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -80949682.40321+95453034.48967i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -450701325.8702+531265402.44i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.0272e-07i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.9907e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -11996586913.4476-78828148510.5352i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -11996586913.4476-78828148510.5352i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.387824289654112e+21-3.049936236684525e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.6833e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.6833e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.5401e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.5401e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.5401e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.0104e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.0104e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.0104e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-7.764e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.6388e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.6388e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-9.9583e-11i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-5.0432e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-5.0432e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-5.0432e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -5711730447982.054-37532699330834.3i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -5711730447982.054-37532699330834.3i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -5968199800960.788-39218003670504.45i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -6.953875115912498e+18+2.067755118391289e+18i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -6.953875115912498e+18+2.067755118391289e+18i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7223e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7223e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7142e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7142e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7142e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.416714314723694e+22-5.880688905243836e+22i.)
+Check function or try again with a different starting value.
+ 2.5% of the prior support gives unique saddle-path solution.
+ 0.0% of the prior support gives explosive dynamics.
+
+
+For 97.5% of the prior support dynare could not find a solution.
+
+    For 80.1% The steadystate routine thrown an exception (inconsistent deep parameters).
+    For 17.4% The steady has NaNs.
+
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for unique Stable Saddle-Path
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for NO unique Stable Saddle-Path
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for NO inability to find a solution
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for inability to find a solution
+Computing theoretical moments ...
+
+... done !
+
+==== Identification analysis ====
+
+Testing prior mean
+  
+All parameters are identified in the model (rank of H).
+
+
+All parameters are identified by J moments (rank of J)
+
+
+==== Identification analysis completed ====
+
+
+Total computing time : 0h01m26s
+Note: warning(s) encountered in MATLAB/Octave code
+Trying mode_compute = 4, Chris Sims’s csminwel, and checking if estimation is feasible.
+Initial value of the log posterior (or likelihood): -2660257.6334
+-----------------
+f at the beginning of new iteration,   2660257.6333641829
+Predicted improvement: 1895005088800640228917248.000000000
+lambda =          1; f = 379001017612995526656.0000000
+lambda =    0.33333; f = 42111224146527518720.0000000
+lambda =    0.11111; f = 4679024894273231872.0000000
+lambda =   0.037037; f = 519891651288660032.0000000
+lambda =   0.012346; f = 57765737823453864.0000000
+lambda =  0.0041152; f = 6418414912420395.0000000
+lambda =  0.0013717; f = 713157080302048.5000000
+lambda = 0.00045725; f = 79239633102540.2031250
+lambda = 0.00015242; f = 8804391092327.0722656
+lambda = 5.0805e-05; f = 978263058140.0710449
+lambda = 1.6935e-05; f = 108696598879.6668549
+lambda =  5.645e-06; f =  12079210844.9318619
+lambda = 1.8817e-06; f =   1344314653.9534998
+lambda = 6.2723e-07; f =    151671459.2495975
+lambda = 2.0908e-07; f =     19196564.9729878
+lambda = 6.9692e-08; f =      4490804.3576021
+lambda = 2.3231e-08; f =      2861388.3165643
+lambda = 7.7435e-09; f =      2681861.2100063
+lambda = 2.5812e-09; f =      2662420.1271300
+lambda =
+  -6.2723e-07
+lambda = -6.2723e-07; f =    151600181.1904989
+lambda = -2.0908e-07; f =     19172845.5976539
+lambda = -6.9692e-08; f =      4482937.8768564
+lambda = -2.3231e-08; f =      2858806.1340147
+lambda = -7.7435e-09; f =      2681040.4601887
+lambda = -2.5812e-09; f =      2662186.5215565
+Norm of dx 1.9468e+10
+----
+Improvement on iteration 1 =        0.000000000
+improvement < crit termination
+smallest step still improving too slow, reversed gradient
+
+Final value of minus the log posterior (or likelihood):2660257.633364 
+
+POSTERIOR KERNEL OPTIMIZATION PROBLEM!
+ (minus) the hessian matrix at the "mode" is not positive definite!
+=> posterior variance of the estimated parameters are not positive.
+You should try to change the initial values of the parameters using
+the estimated_params_init block, or use another optimization routine.
+[Warning: The results below are most likely wrong!] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 316)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',316,0)">line 316</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\MHestimate.m', 101)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\MHestimate.m',101,0)">line 101</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',174,0)">line 174</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 891)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',891,0)">line 891</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND = NaN.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 339)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',339,0)">line 339</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\MHestimate.m', 101)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\MHestimate.m',101,0)">line 101</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m', 174)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',174,0)">line 174</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 891)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',891,0)">line 891</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>] 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+           prior mean     mode    s.d. prior pstdev
+
+alpha          0.330   0.3300     NaN beta  0.0500 
+zeta_p         0.600   0.6000     NaN beta  0.2000 
+iota_p         0.500   0.5000     NaN beta  0.2000 
+s_bis          4.000   0.4000     NaN gamm  1.5000 
+h              0.700   0.7000     NaN beta  0.0500 
+a_bis          0.200   0.2000     NaN gamm  0.1000 
+nu_l           2.000   2.0000     NaN gamm  0.7500 
+zeta_w         0.600   0.6000     NaN beta  0.2000 
+iota_w         0.500   0.5000     NaN beta  0.2000 
+r_star         2.000   2.0000     NaN gamm  1.0000 
+psi_1          1.500   1.5000     NaN gamm  0.4000 
+psi_2          0.200   0.2000     NaN gamm  0.1000 
+rho_R          0.500   0.5000     NaN beta  0.2000 
+pi_star        3.010   3.0000     NaN norm  1.5000 
+gamma_star     2.000   2.0000     NaN gamm  1.0000 
+lambda_f       0.150   0.1500     NaN gamm  0.1000 
+gg_star        0.300   0.2000     NaN gamm  0.1000 
+L_adj          0.000   1.2918     NaN norm  2.0000 
+rho_z          0.200   0.0900     NaN beta  0.1000 
+rho_phi        0.600   0.9000     NaN beta  0.2000 
+rho_lambda_f   0.600   0.9000     NaN beta  0.2000 
+rho_mu         0.800   0.9000     NaN beta  0.0500 
+rho_b          0.600   0.9000     NaN beta  0.2000 
+rho_g          0.800   0.9000     NaN beta  0.0500 
+cmap           0.500   0.7652     NaN beta  0.2000 
+scalehours     5.005   1.0000     NaN unif  2.8839 
+
+standard deviation of shocks
+           prior mean     mode    s.d. prior pstdev
+
+eps_z          0.500   0.7519     NaN invg     Inf 
+eps_phi        2.000   3.4435     NaN invg     Inf 
+eps_lambda_f   0.500   7.3085     NaN invg     Inf 
+eps_mu         0.500   4.1324     NaN invg     Inf 
+eps_b          0.500   2.2806     NaN invg     Inf 
+eps_g          0.500   0.5998     NaN invg     Inf 
+eps_R          0.250   0.2873     NaN invg     Inf 
+
+
+Log data density [Laplace approximation] is NaN.
+
+Mode_compute=5, Marco Ratto’s newrat, was unsuccessfull, trying mode_compute=7, fminsearch.
+Initial value of the log posterior (or likelihood): -2660257.6334
+ 
+ Iteration   Func-count     min f(x)         Procedure
+     0            1      2.66026e+06         
+     1           34      2.41138e+06         initial simplex
+     2           69      2.41138e+06         shrink
+     3          104      2.41138e+06         shrink
+     4          139      2.41138e+06         shrink
+     5          174      2.41138e+06         shrink
+     6          209      2.41138e+06         shrink
+     7          244      2.41138e+06         shrink
+     8          279      2.41138e+06         shrink
+     9          314      2.41138e+06         shrink
+    10          349      2.41138e+06         shrink
+    11          384      2.41138e+06         shrink
+    12          419      2.41138e+06         shrink
+    13          454      2.41138e+06         shrink
+    14          489      2.41138e+06         shrink
+    15          524      2.41138e+06         shrink
+    16          559      2.41138e+06         shrink
+    17          594      2.41138e+06         shrink
+    18          629      2.41138e+06         shrink
+    19          631      2.41138e+06         contract inside
+    20          666      2.41138e+06         shrink
+    21          701      2.41138e+06         shrink
+    22          736      2.41138e+06         shrink
+    23          771      2.41138e+06         shrink
+    24          773      2.41138e+06         contract inside
+    25          808      2.41138e+06         shrink
+    26          843      2.41138e+06         shrink
+    27          845      2.41138e+06         contract inside
+    28          846      2.41138e+06         reflect
+    29          847      2.41138e+06         reflect
+    30          848      2.41138e+06         reflect
+    31          849      2.41138e+06         reflect
+    32          850      2.41138e+06         reflect
+    33          851      2.41138e+06         reflect
+    34          852      2.41138e+06         reflect
+    35          853      2.41138e+06         reflect
+    36          854      2.41138e+06         reflect
+    37          855      2.41138e+06         reflect
+    38          856      2.41138e+06         reflect
+    39          857      2.41138e+06         reflect
+    40          858      2.41138e+06         reflect
+    41          859      2.41138e+06         reflect
+    42          860      2.41138e+06         reflect
+    43          861      2.41138e+06         reflect
+    44          862      2.41138e+06         reflect
+    45          863      2.41138e+06         reflect
+    46          864      2.41138e+06         reflect
+    47          865      2.41138e+06         reflect
+    48          866      2.41138e+06         reflect
+    49          868      2.41138e+06         expand
+    50          869      2.41138e+06         reflect
+    51          870      2.41138e+06         reflect
+    52          871      2.41138e+06         reflect
+    53          872      2.41138e+06         reflect
+    54          873      2.41138e+06         reflect
+    55          874      2.41138e+06         reflect
+    56          875      2.41138e+06         reflect
+    57          876      2.41138e+06         reflect
+    58          877      2.41138e+06         reflect
+    59          878      2.41138e+06         reflect
+    60          879      2.41138e+06         reflect
+    61          880      2.41138e+06         reflect
+    62          881      2.41138e+06         reflect
+    63          882      2.41138e+06         reflect
+    64          883      2.41138e+06         reflect
+    65          884      2.41138e+06         reflect
+    66          885      2.41138e+06         reflect
+    67          887      2.41138e+06         reflect
+    68          889      2.41138e+06         expand
+    69          890      2.41138e+06         reflect
+    70          891      2.41138e+06         reflect
+    71          892      2.41138e+06         reflect
+    72          893      2.41138e+06         reflect
+    73          894      2.41138e+06         reflect
+    74          895      2.41138e+06         reflect
+    75          896      2.41138e+06         reflect
+    76          897      2.41138e+06         reflect
+    77          898      2.41138e+06         reflect
+    78          899      2.41138e+06         reflect
+    79          901      2.41138e+06         expand
+    80          902      2.41138e+06         reflect
+    81          903      2.41138e+06         reflect
+    82          904      2.41138e+06         reflect
+    83          905      2.41138e+06         reflect
+    84          906      2.41138e+06         reflect
+    85          907      2.41138e+06         reflect
+    86          908      2.41138e+06         reflect
+    87          909      2.41138e+06         reflect
+    88          910      2.41138e+06         reflect
+    89          911      2.41138e+06         reflect
+    90          912      2.41138e+06         reflect
+    91          913      2.41138e+06         reflect
+    92          914      2.41138e+06         reflect
+    93          915      2.41138e+06         reflect
+    94          916      2.41138e+06         reflect
+    95          918      2.41138e+06         expand
+    96          919      2.41138e+06         reflect
+    97          920      2.41138e+06         reflect
+    98          921      2.41138e+06         reflect
+    99          922      2.41138e+06         reflect
+   100          923      2.41138e+06         reflect
+   101          924      2.41138e+06         reflect
+   102          925      2.41138e+06         reflect
+   103          926      2.41138e+06         reflect
+   104          927      2.41138e+06         reflect
+   105          928      2.41138e+06         reflect
+   106          929      2.41138e+06         reflect
+   107          930      2.41138e+06         reflect
+   108          931      2.41138e+06         reflect
+   109          932      2.41138e+06         reflect
+   110          933      2.41138e+06         reflect
+   111          934      2.41138e+06         reflect
+   112          936      2.41138e+06         expand
+   113          937      2.41138e+06         reflect
+   114          938      2.41138e+06         reflect
+   115          939      2.41138e+06         reflect
+   116          940      2.41138e+06         reflect
+   117          941      2.41138e+06         reflect
+   118          942      2.41138e+06         reflect
+   119          943      2.41138e+06         reflect
+   120          944      2.41138e+06         reflect
+   121          945      2.41138e+06         reflect
+   122          946      2.41138e+06         reflect
+   123          948      2.41138e+06         expand
+   124          949      2.41138e+06         reflect
+   125          950      2.41138e+06         reflect
+   126          951      2.41138e+06         reflect
+   127          952      2.41138e+06         reflect
+   128          953      2.41138e+06         reflect
+   129          954      2.41138e+06         reflect
+   130          955      2.41138e+06         reflect
+   131          956      2.41138e+06         reflect
+   132          957      2.41138e+06         reflect
+   133          958      2.41138e+06         reflect
+   134          959      2.41138e+06         reflect
+   135          960      2.41138e+06         reflect
+   136          961      2.41138e+06         reflect
+   137          962      2.41138e+06         reflect
+   138          963      2.41138e+06         reflect
+   139          964      2.41138e+06         reflect
+   140          966      2.41138e+06         expand
+   141          967      2.41138e+06         reflect
+   142          968      2.41138e+06         reflect
+   143          969      2.41138e+06         reflect
+   144          970      2.41138e+06         reflect
+   145          971      2.41138e+06         reflect
+   146          972      2.41138e+06         reflect
+   147          973      2.41138e+06         reflect
+   148          974      2.41138e+06         reflect
+   149          975      2.41138e+06         reflect
+   150          976      2.41138e+06         reflect
+   151          977      2.41138e+06         reflect
+   152          978      2.41138e+06         reflect
+   153          979      2.41138e+06         reflect
+   154          980      2.41138e+06         reflect
+   155          982      2.41138e+06         expand
+   156          983      2.41138e+06         reflect
+   157          984      2.41138e+06         reflect
+   158          985      2.41138e+06         reflect
+   159          986      2.41138e+06         reflect
+   160          987      2.41138e+06         reflect
+   161          988      2.41138e+06         reflect
+   162          989      2.41138e+06         reflect
+   163          990      2.41138e+06         reflect
+   164          991      2.41138e+06         reflect
+   165          992      2.41138e+06         reflect
+   166          994      2.41138e+06         expand
+   167          995      2.41138e+06         reflect
+   168          996      2.41138e+06         reflect
+   169          997      2.41138e+06         reflect
+   170          998      2.41138e+06         reflect
+   171          999      2.41138e+06         reflect
+   172         1000      2.41138e+06         reflect
+   173         1001      2.41138e+06         reflect
+   174         1002      2.41138e+06         reflect
+   175         1003      2.41138e+06         reflect
+   176         1004      2.41138e+06         reflect
+   177         1005      2.41138e+06         reflect
+   178         1006      2.41138e+06         reflect
+   179         1007      2.41138e+06         reflect
+   180         1008      2.41138e+06         reflect
+   181         1009      2.41138e+06         reflect
+   182         1010      2.41138e+06         reflect
+   183         1012      2.41138e+06         expand
+   184         1013      2.41138e+06         reflect
+   185         1014      2.41138e+06         reflect
+   186         1015      2.41138e+06         reflect
+   187         1016      2.41138e+06         reflect
+   188         1017      2.41138e+06         reflect
+   189         1018      2.41138e+06         reflect
+   190         1019      2.41138e+06         reflect
+   191         1020      2.41138e+06         reflect
+   192         1021      2.41138e+06         reflect
+   193         1022      2.41138e+06         reflect
+   194         1024      2.41138e+06         expand
+   195         1025      2.41138e+06         reflect
+   196         1026      2.41138e+06         reflect
+   197         1027      2.41138e+06         reflect
+   198         1028      2.41138e+06         reflect
+   199         1029      2.41138e+06         reflect
+   200         1030      2.41138e+06         reflect
+   201         1031      2.41138e+06         reflect
+   202         1032      2.41138e+06         reflect
+   203         1033      2.41138e+06         reflect
+   204         1034      2.41138e+06         reflect
+   205         1035      2.41138e+06         reflect
+   206         1036      2.41138e+06         reflect
+   207         1037      2.41138e+06         reflect
+   208         1038      2.41138e+06         reflect
+   209         1039      2.41138e+06         reflect
+   210         1041      2.41138e+06         expand
+   211         1042      2.41138e+06         reflect
+   212         1043      2.41138e+06         reflect
+   213         1044      2.41138e+06         reflect
+   214         1045      2.41138e+06         reflect
+   215         1046      2.41138e+06         reflect
+   216         1047      2.41138e+06         reflect
+   217         1048      2.41138e+06         reflect
+   218         1049      2.41138e+06         reflect
+   219         1050      2.41138e+06         reflect
+   220         1051      2.41138e+06         reflect
+   221         1052      2.41138e+06         reflect
+   222         1053      2.41138e+06         reflect
+   223         1054      2.41138e+06         reflect
+   224         1055      2.41138e+06         reflect
+   225         1057      2.41138e+06         expand
+   226         1058      2.41138e+06         reflect
+   227         1059      2.41138e+06         reflect
+   228         1060      2.41138e+06         reflect
+   229         1061      2.41138e+06         reflect
+   230         1062      2.41138e+06         reflect
+   231         1063      2.41138e+06         reflect
+   232         1064      2.41138e+06         reflect
+   233         1065      2.41138e+06         reflect
+   234         1066      2.41138e+06         reflect
+   235         1068      2.41138e+06         contract inside
+   236         1069      2.41138e+06         reflect
+   237         1070      2.41138e+06         reflect
+   238         1071      2.41138e+06         reflect
+   239         1073      2.41138e+06         expand
+   240         1074      2.41138e+06         reflect
+   241         1075      2.41138e+06         reflect
+   242         1076      2.41138e+06         reflect
+   243         1077      2.41138e+06         reflect
+   244         1078      2.41138e+06         reflect
+   245         1079      2.41138e+06         reflect
+   246         1080      2.41138e+06         reflect
+   247         1081      2.41138e+06         reflect
+   248         1082      2.41138e+06         reflect
+   249         1083      2.41138e+06         reflect
+   250         1084      2.41138e+06         reflect
+   251         1085      2.41138e+06         reflect
+   252         1086      2.41138e+06         reflect
+   253         1087      2.41138e+06         reflect
+   254         1088      2.41138e+06         reflect
+   255         1090      2.41138e+06         expand
+   256         1091      2.41138e+06         reflect
+   257         1092      2.41138e+06         reflect
+   258         1093      2.41138e+06         reflect
+   259         1094      2.41138e+06         reflect
+   260         1095      2.41138e+06         reflect
+   261         1096      2.41138e+06         reflect
+   262         1097      2.41138e+06         reflect
+   263         1098      2.41138e+06         reflect
+   264         1099      2.41138e+06         reflect
+   265         1100      2.41138e+06         reflect
+   266         1101      2.41138e+06         reflect
+   267         1102      2.41138e+06         reflect
+   268         1103      2.41138e+06         reflect
+   269         1104      2.41138e+06         reflect
+   270         1106      2.41138e+06         expand
+   271         1107      2.41138e+06         reflect
+   272         1108      2.41138e+06         reflect
+   273         1109      2.41138e+06         reflect
+   274         1110      2.41138e+06         reflect
+   275         1111      2.41138e+06         reflect
+   276         1112      2.41138e+06         reflect
+   277         1113      2.41138e+06         reflect
+   278         1114      2.41138e+06         reflect
+   279         1115      2.41138e+06         reflect
+   280         1116      2.41138e+06         reflect
+   281         1117      2.41138e+06         reflect
+   282         1118      2.41138e+06         reflect
+   283         1120      2.41138e+06         expand
+   284         1121      2.41138e+06         reflect
+   285         1122      2.41138e+06         reflect
+   286         1123      2.41138e+06         reflect
+   287         1124      2.41138e+06         reflect
+   288         1125      2.41138e+06         reflect
+   289         1126      2.41138e+06         reflect
+   290         1127      2.41138e+06         reflect
+   291         1128      2.41138e+06         reflect
+   292         1129      2.41138e+06         reflect
+   293         1130      2.41138e+06         reflect
+   294         1131      2.41138e+06         reflect
+   295         1132      2.41138e+06         reflect
+   296         1133      2.41138e+06         reflect
+   297         1134      2.41138e+06         reflect
+   298         1135      2.41138e+06         reflect
+   299         1137      2.41138e+06         expand
+   300         1138      2.41138e+06         reflect
+   301         1139      2.41138e+06         reflect
+   302         1140      2.41138e+06         reflect
+   303         1141      2.41138e+06         reflect
+   304         1142      2.41138e+06         reflect
+   305         1143      2.41138e+06         reflect
+   306         1144      2.41138e+06         reflect
+   307         1145      2.41138e+06         reflect
+   308         1146      2.41138e+06         reflect
+   309         1147      2.41138e+06         reflect
+   310         1148      2.41138e+06         reflect
+   311         1149      2.41138e+06         reflect
+   312         1151      2.41138e+06         expand
+   313         1152      2.41138e+06         reflect
+   314         1153      2.41138e+06         reflect
+   315         1154      2.41138e+06         reflect
+   316         1155      2.41138e+06         reflect
+   317         1156      2.41138e+06         reflect
+   318         1157      2.41138e+06         reflect
+   319         1158      2.41138e+06         reflect
+   320         1159      2.41138e+06         reflect
+   321         1160      2.41138e+06         reflect
+   322         1161      2.41138e+06         reflect
+   323         1162      2.41138e+06         reflect
+   324         1163      2.41138e+06         reflect
+   325         1164      2.41138e+06         reflect
+   326         1165      2.41138e+06         reflect
+   327         1167      2.41138e+06         expand
+   328         1168      2.41138e+06         reflect
+   329         1169      2.41138e+06         reflect
+   330         1170      2.41138e+06         reflect
+   331         1171      2.41138e+06         reflect
+   332         1172      2.41138e+06         reflect
+   333         1173      2.41138e+06         reflect
+   334         1174      2.41138e+06         reflect
+   335         1175      2.41138e+06         reflect
+   336         1176      2.41138e+06         reflect
+   337         1177      2.41138e+06         reflect
+   338         1178      2.41138e+06         reflect
+   339         1179      2.41138e+06         reflect
+   340         1180      2.41138e+06         reflect
+   341         1182      2.41138e+06         expand
+   342         1183      2.41138e+06         reflect
+   343         1184      2.41138e+06         reflect
+   344         1185      2.41138e+06         reflect
+   345         1186      2.41138e+06         reflect
+   346         1187      2.41138e+06         reflect
+   347         1188      2.41138e+06         reflect
+   348         1189      2.41138e+06         reflect
+   349         1190      2.41138e+06         reflect
+   350         1191      2.41138e+06         reflect
+   351         1192      2.41138e+06         reflect
+   352         1193      2.41138e+06         reflect
+   353         1194      2.41138e+06         reflect
+   354         1196      2.41138e+06         expand
+   355         1197      2.41138e+06         reflect
+   356         1198      2.41138e+06         reflect
+   357         1199      2.41138e+06         reflect
+   358         1200      2.41138e+06         reflect
+   359         1201      2.41138e+06         reflect
+   360         1202      2.41138e+06         reflect
+   361         1203      2.41138e+06         reflect
+   362         1204      2.41138e+06         reflect
+   363         1205      2.41138e+06         reflect
+   364         1206      2.41138e+06         reflect
+   365         1207      2.41138e+06         reflect
+   366         1208      2.41138e+06         reflect
+   367         1209      2.41138e+06         reflect
+   368         1210      2.41138e+06         reflect
+   369         1212      2.41138e+06         expand
+   370         1213      2.41138e+06         reflect
+   371         1214      2.41138e+06         reflect
+   372         1215      2.41138e+06         reflect
+   373         1216      2.41138e+06         reflect
+   374         1217      2.41138e+06         reflect
+   375         1218      2.41138e+06         reflect
+   376         1219      2.41138e+06         reflect
+   377         1220      2.41138e+06         reflect
+   378         1221      2.41138e+06         reflect
+   379         1222      2.41138e+06         reflect
+   380         1223      2.41138e+06         reflect
+   381         1224      2.41138e+06         reflect
+   382         1225      2.41138e+06         reflect
+   383         1226      2.41138e+06         reflect
+   384         1228      2.41138e+06         expand
+   385         1229      2.41138e+06         reflect
+   386         1230      2.41138e+06         reflect
+   387         1231      2.41138e+06         reflect
+   388         1232      2.41138e+06         reflect
+   389         1233      2.41138e+06         reflect
+   390         1234      2.41138e+06         reflect
+   391         1235      2.41138e+06         reflect
+   392         1236      2.41138e+06         reflect
+   393         1237      2.41138e+06         reflect
+   394         1238      2.41138e+06         reflect
+   395         1239      2.41138e+06         reflect
+   396         1240      2.41138e+06         reflect
+   397         1241      2.41138e+06         reflect
+   398         1243      2.41138e+06         expand
+   399         1244      2.41138e+06         reflect
+   400         1245      2.41138e+06         reflect
+   401         1246      2.41138e+06         reflect
+   402         1247      2.41138e+06         reflect
+   403         1248      2.41138e+06         reflect
+   404         1249      2.41138e+06         reflect
+   405         1250      2.41138e+06         reflect
+   406         1251      2.41138e+06         reflect
+   407         1252      2.41138e+06         reflect
+   408         1253      2.41138e+06         reflect
+   409         1254      2.41138e+06         reflect
+   410         1255      2.41138e+06         reflect
+   411         1256      2.41138e+06         reflect
+   412         1257      2.41138e+06         reflect
+   413         1258      2.41138e+06         reflect
+   414         1260      2.41138e+06         expand
+   415         1261      2.41138e+06         reflect
+   416         1262      2.41138e+06         reflect
+   417         1263      2.41138e+06         reflect
+   418         1264      2.41138e+06         reflect
+   419         1265      2.41138e+06         reflect
+   420         1266      2.41138e+06         reflect
+   421         1267      2.41138e+06         reflect
+   422         1268      2.41138e+06         reflect
+   423         1269      2.41138e+06         reflect
+   424         1270      2.41138e+06         reflect
+   425         1271      2.41138e+06         reflect
+   426         1272      2.41138e+06         reflect
+   427         1274      2.41138e+06         expand
+   428         1275      2.41138e+06         reflect
+   429         1276      2.41138e+06         reflect
+   430         1277      2.41138e+06         reflect
+   431         1278      2.41138e+06         reflect
+   432         1279      2.41138e+06         reflect
+   433         1280      2.41138e+06         reflect
+   434         1281      2.41138e+06         reflect
+   435         1282      2.41138e+06         reflect
+   436         1283      2.41138e+06         reflect
+   437         1284      2.41138e+06         reflect
+   438         1285      2.41138e+06         reflect
+   439         1286      2.41138e+06         reflect
+   440         1287      2.41138e+06         reflect
+   441         1288      2.41138e+06         reflect
+   442         1290      2.41138e+06         expand
+   443         1291      2.41138e+06         reflect
+   444         1292      2.41138e+06         reflect
+   445         1293      2.41138e+06         reflect
+   446         1294      2.41138e+06         reflect
+   447         1295      2.41138e+06         reflect
+   448         1296      2.41138e+06         reflect
+   449         1297      2.41138e+06         reflect
+   450         1298      2.41138e+06         reflect
+   451         1299      2.41138e+06         reflect
+   452         1300      2.41138e+06         reflect
+   453         1301      2.41138e+06         reflect
+   454         1302      2.41138e+06         reflect
+   455         1303      2.41138e+06         reflect
+   456         1305      2.41138e+06         expand
+   457         1306      2.41138e+06         reflect
+   458         1307      2.41138e+06         reflect
+   459         1308      2.41138e+06         reflect
+   460         1309      2.41138e+06         reflect
+   461         1310      2.41138e+06         reflect
+   462         1311      2.41138e+06         reflect
+   463         1312      2.41138e+06         reflect
+   464         1313      2.41138e+06         reflect
+   465         1314      2.41138e+06         reflect
+   466         1315      2.41138e+06         reflect
+   467         1316      2.41138e+06         reflect
+   468         1317      2.41138e+06         reflect
+   469         1318      2.41138e+06         reflect
+   470         1320      2.41138e+06         expand
+   471         1321      2.41138e+06         reflect
+   472         1322      2.41138e+06         reflect
+   473         1323      2.41138e+06         reflect
+   474         1324      2.41138e+06         reflect
+   475         1325      2.41138e+06         reflect
+   476         1326      2.41138e+06         reflect
+   477         1327      2.41138e+06         reflect
+   478         1328      2.41138e+06         reflect
+   479         1329      2.41138e+06         reflect
+   480         1330      2.41138e+06         reflect
+   481         1331      2.41138e+06         reflect
+   482         1332      2.41138e+06         reflect
+   483         1333      2.41138e+06         reflect
+   484         1334      2.41138e+06         reflect
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('US_DSSW07_20084_steadystate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\US_DSSW07\US_DSSW07_20084\US_DSSW07_20084_steadystate.m', 91)" style="font-weight:bold">US_DSSW07_20084_steadystate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\US_DSSW07\US_DSSW07_20084\US_DSSW07_20084_steadystate.m',91,0)">line 91</a>)
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state_file', 'C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m', 52)" style="font-weight:bold">evaluate_steady_state_file</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m',52,0)">line 52</a>)
+    [ys,check] = h_steadystate(ys_init, exo_ss);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'C:\dynare\4.5.7\matlab\evaluate_steady_state.m', 212)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state.m',212,0)">line 212</a>)
+    [ys,params,info] = evaluate_steady_state_file(ys_init,exo_ss,M, options,steadystate_check_flag);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('resol', 'C:\dynare\4.5.7\matlab\resol.m', 104)" style="font-weight:bold">resol</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\resol.m',104,0)">line 104</a>)
+[dr.ys,M.params,info] = evaluate_steady_state(oo.steady_state,M,options,oo,~options.steadystate.nocheck);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_resolve', 'C:\dynare\4.5.7\matlab\dynare_resolve.m', 69)" style="font-weight:bold">dynare_resolve</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_resolve.m',69,0)">line 69</a>)
+[dr,info,Model,DynareOptions,DynareResults] = resol(0,Model,DynareOptions,DynareResults);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dsge_likelihood', 'C:\dynare\4.5.7\matlab\dsge_likelihood.m', 252)" style="font-weight:bold">dsge_likelihood</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dsge_likelihood.m',252,0)">line 252</a>)
+[T,R,SteadyState,info,Model,DynareOptions,DynareResults] = dynare_resolve(Model,DynareOptions,DynareResults,'restrict');
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fminsearch', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\optimfun\fminsearch.p', 324)" style="font-weight:bold">fminsearch</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\optimfun\fminsearch.p',324,0)">line 324</a>)
+    x(:) = xr; fxr = funfcn(x,varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_minimize_objective', 'C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m', 271)" style="font-weight:bold">dynare_minimize_objective</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m',271,0)">line 271</a>)
+        [opt_par_values,fval,exitflag] = fminsearch(objective_function,start_par_value,optim_options,varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 220)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',220,0)">line 220</a>)
+    [xparam1, fval, exitflag, hh, options_, Scale, new_rat_hess_info] =
+    dynare_minimize_objective(objective_function,xparam1,options_.mode_compute,options_,[bounds.lb
+    bounds.ub],bayestopt_.name,bayestopt_,hh,dataset_,dataset_info,options_,M_,estim_params_,bayestopt_,bounds,oo_);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
+    dynare_estimation_1(var_list,dname);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MHestimate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\MHestimate.m', 111)" style="font-weight:bold">MHestimate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\MHestimate.m',111,0)">line 111</a>)
+    dynare_estimation(var_list_);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Document

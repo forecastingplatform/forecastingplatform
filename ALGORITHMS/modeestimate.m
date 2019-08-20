@@ -70,6 +70,40 @@ global options_ oo_ optcrit
 eval(['diary ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '.log']);
 %while optimizationinfo
 
+% if find(basics.chosenmodels) == 12 % QPM model
+%               
+%        options_ = []; %Set default options
+%          % make sure we only load observable data... 
+%         options_.mode_compute = 4 ;
+%         options_.mode_file = '';
+%         options_.mh_file = '';
+%         options_.subdraws = 0;
+%         options_.mh_recover = 0;
+%         options_.nograph = 0;
+%         options_.presample = 4;        % To make the marginal likelihood comparable to a VAR(4)
+%         options_.forecast = basics.forecasthorizon;
+%         options_.load_mh_file=0;
+%         options_.model_mode = 0;
+%             options_.smoother = 1;         % just to check stationarity of the output gap for the other project
+%             options_.filtered_vars = 0;
+%             options_.linear = 1;
+%             options_.lik_init = 1;
+%             options_.mh_nblck = 1;
+%             options_.prefilter = 0;
+%             options_.order = 1;
+% options_.dsge_var = 1;
+% 
+% options_.bayesian_irf = 0;
+%    options_.mode_file = '';
+%     options_.mh_file = '';
+%     Letters = ['A'; 'B'; 'C'; 'D'; 'E'; 'F'; 'G'; 'H'; 'I'; 'J'; 'K'; 'L'; 'M'; 'N'; 'O'; 'P'; 'Q']; 
+%     options_.xls_range = ['C1:' , Letters(size(data,2)) , num2str(size(data,1)+1)];
+%     options_.forecast = basics.forecasthorizon;
+%     options_.mh_replic = 0;
+%     options_.order = 1;
+%     eval(['options_.datafile = ''' basics.datalocation '\ExcelFileVintages\' basics.zone deblank(num2str(basics.vintage(basics.vintagenr,:))) ''';']);
+% end
+%     
 options_.mode_compute = 4; % start with Sims' algorithm
 try
     disp('Trying mode_compute = 4, Chris Sims’ csminwel, and checking if estimation is feasible.');
@@ -142,12 +176,12 @@ eval(['save ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vint
 ModelOutput.MLLaPlace = oo_.MarginalDensity.LaplaceApproximation; % save ML for fit measurement
 
 ModelOutput.Mean.xgdp_a_obs = oo_.forecast.Mean.xgdp_q_obs(1:basics.forecasthorizon)*4; % get rid of + maximum lag at both ends
-ModelOutput.Mean.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Mean.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Mean.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Mean.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
 
 ModelOutput.Median.xgdp_a_obs = oo_.forecast.Mean.xgdp_q_obs(1:basics.forecasthorizon)*4; % get rid of + maximum lag at both ends
-ModelOutput.Median.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
-ModelOutput.Median.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Median.pgdp_a_obs = oo_.forecast.Mean.pgdp_q_obs(1:basics.forecasthorizon)*4;
+% ModelOutput.Median.rff_a_obs  = oo_.forecast.Mean.rff_q_obs(1:basics.forecasthorizon)*4;
 
 close all
 

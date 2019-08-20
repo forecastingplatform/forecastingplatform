@@ -1,0 +1,48 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 0 equation(s).
+Evaluating expressions...done
+Processing outputs ...
+done
+Preprocessing completed.
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(1) model is equal to  -350.1176
+
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(2) model is equal to  -338.2385
+
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(3) model is equal to  -334.4802
+
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(4) model is equal to  -331.2616
+
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(5) model is equal to  -320.4439
+
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(6) model is equal to  -290.3050
+
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(7) model is equal to  -291.2032
+
+Loading 191 observations from us20074.xls
+
+
+The marginal log density of the BVAR(8) model is equal to  -290.4633
+
+Total computing time : 0h00m05s

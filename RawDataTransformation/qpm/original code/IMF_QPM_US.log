@@ -1,0 +1,145 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: IMF_QPM_US.mod:142.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
+Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
+Found 50 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+RR_US             		 1.8456
+RR_US_BAR         		 1.8456
+UNR_US            		 6.6
+UNR_US_GAP        		 0
+UNR_US_BAR        		 6.6
+PIE_US            		 2.5
+PIE_US4           		 2.5
+Y_US              		 0
+LGDP_US           		 907.428
+LGDP_US_BAR       		 907.428
+RS_US             		 4.3456
+G_US              		 2.7599
+LCPI_US           		 498.839
+E4_PIE_US4        		 2.5
+E1_Y_US           		 0
+E1_PIE_US         		 2.5
+UNR_G_US          		 0
+GROWTH_US         		 2.7599
+GROWTH4_US        		 2.7599
+GROWTH4_US_BAR    		 2.7599
+BLT_US            		 -8.87
+BLT_US_BAR        		 -8.87
+E                 		 0
+E2                		 0
+GROWTH_US_BAR     		 2.7599
+RR_US_GAP         		 0
+BLT_US_GAP        		 0
+xgdp_q_obs        		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+        1.14e-18        -1.14e-18                0
+       3.202e-18        3.202e-18                0
+       5.267e-18       -5.267e-18                0
+       8.651e-18       -8.651e-18                0
+       9.425e-18        9.425e-18                0
+       1.091e-17       -1.091e-17                0
+       1.209e-17        1.209e-17                0
+       2.108e-17        2.108e-17                0
+       5.157e-17        5.157e-17                0
+       5.509e-17       -5.509e-17                0
+             0.1              0.1                0
+          0.4822          -0.4822                0
+          0.5118         -0.05828           0.5085
+          0.5118         -0.05828          -0.5085
+          0.6648           0.6648                0
+          0.6992           0.6992                0
+          0.7796           0.7796                0
+             0.9              0.9                0
+           0.951           0.9252           0.2203
+           0.951           0.9252          -0.2203
+               1                1                0
+               1                1                0
+               1                1                0
+               1                1                0
+           1.156            1.156                0
+           1.718          -0.2063            1.706
+           1.718          -0.2063           -1.706
+           1.824           -1.824                0
+           7.308            7.308                0
+       3.152e+04        1.576e+04         2.73e+04
+       3.152e+04        1.576e+04        -2.73e+04
+       3.152e+04       -3.152e+04                0
+       1.371e+55       -1.371e+55                0
+
+
+There are 9 eigenvalue(s) larger than 1 in modulus 
+for 9 forward-looking variable(s)
+
+The rank condition is verified.
+
+<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',46,1)">46  </a>var_list = check_list_of_variables(options_, M_, var_list);
+dbquite
+{Undefined function or variable 'dbquite'.} 
+dbquit
+load('variables.mat')
+clc
+clear
+load('variables.mat')
+basics.path = cd;
+% Data loading
+
+data = xlsread([basics.datalocation '\ExcelFileVintages\' basics.zone deblank(num2str(basics.vintage(basics.vintagenr,:)))],1);
+
+% go to subdirectoy of current vintage
+cd([basics.thispath '\MODELS\' basics.currentmodel '\' basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:))]);
+
+% evaluate dynare file
+eval(['dynare ' basics.currentmodel '_' deblank(num2str(basics.vintage(basics.vintagenr,:))) '.mod;']);
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: QPM_US_20083.mod:167.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
+Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
+Found 52 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+

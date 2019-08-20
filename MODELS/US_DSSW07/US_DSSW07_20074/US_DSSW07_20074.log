@@ -1,0 +1,828 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 37 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+ - order 2
+ - derivatives of Jacobian/Hessian w.r. to parameters
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+ - derivatives of Jacobian/Hessian w.r. to parameters
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+lambda     		 0.643038
+R          		 1.01761
+pic        		 1.0075
+c          		 1.57287
+w_tilda    		 1.64135
+w          		 1.64135
+phi_w      		 1273.62
+psi_w      		 13.7624
+L          		 1.0074
+k          		 23.244
+k_bar      		 23.3605
+i          		 0.69761
+Q          		 1
+R_e        		 1.01761
+r_k        		 0.0350376
+u          		 1
+mc         		 0.869565
+p_tilda    		 1
+phi_f      		 3.93802
+psi_f      		 4.52873
+y          		 2.8381
+Delta      		 1
+z          		 0.005
+lb         		 0
+lphi       		 -0.223144
+lmu        		 0
+llambda_f  		 -1.89712
+lg         		 0.223144
+lA         		 0
+llamda_fma 		 0
+hours_obs  		 1.29918
+rff_q_obs  		 1.76129
+pgdp_q_obs 		 0.747201
+xgdp_q_obs 		 0.5
+pcer_q_obs 		 0.5
+fpi_q_obs  		 0.5
+wage_obs   		 0.5
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+       2.344e-16       -2.344e-16                0
+        2.61e-16         2.61e-16                0
+          0.3923           0.3923                0
+           0.552           0.5067           0.2189
+           0.552           0.5067          -0.2189
+             0.6              0.6                0
+          0.6516           0.6516                0
+          0.8122           0.8122                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+          0.9558           0.9558                0
+           1.046            1.046                0
+           1.138            1.138                0
+           1.256            1.209           0.3407
+           1.256            1.209          -0.3407
+           1.354            1.354                0
+           1.668            1.668                0
+           1.675            1.675                0
+           1.675            1.675                0
+        6.95e+16        -6.95e+16                0
+       1.059e+17       -1.059e+17                0
+       1.879e+17       -1.879e+17                0
+       1.336e+19        1.336e+19                0
+       2.499e+19        2.499e+19                0
+
+
+There are 13 eigenvalue(s) larger than 1 in modulus 
+for 13 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -80949682.40321+95453034.48967i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -450701325.8702+531265402.44i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -38664089044.60849-254057270400.4762i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -25151124431.21231-165265138213.9835i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -26650603826.26912-175118258075.4704i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.0272e-07i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.9907e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -11996586913.4476-78828148510.5352i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -11996586913.4476-78828148510.5352i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.387824289654112e+21-3.049936236684525e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.6833e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.6833e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.5401e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.5401e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-3.5401e-09i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-8.2377e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.0104e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.0104e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-2.0104e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-7.764e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.4429e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.6388e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.6388e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-9.9583e-11i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-4.9986e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-5.0432e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-5.0432e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-5.0432e-10i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -5711730447982.054-37532699330834.3i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -5711730447982.054-37532699330834.3i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -5968199800960.788-39218003670504.45i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -91426902277822.81-600782421796394.8i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.840491364383548e+28-4.044734876317565e+28i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.504963898354632e+21-3.307366762957154e+21i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -6.953875115912498e+18+2.067755118391289e+18i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -6.953875115912498e+18+2.067755118391289e+18i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-6.3502e-12i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7223e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7223e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7142e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7142e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is -7-1.7142e-08i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 2.267030683728865e+22-9.410296805147892e+22i.)
+Check function or try again with a different starting value.
+Exiting fzero: aborting search for an interval containing a sign change
+    because complex function value encountered during search.
+(Function value at -7 is 1.416714314723694e+22-5.880688905243836e+22i.)
+Check function or try again with a different starting value.
+ 2.5% of the prior support gives unique saddle-path solution.
+ 0.0% of the prior support gives explosive dynamics.
+
+
+For 97.5% of the prior support dynare could not find a solution.
+
+    For 80.1% The steadystate routine thrown an exception (inconsistent deep parameters).
+    For 17.4% The steady has NaNs.
+
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for unique Stable Saddle-Path
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for NO unique Stable Saddle-Path
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for NO inability to find a solution
+
+No correlation term with pvalue <0 and |corr. coef.| >1 found for inability to find a solution
+Computing theoretical moments ...
+
+... done !
+
+==== Identification analysis ====
+
+Testing prior mean
+  
+All parameters are identified in the model (rank of H).
+
+
+All parameters are identified by J moments (rank of J)
+
+
+Press ENTER to print advanced diagnostics
+
+Collinearity patterns with 1 parameter(s)
+Parameter       [ Expl. params   ]       cosn
+SE_eps_z        [ rho_z          ]      0.9764059
+SE_eps_phi      [ rho_phi        ]      0.9913294
+SE_eps_lambda_f [ zeta_p         ]      0.6708169
+SE_eps_mu       [ rho_mu         ]      0.9429115
+SE_eps_b        [ rho_b          ]      0.4529383
+SE_eps_g        [ a_bis          ]      0.5112074
+SE_eps_R        [ SE_eps_phi     ]      0.4583925
+alpha           [ psi_1          ]      0.7315689
+zeta_p          [ cmap           ]      0.6761153
+iota_p          [ cmap           ]      0.7107463
+s_bis           [ SE_eps_mu      ]      0.8068689
+h               [ rho_b          ]      0.5192083
+a_bis           [ psi_2          ]      0.6258795
+nu_l            [ L_adj          ]      0.9673929
+zeta_w          [ psi_2          ]      0.8180030
+iota_w          [ alpha          ]      0.6526568
+r_star          [ pi_star        ]      0.6938012
+psi_1           [ psi_2          ]      0.8509014
+psi_2           [ psi_1          ]      0.8509014
+rho_R           [ zeta_w         ]      0.6305671
+pi_star         [ r_star         ]      0.6938012
+gamma_star      [ r_star         ]      0.4363300
+lambda_f        [ gg_star        ]      0.9999502
+gg_star         [ lambda_f       ]      0.9999502
+L_adj           [ scalehours     ]      0.9972552
+rho_z           [ SE_eps_z       ]      0.9764059
+rho_phi         [ SE_eps_phi     ]      0.9913294
+rho_lambda_f    [ cmap           ]      0.9948442
+rho_mu          [ SE_eps_mu      ]      0.9429115
+rho_b           [ rho_mu         ]      0.7205247
+rho_g           [ a_bis          ]      0.5319789
+cmap            [ rho_lambda_f   ]      0.9948442
+scalehours      [ L_adj          ]      0.9972552
+
+Collinearity patterns with 2 parameter(s)
+Parameter       [ Expl. params                   ]       cosn
+SE_eps_z        [ iota_p          rho_z          ]      0.9877030
+SE_eps_phi      [ iota_w          rho_phi        ]      0.9928810
+SE_eps_lambda_f [ lambda_f        gg_star        ]      1.0000000
+SE_eps_mu       [ s_bis           rho_mu         ]      0.9752210
+SE_eps_b        [ h               rho_b          ]      0.5445065
+SE_eps_g        [ a_bis           psi_2          ]      0.8196172
+SE_eps_R        [ psi_1           psi_2          ]      0.5961290
+alpha           [ psi_1           rho_z          ]      0.9626989
+zeta_p          [ SE_eps_lambda_f rho_lambda_f   ]      0.8273074
+iota_p          [ SE_eps_z        rho_z          ]      0.8134734
+s_bis           [ SE_eps_mu       alpha          ]      0.9051138
+h               [ s_bis           rho_R          ]      0.6602688
+a_bis           [ SE_eps_g        psi_2          ]      0.8908898
+nu_l            [ zeta_w          L_adj          ]      0.9933373
+zeta_w          [ SE_eps_phi      alpha          ]      0.9268238
+iota_w          [ zeta_w          rho_phi        ]      0.7239616
+r_star          [ pi_star         gamma_star     ]      0.7290879
+psi_1           [ alpha           rho_z          ]      0.9638724
+psi_2           [ psi_1           rho_g          ]      0.9258388
+rho_R           [ s_bis           zeta_w         ]      0.7773452
+pi_star         [ r_star          gg_star        ]      0.7109563
+gamma_star      [ r_star          lambda_f       ]      0.4519535
+lambda_f        [ SE_eps_lambda_f gg_star        ]      1.0000000
+gg_star         [ SE_eps_lambda_f lambda_f       ]      1.0000000
+L_adj           [ s_bis           gg_star        ]      0.9989078
+rho_z           [ SE_eps_z        iota_p         ]      0.9843643
+rho_phi         [ SE_eps_phi      iota_w         ]      0.9928516
+rho_lambda_f    [ SE_eps_lambda_f cmap           ]      0.9970286
+rho_mu          [ SE_eps_mu       s_bis          ]      0.9592752
+rho_b           [ h               rho_mu         ]      0.8050989
+rho_g           [ alpha           a_bis          ]      0.8238479
+cmap            [ SE_eps_lambda_f rho_lambda_f   ]      0.9971650
+scalehours      [ SE_eps_g        L_adj          ]      0.9972667
+
+Press ENTER to plot advanced diagnostics
+
+
+==== Identification analysis completed ====
+
+
+Total computing time : 0h01m14s
+Note: warning(s) encountered in MATLAB/Octave code
+Trying mode_compute = 4, Chris Sims’ csminwel, and checking if estimation is feasible.
+Initial value of the log posterior (or likelihood): -2658957.1965
+-----------------
+f at the beginning of new iteration,   2658957.1964656012
+Predicted improvement: 1895055722815936937328640.000000000
+lambda =          1; f = 379011144416052838400.0000000
+lambda =    0.33333; f = 42112349346866782208.0000000
+lambda =    0.11111; f = 4679149916533005312.0000000
+lambda =   0.037037; f = 519905542650807168.0000000
+lambda =   0.012346; f = 57767281308119552.0000000
+lambda =  0.0041152; f = 6418586410710033.0000000
+lambda =  0.0013717; f = 713176135664610.5000000
+lambda = 0.00045725; f = 79241750363291.9218750
+lambda = 0.00015242; f = 8804626342166.0312500
+lambda = 5.0805e-05; f = 978289195788.5440674
+lambda = 1.6935e-05; f = 108699501884.6939545
+lambda =  5.645e-06; f =  12079532237.7045078
+lambda = 1.8817e-06; f =   1344349205.8518064
+lambda = 6.2723e-07; f =    151674141.5835480
+lambda = 2.0908e-07; f =     19195706.7921997
+lambda = 6.9692e-08; f =      4489552.9689434
+lambda = 2.3231e-08; f =      2860093.2990275
+lambda = 7.7435e-09; f =      2680561.3651115
+lambda = 2.5812e-09; f =      2661119.7526271
+lambda =
+  -6.2723e-07
+lambda = -6.2723e-07; f =    151602862.5713895
+lambda = -2.0908e-07; f =     19171987.0991791
+lambda = -6.9692e-08; f =      4481686.3823021
+lambda = -2.3231e-08; f =      2857511.0811794
+lambda = -7.7435e-09; f =      2679740.6035277
+lambda = -2.5812e-09; f =      2660886.1431315
+Norm of dx 1.9468e+10
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str>convertUsingRecycledSprintf', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p', 212)" style="font-weight:bold">num2str>convertUsingRecycledSprintf</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p',212,0)">line 212</a>)
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str>handleNumericPrecision', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p', 193)" style="font-weight:bold">num2str>handleNumericPrecision</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p',193,0)">line 193</a>)
+        s = convertUsingRecycledSprintf(x, precision);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p', 96)" style="font-weight:bold">num2str</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p',96,0)">line 96</a>)
+            [s, forceWidth, f] = handleNumericPrecision(x, d);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('US_DSSW07_20074_steadystate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\US_DSSW07\US_DSSW07_20074\US_DSSW07_20074_steadystate.m', 7)" style="font-weight:bold">US_DSSW07_20074_steadystate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\MODELS\US_DSSW07\US_DSSW07_20074\US_DSSW07_20074_steadystate.m',7,0)">line 7</a>)
+    eval([deblank(M_.param_names(jj,:)),'=',num2str(M_.params(jj,:)),';'])
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state_file', 'C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m', 52)" style="font-weight:bold">evaluate_steady_state_file</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state_file.m',52,0)">line 52</a>)
+    [ys,check] = h_steadystate(ys_init, exo_ss);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('evaluate_steady_state', 'C:\dynare\4.5.7\matlab\evaluate_steady_state.m', 212)" style="font-weight:bold">evaluate_steady_state</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\evaluate_steady_state.m',212,0)">line 212</a>)
+    [ys,params,info] = evaluate_steady_state_file(ys_init,exo_ss,M, options,steadystate_check_flag);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('resol', 'C:\dynare\4.5.7\matlab\resol.m', 104)" style="font-weight:bold">resol</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\resol.m',104,0)">line 104</a>)
+[dr.ys,M.params,info] = evaluate_steady_state(oo.steady_state,M,options,oo,~options.steadystate.nocheck);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_resolve', 'C:\dynare\4.5.7\matlab\dynare_resolve.m', 69)" style="font-weight:bold">dynare_resolve</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_resolve.m',69,0)">line 69</a>)
+[dr,info,Model,DynareOptions,DynareResults] = resol(0,Model,DynareOptions,DynareResults);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dsge_likelihood', 'C:\dynare\4.5.7\matlab\dsge_likelihood.m', 252)" style="font-weight:bold">dsge_likelihood</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dsge_likelihood.m',252,0)">line 252</a>)
+[T,R,SteadyState,info,Model,DynareOptions,DynareResults] = dynare_resolve(Model,DynareOptions,DynareResults,'restrict');
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('penalty_objective_function', 'C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m', 33)" style="font-weight:bold">penalty_objective_function</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\penalty_objective_function.m',33,0)">line 33</a>)
+[fval, info, exit_flag, arg1, arg2] = fcn(x, varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('numgrad2', 'C:\dynare\4.5.7\matlab\optimization\numgrad2.m', 36)" style="font-weight:bold">numgrad2</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\numgrad2.m',36,0)">line 36</a>)
+        fh = penalty_objective_function(x, fcn, penalty, varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1>get_num_grad', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 317)" style="font-weight:bold">csminwel1>get_num_grad</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',317,0)">line 317</a>)
+    [g,badg] = numgrad2(fcn, f0, x0, penalty, epsilon, varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('csminwel1', 'C:\dynare\4.5.7\matlab\optimization\csminwel1.m', 260)" style="font-weight:bold">csminwel1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\csminwel1.m',260,0)">line 260</a>)
+                [gh, badgh]=get_num_grad(method,fcn,penalty,fh,xh,epsilon,varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_minimize_objective', 'C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m', 205)" style="font-weight:bold">dynare_minimize_objective</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\optimization\dynare_minimize_objective.m',205,0)">line 205</a>)
+        csminwel1(objective_function, start_par_value, H0, analytic_grad, crit, nit, numgrad, epsilon, Verbose, Save_files,
+        varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\4.5.7\matlab\dynare_estimation_1.m', 220)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation_1.m',220,0)">line 220</a>)
+    [xparam1, fval, exitflag, hh, options_, Scale, new_rat_hess_info] =
+    dynare_minimize_objective(objective_function,xparam1,options_.mode_compute,options_,[bounds.lb
+    bounds.ub],bayestopt_.name,bayestopt_,hh,dataset_,dataset_info,options_,M_,estim_params_,bayestopt_,bounds,oo_);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\4.5.7\matlab\dynare_estimation.m', 105)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\4.5.7\matlab\dynare_estimation.m',105,0)">line 105</a>)
+    dynare_estimation_1(var_list,dname);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('modeestimate', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\modeestimate.m', 83)" style="font-weight:bold">modeestimate</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\modeestimate.m',83,0)">line 83</a>)
+    dynare_estimation(var_list_); % run the estimation
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m', 97)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',97,0)">line 97</a>)
+                        eval([basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:)) ' = modeestimate(basics);']); %
+                        function for the estimation
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+evalin('caller', strcat(script, ';'));
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>pushbutton1_Callback', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 891)" style="font-weight:bold">EstimationInterface>pushbutton1_Callback</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',891,0)">line 891</a>)
+    run Main
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m', 95)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m',95,0)">line 95</a>)
+        feval(varargin{:});
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+In
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface(''pushbutton1_Callback'',hObject,eventdata,guidata(hObject))')" style="font-weight:bold">matlab.graphics.internal.figfile.FigFile/read>@(hObject,eventdata)EstimationInterface('pushbutton1_Callback',hObject,eventdata,guidata(hObject))</a>} 
+Interrupt while evaluating UIControl Callback.
+
+clear
+load('US_DSSW07HH_20083_results.mat')
+Forecastplatform
+[Warning: The file 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m' could not be cleared because it
+contains MATLAB code that is currently executing.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Forecastplatform', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m', 2)" style="font-weight:bold">Forecastplatform</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m',2,0)">line 2</a>)] 
+[Warning: The file 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m' could not be cleared because it
+contains MATLAB code that is currently executing.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Forecastplatform', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m', 2)" style="font-weight:bold">Forecastplatform</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m',2,0)">line 2</a>)] 
+[Warning: The file 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m' could not be cleared because it
+contains MATLAB code that is currently executing.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Forecastplatform', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m', 2)" style="font-weight:bold">Forecastplatform</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m',2,0)">line 2</a>)] 
+{Reference to non-existent field 'qpmus'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface>EstimationInterface_OpeningFcn', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 53)" style="font-weight:bold">EstimationInterface>EstimationInterface_OpeningFcn</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',53,0)">line 53</a>)
+basics.modelslist = [handles.bvarmp, handles.bvarglp, handles.ussw07, handles.usdngs14, handles.usnkbas, handles.dsgetest,
+handles.nk_ds04, handles.nk_ww11, handles.usfrbedo08, handles.usdngs14sw, handles.ussw07bgg, handles.qpmus];
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gui_mainfcn', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m', 220)" style="font-weight:bold">gui_mainfcn</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\guide\gui_mainfcn.m',220,0)">line 220</a>)
+    feval(gui_State.gui_OpeningFcn, gui_hFigure, [], guidata(gui_hFigure), varargin{:});
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('EstimationInterface', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m', 42)" style="font-weight:bold">EstimationInterface</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\EstimationInterface\EstimationInterface.m',42,0)">line 42</a>)
+    gui_mainfcn(gui_State, varargin{:});
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Forecastplatform', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m', 4)" style="font-weight:bold">Forecastplatform</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\Forecastplatform.m',4,0)">line 4</a>)
+EstimationInterface} 
+Forecastplatform
+Main
+{Reference to non-existent field 'models'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m', 9)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',9,0)">line 9</a>)
+basics.models = basics.models;} 
+Forecastplatform
+Forecastplatform
+Generating vintages...
+<a href="matlab: opentoline('C:\Users\Farkas\Documents\GitHub\forecastingplatform\ALGORITHMS\Main.m',97,1)">97  </a>                        eval([basics.currentmodel '_' num2str(basics.vintage(basics.vintagenr,:)) ' = modeestimate(basics);']); % function for the estimation
+if system_dependent('IsDebugMode')==1, dbstep; end
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: QPM_US_20083.mod:167.1-79: ''unit_root_vars'' is now obsolete; use the ''diffuse_filter'' option of ''estimation'' instead
+Substitution of endo leads >= 2: added 6 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 16 auxiliary variables and equations.
+Found 52 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
